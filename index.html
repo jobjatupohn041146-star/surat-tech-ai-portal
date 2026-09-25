@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</title>
-  <meta name="description" content="พอร์ทัลแสดงผลลัพธ์ยุทธศาสตร์ AI, สถาปัตยกรรม Vibe Coding และคลังหลักฐานระดับ C-Level วิทยาลัยเทคนิคสุราษฎร์ธานี">
+  <meta name="description" content="พอร์ทัลผลลัพธ์ยุทธศาสตร์ AI ระดับ C-Level, สถาปัตยกรรม Vibe Coding สู่ ค.ศ.4 และคลังหลักฐานเชิงประจักษ์ 130 รายการ วิทยาลัยเทคนิคสุราษฎร์ธานี">
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -13,15 +13,26 @@
       theme: {
         extend: {
           colors: {
-            srtc: {
-              navy: '#0F172A',
-              royal: '#1E3A8A',
-              crimson: '#991B1B',
-              crimsonDark: '#7F1D1D',
-              gold: '#D97706',
-              goldLight: '#FEF3C7',
-              border: '#E2E8F0',
-              surface: '#F8FAFC'
+            royal: {
+              950: '#060D1A',
+              900: '#0B172E',
+              800: '#112244',
+              700: '#1E3A8A',
+              600: '#2563EB',
+            },
+            crimson: {
+              900: '#670F1E',
+              800: '#8B1528',
+              700: '#9E1B32',
+              600: '#BE123C',
+              50: '#FFF1F2'
+            },
+            gold: {
+              600: '#D97706',
+              500: '#F59E0B',
+              400: '#FBBF24',
+              100: '#FEF3C7',
+              50: '#FFFBEB'
             }
           }
         }
@@ -29,214 +40,200 @@
     }
   </script>
   <link rel="stylesheet" href="css/custom.css">
-  <style>
-    /* GitHub Octicon / Primer Design System Accents */
-    .gh-card {
-      background: #FFFFFF;
-      border: 1px solid #D0D7DE;
-      border-radius: 8px;
-      transition: border-color 0.15s ease, box-shadow 0.15s ease;
-    }
-    .gh-card:hover {
-      border-color: #0969DA;
-      box-shadow: 0 3px 12px rgba(140, 149, 159, 0.15);
-    }
-    .gh-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      padding: 2px 8px;
-      border-radius: 12px;
-      font-size: 11px;
-      font-weight: 500;
-      border: 1px solid #D0D7DE;
-    }
-    .gh-tab-btn {
-      padding: 10px 16px;
-      font-size: 13px;
-      font-weight: 600;
-      color: #57609A;
-      border-bottom: 2px solid transparent;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      white-space: nowrap;
-      transition: all 0.15s ease;
-    }
-    .gh-tab-btn:hover {
-      color: #0F172A;
-      border-bottom-color: #D0D7DE;
-    }
-    .gh-tab-active {
-      color: #991B1B !important;
-      border-bottom-color: #991B1B !important;
-    }
-    .gh-counter {
-      background: rgba(175, 184, 193, 0.2);
-      color: #24292F;
-      padding: 0 6px;
-      border-radius: 10px;
-      font-size: 11px;
-      font-weight: 600;
-    }
-  </style>
 </head>
-<body class="bg-[#F6F8FA] text-[#1F2328] antialiased min-h-screen flex flex-col font-sans">
+<body class="bg-[#F8FAFC] text-[#1E293B] antialiased min-h-screen flex flex-col font-display">
 
-  <!-- ========================================== -->
-  <!-- 1. GITHUB REPO-STYLE HEADER (No Print)     -->
-  <!-- ========================================== -->
-  <header class="bg-[#0F172A] text-white border-b border-slate-800 no-print sticky top-0 z-40 shadow-sm">
+  <!-- ============================================================== -->
+  <!-- 1. ULTRA-LUXURY EXECUTIVE HEADER                              -->
+  <!-- ============================================================== -->
+  <header class="bg-[#060D1A]/95 backdrop-blur-xl border-b border-white/10 text-white sticky top-0 z-40 no-print shadow-2xl">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16 sm:h-20">
+      <div class="flex items-center justify-between h-20 sm:h-24">
         
-        <!-- College Logo & Organization Title -->
-        <div class="flex items-center gap-3 sm:gap-4">
-          <div class="relative group cursor-pointer" onclick="switchTab('overview')">
-            <img src="assets/logo.png" alt="ตราสัญลักษณ์วิทยาลัยเทคนิคสุราษฎร์ธานี" class="w-12 h-12 sm:w-14 sm:h-14 object-contain filter drop-shadow-md group-hover:scale-105 transition-transform">
-            <div class="absolute inset-0 rounded-full border-2 border-amber-400/40 pointer-events-none"></div>
+        <!-- College Logo & Institutional Identity -->
+        <div class="flex items-center gap-4 cursor-pointer" onclick="switchTab('overview')">
+          <div class="relative group">
+            <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-amber-500 via-rose-600 to-amber-500 opacity-60 blur-sm group-hover:opacity-100 transition duration-300"></div>
+            <img src="assets/logo.png" alt="ตราสัญลักษณ์วิทยาลัยเทคนิคสุราษฎร์ธานี" class="relative w-14 h-14 sm:w-16 sm:h-16 object-contain filter drop-shadow-xl transform group-hover:scale-105 transition-transform duration-200">
           </div>
           <div>
-            <div class="flex items-center gap-2">
-              <span class="text-xs font-bold uppercase tracking-widest text-amber-400">วิทยาลัยเทคนิคสุราษฎร์ธานี</span>
-              <span class="text-slate-500">/</span>
-              <span class="text-xs px-2 py-0.5 rounded-full bg-red-950 text-red-300 border border-red-800 font-semibold">C-Level Evidence Hub</span>
+            <div class="flex items-center gap-2 mb-0.5">
+              <span class="text-[11px] font-bold uppercase tracking-widest text-amber-400">วิทยาลัยเทคนิคสุราษฎร์ธานี</span>
+              <span class="text-slate-500 text-xs">•</span>
+              <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-rose-950/80 text-rose-300 border border-rose-800">C-Level Evidence</span>
             </div>
-            <h1 class="text-sm sm:text-lg font-bold text-white tracking-tight flex items-center gap-2">
-              <span>Executive AI Strategy & Evidence Portal</span>
-              <span class="hidden md:inline-flex text-[11px] px-2 py-0.5 rounded-md bg-slate-800 text-slate-300 font-mono border border-slate-700">v2.5.0 • Live</span>
+            <h1 class="text-base sm:text-xl font-extrabold text-white tracking-tight leading-tight flex items-center gap-2.5">
+              <span>Executive AI Strategy Portal</span>
+              <span class="hidden md:inline-flex text-[11px] px-2.5 py-0.5 rounded-md bg-white/10 text-amber-300 font-mono border border-white/15 font-semibold">25 ก.ย. 2569</span>
             </h1>
           </div>
         </div>
 
-        <!-- Action Buttons (Print, GitHub Stats) -->
-        <div class="flex items-center gap-2 sm:gap-3">
-          <div class="hidden lg:flex items-center bg-slate-800 rounded-lg p-1 border border-slate-700 text-xs">
-            <span class="px-2 py-1 text-slate-300 flex items-center gap-1.5 font-semibold">
-              <svg class="w-3.5 h-3.5 text-amber-400" fill="currentColor" viewBox="0 0 16 16"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25z"/></svg>
-              <span>Stars</span>
-              <span class="gh-counter bg-slate-700 text-amber-300">128</span>
-            </span>
-            <span class="w-px h-4 bg-slate-700"></span>
-            <span class="px-2 py-1 text-slate-300 flex items-center gap-1.5 font-semibold">
-              <svg class="w-3.5 h-3.5 text-slate-400" fill="currentColor" viewBox="0 0 16 16"><path d="M5 3.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm0 2.122a2.25 2.25 0 1 0-1.5 0v.878A2.25 2.25 0 0 0 5.75 8.5h1.5v2.128a2.251 2.251 0 1 0 1.5 0V8.5h1.5a2.25 2.25 0 0 0 2.25-2.25v-.878a2.25 2.25 0 1 0-1.5 0v.878a.75.75 0 0 1-.75.75h-4.5A.75.75 0 0 1 5 6.25v-.878z"/></svg>
-              <span>Forked Apps</span>
-              <span class="gh-counter bg-slate-700 text-slate-300">20+</span>
-            </span>
-          </div>
+        <!-- Header Actions: Quick Search, Stars, Print A4 -->
+        <div class="flex items-center gap-2.5 sm:gap-3">
+          
+          <!-- Quick Search Button (⌘K) -->
+          <button onclick="openQuickSearch()" class="hidden md:flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 hover:text-white text-xs transition-all">
+            <svg class="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+            <span>ค้นหาด่วน...</span>
+            <kbd class="px-1.5 py-0.5 rounded bg-white/10 text-[10px] font-mono text-slate-300 border border-white/15">⌘K</kbd>
+          </button>
 
-          <button onclick="switchTab('report'); setTimeout(() => window.print(), 350);" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-[#991B1B] hover:bg-[#7F1D1D] text-white text-xs sm:text-sm font-bold shadow-md transition-all border border-red-700">
+          <!-- Print Report Button (Luxury Crimson) -->
+          <button onclick="switchTab('report'); setTimeout(() => window.print(), 350);" class="inline-flex items-center gap-2 px-4 py-2 sm:py-2.5 rounded-xl bg-gradient-to-r from-[#8B1528] to-[#9E1B32] hover:from-[#9E1B32] hover:to-[#BE123C] text-white text-xs sm:text-sm font-bold shadow-lg shadow-rose-950/50 transition-all border border-rose-500/30 transform hover:-translate-y-0.5">
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
             </svg>
             <span>พิมพ์รายงาน A4</span>
           </button>
+
         </div>
 
       </div>
     </div>
 
-    <!-- Navigation Tabs Strip (GitHub Sub-nav Style) -->
-    <div class="bg-white border-t border-b border-[#D0D7DE] text-[#24292F] overflow-x-auto scrollbar-none" id="main-tabs">
+    <!-- Navigation Pills Strip -->
+    <div class="bg-[#0B172E]/90 border-t border-b border-white/10 text-white overflow-x-auto scrollbar-none py-2" id="main-tabs">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex space-x-1 sm:space-x-2">
-        <button onclick="switchTab('overview')" data-tab="overview" class="gh-tab-btn gh-tab-active">
+        <button onclick="switchTab('overview')" data-tab="overview" class="nav-tab-pill active">
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg>
-          <span>ภาพรวมยุทธศาสตร์ (Overview)</span>
+          <span>ภาพรวมยุทธศาสตร์</span>
         </button>
-        <button onclick="switchTab('apps')" data-tab="apps" class="gh-tab-btn">
+        <button onclick="switchTab('apps')" data-tab="apps" class="nav-tab-pill">
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
-          <span>คลังแอปพลิเคชัน (Live Apps)</span>
-          <span class="gh-counter" id="tab-apps-count">20</span>
+          <span>คลังแอปพลิเคชัน</span>
+          <span class="counter-badge">20+</span>
         </button>
-        <button onclick="switchTab('docs')" data-tab="docs" class="gh-tab-btn">
+        <button onclick="switchTab('docs')" data-tab="docs" class="nav-tab-pill">
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-          <span>ผลงานวิชาการ (Artifacts)</span>
-          <span class="gh-counter">57</span>
+          <span>ผลงานวิชาการ 57 ชิ้น</span>
+          <span class="counter-badge">57</span>
         </button>
-        <button onclick="switchTab('prompts')" data-tab="prompts" class="gh-tab-btn">
+        <button onclick="switchTab('prompts')" data-tab="prompts" class="nav-tab-pill">
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-          <span>วิศวกรรมคำสั่ง & สไลด์ (Prompts)</span>
-          <span class="gh-counter">51</span>
+          <span>สถาปัตยกรรม & คำสั่ง</span>
+          <span class="counter-badge">51</span>
         </button>
-        <button onclick="switchTab('atmosphere')" data-tab="atmosphere" class="gh-tab-btn">
+        <button onclick="switchTab('atmosphere')" data-tab="atmosphere" class="nav-tab-pill">
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-          <span>บรรยากาศห้องอบรมจริง (Gallery)</span>
-          <span class="gh-counter">15</span>
+          <span>บรรยากาศห้องอบรมจริง</span>
+          <span class="counter-badge">15</span>
         </button>
-        <button onclick="switchTab('media')" data-tab="media" class="gh-tab-btn">
+        <button onclick="switchTab('media')" data-tab="media" class="nav-tab-pill">
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-          <span>พอดแคสต์ & มีเดีย (Podcast)</span>
+          <span>สตูดิโอพอดแคสต์</span>
         </button>
-        <button onclick="switchTab('people')" data-tab="people" class="gh-tab-btn">
+        <button onclick="switchTab('people')" data-tab="people" class="nav-tab-pill">
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
-          <span>ทำเนียบผู้พัฒนา (People)</span>
-          <span class="gh-counter">15</span>
+          <span>ทำเนียบผู้พัฒนา</span>
+          <span class="counter-badge">15</span>
         </button>
-        <button onclick="switchTab('report')" data-tab="report" class="gh-tab-btn text-red-800 font-bold bg-red-50/70 border-b-2 border-red-800">
-          <svg class="w-4 h-4 text-red-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-          <span>รายงานผู้บริหาร 10 หน้า (A4 Report)</span>
+        <button onclick="switchTab('report')" data-tab="report" class="nav-tab-pill border border-amber-500/40 text-amber-300 hover:text-white">
+          <svg class="w-4 h-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+          <span>รายงาน 10 หน้า A4</span>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- ========================================== -->
-  <!-- 2. HERO & BLUF TOP METRICS (No Print)      -->
-  <!-- ========================================== -->
-  <section class="bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#1E3A8A] text-white py-10 px-4 sm:px-6 lg:px-8 no-print border-b border-slate-700" id="hero-section">
-    <div class="max-w-7xl mx-auto">
-      
-      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8">
-        <div class="flex items-start gap-4">
-          <img src="assets/logo.png" alt="Official Logo" class="w-16 h-16 sm:w-20 sm:h-20 object-contain flex-shrink-0 drop-shadow-lg">
-          <div>
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-red-900/60 text-red-200 border border-red-700 mb-2">
-              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              วิทยาลัยเทคนิคสุราษฎร์ธานี • โครงการอบรมเชิงปฏิบัติการ AI Learning Designer
-            </div>
-            <h2 class="text-xl sm:text-3xl font-extrabold tracking-tight text-white mb-2 leading-snug">
-              พอร์ทัลผลลัพธ์ยุทธศาสตร์ปัญญาประดิษฐ์และคลังหลักฐานระดับ C-Level
-            </h2>
-            <p class="text-xs sm:text-sm text-slate-300 max-w-3xl leading-relaxed">
-              สถาปัตยกรรม Vibe Coding สู่การยกระดับวิทยฐานะ ค.ศ.4 (ครูเชี่ยวชาญ) ตามเกณฑ์ ว.PA พร้อมการจัดเก็บหลักฐานเชิงประจักษ์ 130 รายการ
-            </p>
-          </div>
-        </div>
+  <!-- ============================================================== -->
+  <!-- 2. BREATHTAKING HERO SECTION                                   -->
+  <!-- ============================================================== -->
+  <section class="relative bg-gradient-to-b from-[#060D1A] via-[#0B172E] to-[#0F1E3D] text-white py-14 px-4 sm:px-6 lg:px-8 no-print border-b border-white/10 overflow-hidden" id="hero-section">
+    
+    <!-- Ambient Radial Glows -->
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 right-1/4 w-96 h-96 bg-rose-600/15 rounded-full blur-3xl pointer-events-none"></div>
 
-        <div class="flex-shrink-0 bg-slate-900/80 backdrop-blur rounded-xl p-4 border border-slate-700 min-w-[250px]">
-          <div class="text-[11px] text-amber-400 uppercase tracking-wider font-bold mb-1">วันที่จัดกิจกรรมอย่างเป็นทางการ</div>
-          <div class="text-lg font-black text-white mb-2">25 กันยายน 2569</div>
-          <div class="text-xs text-emerald-400 flex items-center gap-1.5 font-medium">
-            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-            <span>รับรองผลการจัดอบรม 1 วันเต็ม (Intensive Sprint)</span>
-          </div>
+    <div class="max-w-7xl mx-auto relative z-10">
+      
+      <!-- Top Badges & Breadcrumb -->
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/15 text-xs text-slate-300">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          <span class="font-bold text-amber-400">สอศ.</span>
+          <span>/</span>
+          <span>สถาบันการอาชีวศึกษาภาคใต้ 1</span>
+          <span>/</span>
+          <span class="text-white font-semibold">วิทยาลัยเทคนิคสุราษฎร์ธานี</span>
+        </div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-950/80 border border-rose-800 text-[11px] font-semibold text-rose-300">
+          <span>ความสำเร็จโครงการ 100% Adoption Rate</span>
         </div>
       </div>
 
-      <!-- BLUF Top 5 Metrics -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3" id="kpi-metrics-container">
-        <!-- Rendered instantly via inline JS -->
+      <!-- Main Headline & Grand Intro -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-10">
+        
+        <div class="lg:col-span-8">
+          <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-4 leading-tight">
+            การเปลี่ยนผ่านยุทธศาสตร์ปัญญาประดิษฐ์สู่ <span class="bg-gradient-to-r from-amber-300 via-rose-300 to-amber-200 bg-clip-text text-transparent">ค.ศ.4 (ครูเชี่ยวชาญ)</span>
+          </h2>
+          <p class="text-sm sm:text-base text-slate-300 max-w-3xl leading-relaxed mb-6 font-sarabun">
+            ศูนย์กลางจัดแสดงผลลัพธ์ยุทธศาสตร์ AI และคลังหลักฐานเชิงประจักษ์ระดับ C-Level จากโครงการอบรมเชิงปฏิบัติการ 
+            <strong>"AI Learning Designer"</strong> ในวันที่ 25 กันยายน 2569 ขับเคลื่อนครูช่างสู่การเป็น <em>AI Solution Architect</em> 
+            ผลิตผลงานเว็บแอปพลิเคชันใช้งานจริง <strong>20+ ระบบ</strong> และผลงานวิชาการ <strong>57 ชิ้นงาน</strong> บนสถาปัตยกรรม Serverless <strong>0 บาท</strong>
+          </p>
+
+          <!-- Quick Action Buttons -->
+          <div class="flex flex-wrap items-center gap-3">
+            <button onclick="switchTab('apps')" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-extrabold text-xs sm:text-sm shadow-lg shadow-amber-950/40 transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+              <span>สำรวจผลงาน 20+ แอปพลิเคชัน</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+            </button>
+            <button onclick="switchTab('report')" class="px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-xs sm:text-sm transition-all flex items-center gap-2">
+              <svg class="w-4 h-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+              <span>เปิดรายงานผู้บริหาร 10 หน้า</span>
+            </button>
+            <button onclick="switchTab('media')" class="px-4 py-2.5 rounded-xl bg-rose-950/60 hover:bg-rose-950 border border-rose-800 text-rose-300 font-semibold text-xs transition-all flex items-center gap-2">
+              <svg class="w-4 h-4 text-rose-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" /></svg>
+              <span>ฟังพอดแคสต์ครูช่าง</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Official Institutional Seal Spotlight -->
+        <div class="lg:col-span-4 flex justify-center">
+          <div class="relative p-6 rounded-3xl bg-gradient-to-b from-white/10 to-white/5 border border-white/15 backdrop-blur-xl shadow-2xl text-center max-w-sm w-full">
+            <div class="relative inline-block mb-3">
+              <div class="absolute -inset-2 rounded-full bg-amber-400/30 blur-md animate-pulse"></div>
+              <img src="assets/logo.png" alt="Emblem Seal" class="relative w-28 h-28 mx-auto object-contain drop-shadow-2xl">
+            </div>
+            <div class="text-xs font-bold text-amber-400 uppercase tracking-widest mb-1">สถาบันการอาชีวศึกษา</div>
+            <h3 class="text-base font-extrabold text-white mb-2">วิทยาลัยเทคนิคสุราษฎร์ธานี</h3>
+            <div class="text-[11px] text-slate-300 leading-relaxed font-sarabun px-2">
+              "สร้างคน สร้างงาน สร้างอนาคต สู่เทคโนโลยียั่งยืน"<br>
+              รับรองความถูกต้องของข้อมูลหลักฐานเชิงประจักษ์ 130 รายการ
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BLUF Top 5 Metrics Bento Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5 pt-6 border-t border-white/10" id="kpi-metrics-container">
+        <!-- Rendered instantly via JS -->
       </div>
 
     </div>
   </section>
 
-  <!-- ========================================== -->
-  <!-- 3. MAIN CONTENT BODY (Tab Sections)        -->
-  <!-- ========================================== -->
+  <!-- ============================================================== -->
+  <!-- 3. MAIN CONTENT BODY (Tab Sections)                           -->
+  <!-- ============================================================== -->
   <main class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
 
-    <!-- SECTION: OVERVIEW -->
+    <!-- ==================== TAB: OVERVIEW ==================== -->
     <div id="section-overview" class="space-y-8 no-print">
       
-      <!-- Pinned Core Platforms (GitHub Style) -->
+      <!-- Pinned Core Repositories (GitHub Style) -->
       <div>
         <div class="flex items-center justify-between mb-4">
           <div class="flex items-center gap-2">
-            <svg class="w-4 h-4 text-slate-500" fill="currentColor" viewBox="0 0 16 16"><path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .708c-.026.026-1.185 1.184-2.164 2.163l-.707.707 2.146 2.147a.5.5 0 0 1-.707.707L12.353 10l-1.414 1.414a.5.5 0 0 1-.708 0l-2.12-2.12-2.122 2.12a.5.5 0 0 1-.707 0l-.707-.707a.5.5 0 0 1 0-.707l2.12-2.122-2.12-2.12a.5.5 0 0 1 0-.708l1.414-1.414L3.647 1.464a.5.5 0 0 1 .707-.707l2.147 2.146.707-.707C8.187 1.217 9.346.06 9.372.034a.5.5 0 0 1 .456-.034z"/></svg>
-            <h3 class="text-sm font-bold text-slate-800 uppercase tracking-wider">แพลตฟอร์มหลักที่ปักหมุด (Pinned Core Repositories)</h3>
+            <svg class="w-4 h-4 text-[#8B1528]" fill="currentColor" viewBox="0 0 16 16"><path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .708c-.026.026-1.185 1.184-2.164 2.163l-.707.707 2.146 2.147a.5.5 0 0 1-.707.707L12.353 10l-1.414 1.414a.5.5 0 0 1-.708 0l-2.12-2.12-2.122 2.12a.5.5 0 0 1-.707 0l-.707-.707a.5.5 0 0 1 0-.707l2.12-2.122-2.12-2.12a.5.5 0 0 1 0-.708l1.414-1.414L3.647 1.464a.5.5 0 0 1 .707-.707l2.147 2.146.707-.707C8.187 1.217 9.346.06 9.372.034a.5.5 0 0 1 .456-.034z"/></svg>
+            <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wider">แอปพลิเคชันยุทธศาสตร์ปักหมุด (Pinned Core Repositories)</h3>
           </div>
-          <span class="text-xs text-slate-500">ผลงานยุทธศาสตร์นำร่อง 4 ด้าน</span>
+          <span class="text-xs text-slate-500 font-semibold">4 สาขานำร่อง</span>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="pinned-apps-container">
@@ -244,55 +241,97 @@
         </div>
       </div>
 
-      <!-- Executive BLUF Summary -->
-      <div class="gh-card p-6 sm:p-8 bg-white border border-[#D0D7DE]">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 rounded-lg bg-red-50 text-[#991B1B] font-black text-sm flex items-center justify-center border border-red-200">
-            BLUF
-          </div>
+      <!-- Architecture Pipeline Diagram (Animated Flow) -->
+      <div class="gh-repo-card p-6 sm:p-8 bg-white border border-[#D0D7DE]">
+        <div class="flex items-center justify-between mb-4">
           <div>
-            <h3 class="text-lg font-bold text-slate-900">สาระสำคัญเชิงยุทธศาสตร์ (Bottom Line Up Front)</h3>
-            <p class="text-xs text-slate-500">บทสรุปความคุ้มค่าและทิศทางการยกระดับวิทยาลัยเทคนิคสุราษฎร์ธานี สำหรับผู้บริหารระดับสูง (C-Level)</p>
+            <span class="text-[11px] font-bold text-[#8B1528] uppercase tracking-wider">Enterprise Architecture</span>
+            <h3 class="text-lg font-bold text-slate-900">วงจรการสังเคราะห์นวัตกรรม (Vibe Coding Pipeline)</h3>
           </div>
+          <span class="gh-pill bg-emerald-50 text-emerald-800 border-emerald-300">Zero Maintenance</span>
         </div>
-        <p class="text-slate-700 leading-relaxed text-sm mb-6 font-sarabun text-justify">
-          การอบรมเชิงปฏิบัติการ <strong>"AI Learning Designer"</strong> ในวันที่ 25 กันยายน 2569 ได้สร้างจุดเปลี่ยนสำคัญในการจัดการศึกษาอาชีวศึกษาของวิทยาลัยเทคนิคสุราษฎร์ธานี 
-          โดยเปลี่ยนบทบาทของครูช่างจาก <em>"ผู้บริโภคเครื่องมือ AI"</em> สู่ <em>"สถาปนิกผู้ออกแบบและสร้างแอปพลิเคชัน (AI Solution Architect)"</em> ผ่านกระบวนการ Vibe Coding 
-          สามารถผลิตผลงานที่จับต้องได้และนำไปใช้งานจริงทันทีรวม <strong>20+ แอปพลิเคชันบน Cloud</strong> และสังเคราะห์เอกสารวิชาการ <strong>57 ชิ้นงาน</strong> 
-          โดยปราศจากภาระค่าใช้จ่ายด้านโครงสร้างพื้นฐานเซิร์ฟเวอร์ (0 THB Serverless Architecture)
-        </p>
-
-        <!-- 3 Pillars Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 border-t border-slate-200">
-          <div class="p-4 rounded-lg bg-slate-50 border border-slate-200">
-            <div class="text-[11px] font-bold uppercase tracking-wider text-[#991B1B] mb-1">Pillar 1: ว.PA & Competency</div>
-            <div class="font-bold text-slate-900 text-sm mb-1">ขับเคลื่อนสู่ ค.ศ.4 (ครูเชี่ยวชาญ)</div>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              ตอบโจทย์เกณฑ์การประเมินวิทยฐานะ ว.PA ด้านการริเริ่ม พัฒนา และปรับเปลี่ยนนวัตกรรมที่ส่งผลต่อคุณภาพผู้เรียนอย่างชัดเจน
-            </p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-4 gap-3 text-center my-6">
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 relative">
+            <div class="w-8 h-8 rounded-full bg-slate-900 text-white font-bold text-xs flex items-center justify-center mx-auto mb-2">1</div>
+            <div class="text-xs font-bold text-slate-900 mb-1">Agentic Setup</div>
+            <div class="text-[11px] text-slate-500 leading-snug">Google Antigravity & Skillbook: vibe-coding</div>
           </div>
-          <div class="p-4 rounded-lg bg-slate-50 border border-slate-200">
-            <div class="text-[11px] font-bold uppercase tracking-wider text-[#1E3A8A] mb-1">Pillar 2: Technical Architecture</div>
-            <div class="font-bold text-slate-900 text-sm mb-1">Modern Vibe Coding & Agentic AI</div>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              ใช้ Google Antigravity, Gemini Multimodal และ Cloud Platforms (Vercel/Netlify) พัฒนาระบบได้รวดเร็วกว่าเดิม 10 เท่า
-            </p>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 relative">
+            <div class="w-8 h-8 rounded-full bg-[#1E3A8A] text-white font-bold text-xs flex items-center justify-center mx-auto mb-2">2</div>
+            <div class="text-xs font-bold text-slate-900 mb-1">Prompt Engineering</div>
+            <div class="text-[11px] text-slate-500 leading-snug">แปลงความเชี่ยวชาญช่างเป็น Interactive Logic</div>
           </div>
-          <div class="p-4 rounded-lg bg-slate-50 border border-slate-200">
-            <div class="text-[11px] font-bold uppercase tracking-wider text-emerald-800 mb-1">Pillar 3: Institutional ROI</div>
-            <div class="font-bold text-slate-900 text-sm mb-1">ผลตอบแทนการลงทุน 786,000 บาท</div>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              ประหยัดงบประมาณจัดจ้างพัฒนาซอฟต์แวร์ และลดเวลาเตรียมการสอนจาก 14 วันต่อชิ้นงาน เหลือเพียง 2 ชั่วโมง
-            </p>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 relative">
+            <div class="w-8 h-8 rounded-full bg-[#8B1528] text-white font-bold text-xs flex items-center justify-center mx-auto mb-2">3</div>
+            <div class="text-xs font-bold text-slate-900 mb-1">Cloud Deployment</div>
+            <div class="text-[11px] text-slate-500 leading-snug">Vercel Edge & Netlify CDN ฟรี 100%</div>
+          </div>
+          <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 relative">
+            <div class="w-8 h-8 rounded-full bg-amber-600 text-white font-bold text-xs flex items-center justify-center mx-auto mb-2">4</div>
+            <div class="text-xs font-bold text-amber-900 mb-1">สู่ ว.PA ค.ศ.4</div>
+            <div class="text-[11px] text-amber-700 leading-snug">หลักฐานนวัตกรรมพร้อมแนบระบบ DPA</div>
           </div>
         </div>
       </div>
 
+      <!-- Before vs After Comparison Card -->
+      <div class="gh-repo-card p-6 sm:p-8 bg-white border border-[#D0D7DE]">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-rose-50 text-[#8B1528] font-black text-sm flex items-center justify-center border border-rose-200">
+            ROI
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">การวิเคราะห์เปรียบเทียบความคุ้มค่าเชิงประจักษ์ (Comparative Impact)</h3>
+            <p class="text-xs text-slate-500">ผลลัพธ์รูปธรรมระหว่างกระบวนการจัดการเรียนการสอนแบบดั้งเดิม vs กระบวนการยุค AI Agent</p>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs text-left border-collapse">
+            <thead>
+              <tr class="border-b border-slate-300 text-slate-600">
+                <th class="py-2.5 font-bold">มิติการดำเนินงาน</th>
+                <th class="py-2.5 font-bold text-slate-500">กระบวนการเดิม (Traditional)</th>
+                <th class="py-2.5 font-bold text-[#8B1528]">ผลลัพธ์ผ่านโครงการ AI (Antigravity Stack)</th>
+                <th class="py-2.5 font-bold text-emerald-700 text-right">ความคุ้มค่า / ผลตอบแทน</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
+              <tr>
+                <td class="py-3 font-semibold text-slate-900">เวลาจัดทำสื่อและแผนการสอน</td>
+                <td class="py-3 text-slate-600">เฉลี่ย 10 - 14 วันต่อหนึ่งหน่วยการเรียนรู้</td>
+                <td class="py-3 font-semibold text-[#8B1528]">เฉลี่ย 2 ชั่วโมงต่อหนึ่งหน่วยการเรียนรู้</td>
+                <td class="py-3 text-emerald-700 font-bold text-right">ประหยัดเวลา 85%</td>
+              </tr>
+              <tr>
+                <td class="py-3 font-semibold text-slate-900">การสร้างแบบจำลองปฏิบัติการ (Simulators)</td>
+                <td class="py-3 text-slate-600">ต้องจัดซื้อชุดทดลองราคาแพง หรือซอฟต์แวร์ติดลิขสิทธิ์</td>
+                <td class="py-3 font-semibold text-[#8B1528]">สร้าง Web Simulator ใช้งานได้ฟรีบนมือถือ/แท็บเล็ต</td>
+                <td class="py-3 text-emerald-700 font-bold text-right">ประหยัดงบ 600,000 บาท</td>
+              </tr>
+              <tr>
+                <td class="py-3 font-semibold text-slate-900">ค่าบริการ Cloud Server & Hosting</td>
+                <td class="py-3 text-slate-600">ค่าเช่า Server / Cloud เฉลี่ย 72,000 บาท/ปี</td>
+                <td class="py-3 font-semibold text-[#8B1528]">Serverless Edge Deployment (Vercel & Netlify)</td>
+                <td class="py-3 text-emerald-700 font-bold text-right">0 บาท ตลอดการใช้งาน</td>
+              </tr>
+              <tr>
+                <td class="py-3 font-semibold text-slate-900">ความพร้อมขอประเมินวิทยฐานะ ค.ศ.4</td>
+                <td class="py-3 text-slate-600">ขาดร่องรอยการคิดค้นนวัตกรรมที่เป็นรูปธรรม</td>
+                <td class="py-3 font-semibold text-[#8B1528]">มีร่องรอยหลักฐาน 130 รายการ พร้อมหลักสูตรจริง</td>
+                <td class="py-3 text-emerald-700 font-bold text-right">100% Ready for DPA</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       <!-- Execution Timeline (25 Sep 2026) -->
-      <div class="gh-card p-6 sm:p-8 bg-white border border-[#D0D7DE]">
+      <div class="gh-repo-card p-6 sm:p-8 bg-white border border-[#D0D7DE]">
         <div class="flex items-center justify-between mb-4">
-          <h3 class="text-base font-bold text-slate-900">บันทึกประวัติการขับเคลื่อนงาน 1 วันเต็ม (Execution Timeline - 25 ก.ย. 2569)</h3>
-          <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">Verified Commit Log</span>
+          <h3 class="text-base font-bold text-slate-900">บันทึกไทม์ไลน์การขับเคลื่อนงานจริง (Execution Timeline - 25 ก.ย. 2569)</h3>
+          <span class="gh-pill bg-slate-100 text-slate-700 border-slate-300">Verified Commit Log</span>
         </div>
         
         <div class="relative pl-6 border-l-2 border-slate-200 space-y-6">
@@ -328,23 +367,23 @@
 
     </div>
 
-    <!-- SECTION: LIVE APPS (GitHub Repository Hub) -->
+    <!-- ==================== TAB: LIVE APPS ==================== -->
     <div id="section-apps" class="space-y-6 hidden no-print">
       
       <!-- Search & Filters Strip -->
-      <div class="gh-card p-4 sm:p-5 bg-white border border-[#D0D7DE]">
+      <div class="gh-repo-card p-5 bg-white border border-[#D0D7DE]">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
           <div>
             <div class="flex items-center gap-2">
               <h3 class="text-base font-bold text-slate-900">คลังผลงานแอปพลิเคชันการศึกษา (Repositories)</h3>
-              <span id="apps-count-badge" class="gh-counter text-xs">20 ผลงาน</span>
+              <span id="apps-count-badge" class="gh-pill bg-slate-100 text-slate-800 border-slate-300">20 ผลงาน</span>
             </div>
             <p class="text-xs text-slate-500 mt-0.5">ระบบที่ครูช่างวิทยาลัยเทคนิคสุราษฎร์ธานีพัฒนาและเปิดใช้งานบน Vercel และ Netlify จริง</p>
           </div>
 
           <!-- Live Search Bar -->
           <div class="relative w-full md:w-80">
-            <input type="text" id="app-search-input" placeholder="ค้นหาชื่อแอป, ครูผู้พัฒนา, แผนกวิชา..." class="w-full pl-9 pr-4 py-2 text-xs rounded-md border border-[#D0D7DE] bg-[#F6F8FA] focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent">
+            <input type="text" id="app-search-input" placeholder="ค้นหาชื่อแอป, ครูผู้พัฒนา, แผนกวิชา..." class="w-full pl-9 pr-4 py-2 text-xs rounded-lg border border-[#D0D7DE] bg-[#F6F8FA] focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent">
             <svg class="w-4 h-4 text-slate-400 absolute left-3 top-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
@@ -353,12 +392,12 @@
 
         <!-- Filter Tabs -->
         <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-200" id="app-filter-pills">
-          <button onclick="setAppCategory('all')" class="app-filter-pill px-3 py-1.5 rounded-md text-xs font-semibold bg-[#0F172A] text-white transition-colors" data-dept="all">ทั้งหมด (All)</button>
-          <button onclick="setAppCategory('automotive')" class="app-filter-pill px-3 py-1.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-dept="automotive">ช่างยนต์</button>
-          <button onclick="setAppCategory('electrical')" class="app-filter-pill px-3 py-1.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-dept="electrical">ช่างไฟฟ้าและอิเล็กทรอนิกส์</button>
-          <button onclick="setAppCategory('mechanical')" class="app-filter-pill px-3 py-1.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-dept="mechanical">เมคคาทรอนิกส์ / กลโรงงาน / เชื่อม</button>
-          <button onclick="setAppCategory('management')" class="app-filter-pill px-3 py-1.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-dept="management">บริหารวิชาการ & ค.ศ.4</button>
-          <button onclick="setAppCategory('general')" class="app-filter-pill px-3 py-1.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-dept="general">สามัญสัมพันธ์ & โลจิสติกส์</button>
+          <button onclick="setAppCategory('all')" class="app-filter-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-[#0B172E] text-white transition-colors" data-dept="all">ทั้งหมด (All)</button>
+          <button onclick="setAppCategory('automotive')" class="app-filter-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-dept="automotive">ช่างยนต์</button>
+          <button onclick="setAppCategory('electrical')" class="app-filter-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-dept="electrical">ช่างไฟฟ้าและอิเล็กทรอนิกส์</button>
+          <button onclick="setAppCategory('mechanical')" class="app-filter-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-dept="mechanical">เมคคาทรอนิกส์ / กลโรงงาน / เชื่อม</button>
+          <button onclick="setAppCategory('management')" class="app-filter-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-dept="management">บริหารวิชาการ & ค.ศ.4</button>
+          <button onclick="setAppCategory('general')" class="app-filter-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-dept="general">สามัญสัมพันธ์ & โลจิสติกส์</button>
         </div>
       </div>
 
@@ -368,58 +407,55 @@
       </div>
     </div>
 
-    <!-- SECTION: ACADEMIC DOCUMENTS -->
+    <!-- ==================== TAB: DOCUMENTS ==================== -->
     <div id="section-docs" class="space-y-6 hidden no-print">
-      <div class="gh-card p-4 sm:p-5 bg-white border border-[#D0D7DE]">
+      <div class="gh-repo-card p-5 bg-white border border-[#D0D7DE]">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
           <div>
             <div class="flex items-center gap-2">
               <h3 class="text-base font-bold text-slate-900">คลังเอกสารและแผนงานวิชาการยุทธศาสตร์ (57 ชิ้นงาน)</h3>
-              <span id="docs-count-badge" class="gh-counter text-xs">57 เอกสาร</span>
+              <span id="docs-count-badge" class="gh-pill bg-slate-100 text-slate-800 border-slate-300">57 เอกสาร</span>
             </div>
             <p class="text-xs text-slate-500 mt-0.5">แผนการจัดการเรียนรู้ฐานสมรรถนะ, เกณฑ์ Rubric, คู่มือปฏิบัติการ และเอกสารรับรอง ค.ศ.4</p>
           </div>
 
-          <!-- Doc Search -->
           <div class="relative w-full md:w-80">
-            <input type="text" id="doc-search-input" placeholder="ค้นหาชื่อเอกสาร, หมวดวิชา..." class="w-full pl-9 pr-4 py-2 text-xs rounded-md border border-[#D0D7DE] bg-[#F6F8FA] focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent">
+            <input type="text" id="doc-search-input" placeholder="ค้นหาชื่อเอกสาร, หมวดวิชา..." class="w-full pl-9 pr-4 py-2 text-xs rounded-lg border border-[#D0D7DE] bg-[#F6F8FA] focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent">
             <svg class="w-4 h-4 text-slate-400 absolute left-3 top-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
           </div>
         </div>
 
-        <!-- Filter Pills -->
         <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-200" id="doc-filter-pills">
-          <button onclick="setDocCategory('all')" class="doc-filter-pill px-3 py-1.5 rounded-md text-xs font-semibold bg-[#0F172A] text-white transition-colors" data-cat="all">ทั้งหมด (57)</button>
-          <button onclick="setDocCategory('automotive')" class="doc-filter-pill px-3 py-1.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-cat="automotive">ช่างยนต์ / EV</button>
-          <button onclick="setDocCategory('electrical')" class="doc-filter-pill px-3 py-1.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-cat="electrical">ช่างไฟฟ้าและอิเล็กทรอนิกส์</button>
-          <button onclick="setDocCategory('mechanical')" class="doc-filter-pill px-3 py-1.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-cat="mechanical">เมคคาทรอนิกส์ / เชื่อม / ช่างกล</button>
-          <button onclick="setDocCategory('management')" class="doc-filter-pill px-3 py-1.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-cat="management">บริหารวิชาการ & ค.ศ.4</button>
-          <button onclick="setDocCategory('logistics')" class="doc-filter-pill px-3 py-1.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-cat="logistics">โลจิสติกส์</button>
-          <button onclick="setDocCategory('general')" class="doc-filter-pill px-3 py-1.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-cat="general">สามัญสัมพันธ์ & ภาษา</button>
+          <button onclick="setDocCategory('all')" class="doc-filter-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-[#0B172E] text-white transition-colors" data-cat="all">ทั้งหมด (57)</button>
+          <button onclick="setDocCategory('automotive')" class="doc-filter-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-cat="automotive">ช่างยนต์ / EV</button>
+          <button onclick="setDocCategory('electrical')" class="doc-filter-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-cat="electrical">ช่างไฟฟ้าและอิเล็กทรอนิกส์</button>
+          <button onclick="setDocCategory('mechanical')" class="doc-filter-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-cat="mechanical">เมคคาทรอนิกส์ / เชื่อม / ช่างกล</button>
+          <button onclick="setDocCategory('management')" class="doc-filter-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-cat="management">บริหารวิชาการ & ค.ศ.4</button>
+          <button onclick="setDocCategory('logistics')" class="doc-filter-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-cat="logistics">โลจิสติกส์</button>
+          <button onclick="setDocCategory('general')" class="doc-filter-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-cat="general">สามัญสัมพันธ์ & ภาษา</button>
         </div>
       </div>
 
-      <!-- Documents Table/Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-3" id="docs-table-container">
         <!-- Rendered via JS -->
       </div>
     </div>
 
-    <!-- SECTION: PROMPTS & ARCHITECTURE -->
+    <!-- ==================== TAB: PROMPTS ==================== -->
     <div id="section-prompts" class="space-y-6 hidden no-print">
-      <div class="gh-card p-4 sm:p-5 bg-white border border-[#D0D7DE]">
+      <div class="gh-repo-card p-5 bg-white border border-[#D0D7DE]">
         <h3 class="text-base font-bold text-slate-900 mb-1">คลังสถาปัตยกรรมคำสั่งและสไลด์ยุทธศาสตร์ (AI Prompts & Architecture)</h3>
         <p class="text-xs text-slate-500 mb-4">พิมพ์เขียวยุทธศาสตร์, ตารางเปรียบเทียบก่อน-หลัง, และหลักฐานสกรีนช็อตการเขียนโค้ดผ่าน AI</p>
 
         <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-200" id="prompt-filter-pills">
-          <button onclick="setPromptCategory('all')" class="prompt-filter-pill px-3 py-1.5 rounded-md text-xs font-semibold bg-[#0F172A] text-white transition-colors" data-prompt-cat="all">ทั้งหมด (51)</button>
-          <button onclick="setPromptCategory('Strategic Architecture Slides')" class="prompt-filter-pill px-3 py-1.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-prompt-cat="Strategic Architecture Slides">สไลด์พิมพ์เขียวยุทธศาสตร์ (1-6)</button>
-          <button onclick="setPromptCategory('Comparative Analysis')" class="prompt-filter-pill px-3 py-1.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-prompt-cat="Comparative Analysis">ตารางเปรียบเทียบใช้ vs ไม่ใช้ AI</button>
-          <button onclick="setPromptCategory('Multimodal Output')" class="prompt-filter-pill px-3 py-1.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-prompt-cat="Multimodal Output">Gemini Multimodal Output</button>
-          <button onclick="setPromptCategory('AI Infographic & Guide')" class="prompt-filter-pill px-3 py-1.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-prompt-cat="AI Infographic & Guide">อินโฟกราฟิก & คู่มือ</button>
-          <button onclick="setPromptCategory('Live Coding & Prompts')" class="prompt-filter-pill px-3 py-1.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-prompt-cat="Live Coding & Prompts">สกรีนช็อตคำสั่ง Prompt</button>
+          <button onclick="setPromptCategory('all')" class="prompt-filter-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-[#0B172E] text-white transition-colors" data-prompt-cat="all">ทั้งหมด (51)</button>
+          <button onclick="setPromptCategory('Strategic Architecture Slides')" class="prompt-filter-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-prompt-cat="Strategic Architecture Slides">สไลด์พิมพ์เขียวยุทธศาสตร์ (1-6)</button>
+          <button onclick="setPromptCategory('Comparative Analysis')" class="prompt-filter-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-prompt-cat="Comparative Analysis">ตารางเปรียบเทียบใช้ vs ไม่ใช้ AI</button>
+          <button onclick="setPromptCategory('Multimodal Output')" class="prompt-filter-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-prompt-cat="Multimodal Output">Gemini Multimodal Output</button>
+          <button onclick="setPromptCategory('AI Infographic & Guide')" class="prompt-filter-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-prompt-cat="AI Infographic & Guide">อินโฟกราฟิก & คู่มือ</button>
+          <button onclick="setPromptCategory('Live Coding & Prompts')" class="prompt-filter-pill px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-prompt-cat="Live Coding & Prompts">สกรีนช็อตคำสั่ง Prompt</button>
         </div>
       </div>
 
@@ -428,15 +464,15 @@
       </div>
     </div>
 
-    <!-- SECTION: ATMOSPHERE GALLERY -->
+    <!-- ==================== TAB: ATMOSPHERE ==================== -->
     <div id="section-atmosphere" class="space-y-6 hidden no-print">
-      <div class="gh-card p-4 sm:p-5 bg-white border border-[#D0D7DE]">
+      <div class="gh-repo-card p-5 bg-white border border-[#D0D7DE]">
         <div class="flex items-center justify-between">
           <div>
             <h3 class="text-base font-bold text-slate-900">ภาพบันทึกบรรยากาศการอบรมเชิงปฏิบัติการจริง (Atmosphere Gallery)</h3>
             <p class="text-xs text-slate-500 mt-0.5">คัดเฉพาะภาพถ่ายบุคคล การเรียนรู้ และการมีส่วนร่วมในห้องปฏิบัติการจริง 15 ภาพ (คัดแยกภาพหน้าจอคอมพิวเตอร์ออกตามมาตรฐาน C-Level)</p>
           </div>
-          <span class="gh-counter text-xs px-2.5 py-1">15 Verified Photos</span>
+          <span class="gh-pill bg-slate-100 text-slate-800 border-slate-300">15 Verified Photos</span>
         </div>
       </div>
 
@@ -445,10 +481,10 @@
       </div>
     </div>
 
-    <!-- SECTION: MEDIA & PODCAST -->
+    <!-- ==================== TAB: MEDIA & PODCAST ==================== -->
     <div id="section-media" class="space-y-6 hidden no-print">
-      <div class="gh-card p-4 sm:p-5 bg-white border border-[#D0D7DE]">
-        <h3 class="text-base font-bold text-slate-900 mb-0.5">ศูนย์สื่อมัลติมีเดียและพอดแคสต์ (Executive Media Center)</h3>
+      <div class="gh-repo-card p-5 bg-white border border-[#D0D7DE]">
+        <h3 class="text-base font-bold text-slate-900 mb-0.5">สตูดิโอมัลติมีเดียและพอดแคสต์ (Executive Media Center)</h3>
         <p class="text-xs text-slate-500">บันทึกเสียงรายการสัมภาษณ์ถอดบทเรียนครูช่าง และคลิปวิดีโอสาธิตอุปกรณ์</p>
       </div>
 
@@ -458,15 +494,15 @@
       </div>
     </div>
 
-    <!-- SECTION: PEOPLE DIRECTORY -->
+    <!-- ==================== TAB: PEOPLE ==================== -->
     <div id="section-people" class="space-y-6 hidden no-print">
-      <div class="gh-card p-4 sm:p-5 bg-white border border-[#D0D7DE]">
+      <div class="gh-repo-card p-5 bg-white border border-[#D0D7DE]">
         <div class="flex items-center justify-between">
           <div>
             <h3 class="text-base font-bold text-slate-900">ทำเนียบวิทยากร คณะครูช่าง และผู้พัฒนานวัตกรรม (Faculty Directory)</h3>
             <p class="text-xs text-slate-500 mt-0.5">รายชื่อผู้เข้าร่วมโครงการ แผนกวิชา และทักษะปัญญาประดิษฐ์ที่ผ่านการรับรอง</p>
           </div>
-          <span class="gh-counter text-xs px-2.5 py-1">15 AI Innovators</span>
+          <span class="gh-pill bg-slate-100 text-slate-800 border-slate-300">15 AI Innovators</span>
         </div>
       </div>
 
@@ -475,36 +511,37 @@
       </div>
     </div>
 
-    <!-- SECTION: FORMAL 10-PAGE REPORT -->
+    <!-- ==================== TAB: REPORT 10 PAGES ==================== -->
     <div id="section-report" class="space-y-8 hidden">
-      <div class="gh-card p-4 sm:p-6 bg-white border border-[#D0D7DE] flex items-center justify-between no-print">
+      <div class="gh-repo-card p-5 bg-white border border-[#D0D7DE] flex items-center justify-between no-print">
         <div>
           <h3 class="text-base font-bold text-slate-900">รายงานยุทธศาสตร์ผู้บริหารฉบับทางการ (Formal 10-Page A4 Executive Report)</h3>
           <p class="text-xs text-slate-500 mt-0.5">จัดพิมพ์ตามมาตรฐานเอกสารทางราชการและมาตรฐานรายงานผู้บริหารระดับ C-Level พร้อมระบบสั่งพิมพ์ลงกระดาษ A4</p>
         </div>
-        <button onclick="window.print()" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#991B1B] hover:bg-[#7F1D1D] text-white text-sm font-bold shadow-md transition-all">
+        <button onclick="window.print()" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#8B1528] hover:bg-[#9E1B32] text-white text-sm font-bold shadow-md transition-all">
           <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" /></svg>
           <span>สั่งพิมพ์รายงาน A4 (Print Now)</span>
         </button>
       </div>
 
-      <!-- 10-PAGE REPORT HTML CONTAINER (Kept pristine from before) -->
+      <!-- 10-PAGE PRINT CONTAINER -->
       <div id="formal-report-section" class="font-sarabun text-slate-900">
-        <!-- Pages 1 to 10 with logo header -->
+        
+        <!-- PAGE 1: COVER & EXECUTIVE SUMMARY -->
         <div class="report-page flex flex-col justify-between">
           <div>
             <div class="text-center pb-6 border-b-2 border-slate-900 mb-8">
-              <img src="assets/logo.png" alt="Emblem" class="w-20 h-20 mx-auto object-contain mb-3">
+              <img src="assets/logo.png" alt="Emblem" class="w-24 h-24 mx-auto object-contain mb-3 drop-shadow">
               <div class="text-xs font-bold uppercase tracking-widest text-slate-600 mb-2">เอกสารรายงานยุทธศาสตร์ระดับผู้บริหาร (C-LEVEL EXECUTIVE REPORT)</div>
               <h1 class="text-2xl font-extrabold text-slate-900 leading-snug mb-3">
                 รายงานผลลัพธ์ยุทธศาสตร์และการพัฒนานวัตกรรมปัญญาประดิษฐ์ทางการศึกษา<br>
                 โครงการอบรมเชิงปฏิบัติการ "AI Learning Designer"
               </h1>
-              <div class="text-sm font-bold text-[#991B1B]">วิทยาลัยเทคนิคสุราษฎร์ธานี • 25 กันยายน 2569</div>
+              <div class="text-sm font-bold text-[#8B1528]">วิทยาลัยเทคนิคสุราษฎร์ธานี • 25 กันยายน 2569</div>
             </div>
 
             <div class="mb-8">
-              <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#991B1B] pl-3 mb-3">1. บทสรุปผู้บริหารระดับสูง (Executive Summary & C-Level Mandate)</h2>
+              <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#8B1528] pl-3 mb-3">1. บทสรุปผู้บริหารระดับสูง (Executive Summary & C-Level Mandate)</h2>
               <p class="text-xs leading-relaxed text-justify mb-3">
                 ตามนโยบายการขับเคลื่อนความเป็นเลิศด้านอาชีวศึกษาของสำนักงานคณะกรรมการการอาชีวศึกษา (สอศ.) ในการยกระดับสมรรถนะครูช่างสู่ยุคดิจิทัล วิทยาลัยเทคนิคสุราษฎร์ธานีได้จัดโครงการอบรมเชิงปฏิบัติการ <strong>"AI Learning Designer"</strong> ในวันที่ 25 กันยายน 2569 เพื่อสร้างความพร้อมในการประยุกต์ใช้ Generative AI และ Agentic AI ในการจัดการเรียนการสอนสายอาชีพ
               </p>
@@ -513,11 +550,11 @@
               </p>
             </div>
 
-            <div class="bg-slate-50 p-5 rounded-lg border border-slate-200 mb-6">
+            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 mb-6">
               <h3 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3 text-center">ตัวเลขชี้วัดความสำเร็จเชิงประจักษ์ (Key Strategic Metrics - BLUF)</h3>
               <div class="grid grid-cols-3 gap-4 text-center">
                 <div class="border-r border-slate-200 pr-2">
-                  <div class="text-xl font-black text-[#991B1B]">100%</div>
+                  <div class="text-xl font-black text-[#8B1528]">100%</div>
                   <div class="text-[11px] font-semibold text-slate-700">Adoption Rate</div>
                   <div class="text-[9px] text-slate-500">บุคลากรสร้าง AI สำเร็จทุกคน</div>
                 </div>
@@ -541,21 +578,21 @@
           </div>
         </div>
 
-        <!-- Page 2 to 10 -->
+        <!-- PAGE 2: PROBLEM STATEMENT & PARADIGM SHIFT -->
         <div class="report-page flex flex-col justify-between">
           <div>
             <div class="report-header-rule"><span class="text-xs font-bold text-slate-500">มิติเชิงยุทธศาสตร์: ปัญหาและความจำเป็นในการเปลี่ยนแปลง</span></div>
-            <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#991B1B] pl-3 mb-4">2. สภาพปัญหาและการเปลี่ยนผ่านกระบวนทัศน์อาชีวศึกษา (Paradigm Shift)</h2>
+            <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#8B1528] pl-3 mb-4">2. สภาพปัญหาและการเปลี่ยนผ่านกระบวนทัศน์อาชีวศึกษา (Paradigm Shift)</h2>
             <div class="space-y-4 text-xs leading-relaxed text-justify">
-              <p>การจัดการเรียนการสอนช่างอุตสาหกรรมในอดีตต้องเผชิญกับอุปสรรคสำคัญ 3 ประการ: 1) การเตรียมสื่อและใบงานภาคปฏิบัติใช้เวลานาน เฉลี่ย 10-14 วันต่อหนึ่งหน่วยการเรียนรู้ 2) สื่อจำลองทางเทคนิคมีราคาสูง และ 3) ข้อจำกัดด้านทักษะการเขียนโปรแกรมของครูช่าง</p>
+              <p>การจัดการเรียนการสอนช่างอุตสาหกรรมในอดีตต้องเผชิญกับอุปสรรคสำคัญ 3 ประการ: 1) การเตรียมสื่อและใบงานภาคปฏิบัติใช้เวลานาน เฉลี่ย 10-14 วันต่อหนึ่งหน่วยการเรียนรู้ 2) สื่อจำลองทางเทคนิคมีราคาสูง ต้องพึ่งพาซอฟต์แวร์นำเข้า และ 3) ข้อจำกัดด้านทักษะการเขียนโปรแกรมของครูช่าง</p>
               <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
                 <h4 class="font-bold text-slate-900 mb-2">ตารางเปรียบเทียบกระบวนทัศน์การจัดการเรียนการสอน</h4>
                 <table class="w-full text-[10px] border-collapse">
-                  <thead><tr class="border-b border-slate-300 text-left"><th class="py-1.5 font-bold">มิติการดำเนินงาน</th><th class="py-1.5 font-bold text-slate-500">กระบวนการเดิม</th><th class="py-1.5 font-bold text-[#991B1B]">กระบวนการยุค AI Agent</th></tr></thead>
+                  <thead><tr class="border-b border-slate-300 text-left"><th class="py-1.5 font-bold">มิติการดำเนินงาน</th><th class="py-1.5 font-bold text-slate-500">กระบวนการเดิม</th><th class="py-1.5 font-bold text-[#8B1528]">กระบวนการยุค AI Agent</th></tr></thead>
                   <tbody class="divide-y divide-slate-200">
-                    <tr><td class="py-1.5 font-semibold">การจัดทำแผนและสื่อ</td><td class="py-1.5 text-slate-600">เขียนด้วยมือ (14 วัน)</td><td class="py-1.5 font-semibold text-[#991B1B]">Vibe Coding (2 ชม.)</td></tr>
-                    <tr><td class="py-1.5 font-semibold">การพัฒนาแบบจำลองแล็บ</td><td class="py-1.5 text-slate-600">ซื้อชุดทดลองราคาแพง</td><td class="py-1.5 font-semibold text-[#991B1B]">สร้าง Web Simulator ใช้งานฟรี</td></tr>
-                    <tr><td class="py-1.5 font-semibold">การวัดและประเมินผล</td><td class="py-1.5 text-slate-600">เกณฑ์อัตวิสัย</td><td class="py-1.5 font-semibold text-[#991B1B]">Psychomotor Rubric ตาม ว.PA</td></tr>
+                    <tr><td class="py-1.5 font-semibold">การจัดทำแผนและสื่อ</td><td class="py-1.5 text-slate-600">เขียนด้วยมือ (14 วัน)</td><td class="py-1.5 font-semibold text-[#8B1528]">Vibe Coding (2 ชม.)</td></tr>
+                    <tr><td class="py-1.5 font-semibold">การพัฒนาแบบจำลองแล็บ</td><td class="py-1.5 text-slate-600">ซื้อชุดทดลองราคาแพง</td><td class="py-1.5 font-semibold text-[#8B1528]">สร้าง Web Simulator ใช้งานฟรี</td></tr>
+                    <tr><td class="py-1.5 font-semibold">การวัดและประเมินผล</td><td class="py-1.5 text-slate-600">เกณฑ์อัตวิสัย</td><td class="py-1.5 font-semibold text-[#8B1528]">Psychomotor Rubric ตาม ว.PA</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -564,11 +601,12 @@
           <div class="report-footer-rule"><span>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</span><span>หน้า 2 / 10</span></div>
         </div>
 
+        <!-- PAGE 3: TECHNICAL BLUEPRINT -->
         <div class="report-page flex flex-col justify-between">
           <div>
             <div class="report-header-rule"><span class="text-xs font-bold text-slate-500">สถาปัตยกรรมทางเทคนิค: พิมพ์เขียว Vibe Coding & Multi-Agent Stack</span></div>
-            <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#991B1B] pl-3 mb-4">3. พิมพ์เขียวสถาปัตยกรรม Vibe Coding & Multi-Agent Stack</h2>
-            <div class="p-4 bg-slate-900 text-white rounded-lg text-[10px] font-mono leading-normal mb-4">
+            <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#8B1528] pl-3 mb-4">3. พิมพ์เขียวสถาปัตยกรรม Vibe Coding & Multi-Agent Stack</h2>
+            <div class="p-4 bg-slate-900 text-white rounded-xl text-[10px] font-mono leading-normal mb-4">
               <div class="text-amber-400 font-bold mb-1">// ENTERPRISE VOCATIONAL AI ARCHITECTURE BLUEPRINT</div>
               <div class="text-slate-400">Layer 1: Reasoning & Synthesis ↳ Google Antigravity + Gemini Multimodal</div>
               <div class="text-slate-400 mt-1">Layer 2: Logic Orchestration ↳ Skillbook: vibe-coding-idea-architect</div>
@@ -580,24 +618,26 @@
           <div class="report-footer-rule"><span>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</span><span>หน้า 3 / 10</span></div>
         </div>
 
+        <!-- PAGE 4: TIMELINE -->
         <div class="report-page flex flex-col justify-between">
           <div>
             <div class="report-header-rule"><span class="text-xs font-bold text-slate-500">การขับเคลื่อนเชิงปฏิบัติการ: ไทม์ไลน์ 1 วันเต็ม 25 ก.ย. 2569</span></div>
-            <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#991B1B] pl-3 mb-4">4. ไทม์ไลน์การขับเคลื่อน 1 วันเต็ม (25 กันยายน 2569)</h2>
+            <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#8B1528] pl-3 mb-4">4. ไทม์ไลน์การขับเคลื่อน 1 วันเต็ม (25 กันยายน 2569)</h2>
             <div class="space-y-3 text-[10px]">
-              <div class="p-3 bg-slate-50 rounded border border-slate-200"><strong>หมุดหมาย 1 (07:12 - 08:37 น.):</strong> แจกจ่ายคู่มือ Google Antigravity และติดตั้ง Skillbook</div>
-              <div class="p-3 bg-slate-50 rounded border border-slate-200"><strong>หมุดหมาย 2 (08:37 - 10:50 น.):</strong> พัฒนาและทยอย Deploy เว็บแอป 20+ ระบบขึ้น Cloud</div>
-              <div class="p-3 bg-slate-50 rounded border border-slate-200"><strong>หมุดหมาย 3 (11:00 - 14:30 น.):</strong> สังเคราะห์แผนการสอนฐานสมรรถนะ เกณฑ์ Rubric 57 รายการ</div>
-              <div class="p-3 bg-slate-50 rounded border border-slate-200"><strong>หมุดหมาย 4 (14:30 - 16:30 น.):</strong> นำเสนอผลงานหน้าห้องอบรมและสรุปรายงานเสนอผู้บริหาร</div>
+              <div class="p-3 bg-slate-50 rounded-lg border border-slate-200"><strong>หมุดหมาย 1 (07:12 - 08:37 น.):</strong> แจกจ่ายคู่มือ Google Antigravity และติดตั้ง Skillbook</div>
+              <div class="p-3 bg-slate-50 rounded-lg border border-slate-200"><strong>หมุดหมาย 2 (08:37 - 10:50 น.):</strong> พัฒนาและทยอย Deploy เว็บแอป 20+ ระบบขึ้น Cloud</div>
+              <div class="p-3 bg-slate-50 rounded-lg border border-slate-200"><strong>หมุดหมาย 3 (11:00 - 14:30 น.):</strong> สังเคราะห์แผนการสอนฐานสมรรถนะ เกณฑ์ Rubric 57 รายการ</div>
+              <div class="p-3 bg-slate-50 rounded-lg border border-slate-200"><strong>หมุดหมาย 4 (14:30 - 16:30 น.):</strong> นำเสนอผลงานหน้าห้องอบรมและสรุปรายงานเสนอผู้บริหาร</div>
             </div>
           </div>
           <div class="report-footer-rule"><span>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</span><span>หน้า 4 / 10</span></div>
         </div>
 
+        <!-- PAGE 5: 4 CASE STUDIES -->
         <div class="report-page flex flex-col justify-between">
           <div>
             <div class="report-header-rule"><span class="text-xs font-bold text-slate-500">ผลงานเชิงประจักษ์: กรณีศึกษา 4 สาขาวิชาช่าง</span></div>
-            <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#991B1B] pl-3 mb-3">5. กรณีศึกษาและผลงานจริง 4 สาขาวิชาช่าง</h2>
+            <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#8B1528] pl-3 mb-3">5. กรณีศึกษาและผลงานจริง 4 สาขาวิชาช่าง</h2>
             <div class="space-y-2 text-[10px]">
               <div class="p-2.5 bg-slate-50 rounded border border-slate-200"><strong>1. ช่างยนต์ / EV:</strong> STTC EduStudio, แบบจำลอง 456-wine-xi, Psychomotor Rubric งานระบบแรงดันสูง EV</div>
               <div class="p-2.5 bg-slate-50 rounded border border-slate-200"><strong>2. ช่างไฟฟ้า-อิเล็กฯ:</strong> Resistor Worksheet, Switch Debouncing Simulator, คู่มือระบบ BMS</div>
@@ -608,19 +648,21 @@
           <div class="report-footer-rule"><span>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</span><span>หน้า 5 / 10</span></div>
         </div>
 
+        <!-- PAGE 6: ว.PA -->
         <div class="report-page flex flex-col justify-between">
           <div>
             <div class="report-header-rule"><span class="text-xs font-bold text-slate-500">ความก้าวหน้าทางวิชาการ: การเตรียมความพร้อมสู่ ค.ศ.4 (ครูเชี่ยวชาญ)</span></div>
-            <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#991B1B] pl-3 mb-4">6. กรอบการยกระดับวิทยฐานะ ค.ศ.4 (ครูเชี่ยวชาญ) ตามเกณฑ์ ว.PA</h2>
+            <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#8B1528] pl-3 mb-4">6. กรอบการยกระดับวิทยฐานะ ค.ศ.4 (ครูเชี่ยวชาญ) ตามเกณฑ์ ว.PA</h2>
             <p class="text-xs leading-relaxed text-justify mb-3">ผู้ขอรับการประเมินเพื่อมีหรือเลื่อนเป็น ครูเชี่ยวชาญ (ค.ศ.4) จะต้องแสดงหลักฐานเชิงประจักษ์ถึงการ "คิดค้น พัฒนา (Create & Innovate)" นวัตกรรมการจัดการเรียนรู้ที่ส่งผลต่อคุณภาพผู้เรียน ผลงานและร่องรอยหลักฐาน 130 รายการในพอร์ทัลนี้มีความสมบูรณ์พร้อมแนบในระบบ DPA ได้ทันที</p>
           </div>
           <div class="report-footer-rule"><span>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</span><span>หน้า 6 / 10</span></div>
         </div>
 
+        <!-- PAGE 7: AI GOVERNANCE -->
         <div class="report-page flex flex-col justify-between">
           <div>
             <div class="report-header-rule"><span class="text-xs font-bold text-slate-500">ธรรมาภิบาลและความปลอดภัย: จริยธรรม AI และ PDPA</span></div>
-            <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#991B1B] pl-3 mb-4">7. ธรรมาภิบาลปัญญาประดิษฐ์ ความปลอดภัยข้อมูล และ PDPA</h2>
+            <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#8B1528] pl-3 mb-4">7. ธรรมาภิบาลปัญญาประดิษฐ์ ความปลอดภัยข้อมูล และ PDPA</h2>
             <div class="grid grid-cols-2 gap-3 text-[10px]">
               <div class="p-2.5 bg-slate-50 rounded border border-slate-200"><strong>1. PDPA:</strong> ไม่ส่งข้อมูลส่วนบุคคลของนักศึกษาเข้าสู่ Public LLMs</div>
               <div class="p-2.5 bg-slate-50 rounded border border-slate-200"><strong>2. Human-in-the-Loop:</strong> ครูผู้เชี่ยวชาญเป็นผู้ตรวจทานและรับรองเนื้อหาทุกครั้ง</div>
@@ -631,27 +673,29 @@
           <div class="report-footer-rule"><span>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</span><span>หน้า 7 / 10</span></div>
         </div>
 
+        <!-- PAGE 8: ROI -->
         <div class="report-page flex flex-col justify-between">
           <div>
             <div class="report-header-rule"><span class="text-xs font-bold text-slate-500">การวิเคราะห์ความคุ้มค่า: ผลตอบแทนการลงทุนและประสิทธิภาพทรัพยากร</span></div>
-            <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#991B1B] pl-3 mb-4">8. การวิเคราะห์ความคุ้มค่า ROI และการประหยัดทรัพยากร</h2>
+            <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#8B1528] pl-3 mb-4">8. การวิเคราะห์ความคุ้มค่า ROI และการประหยัดทรัพยากร</h2>
             <table class="w-full text-[10px] border-collapse mb-4">
-              <thead><tr class="border-b border-slate-300 text-left"><th class="py-1">รายการ</th><th class="py-1 text-slate-500">มูลค่าภายนอก</th><th class="py-1 text-[#991B1B]">ต้นทุนจริง</th><th class="py-1 text-emerald-800">ประหยัดได้</th></tr></thead>
+              <thead><tr class="border-b border-slate-300 text-left"><th class="py-1">รายการ</th><th class="py-1 text-slate-500">มูลค่าภายนอก</th><th class="py-1 text-[#8B1528]">ต้นทุนจริง</th><th class="py-1 text-emerald-800">ประหยัดได้</th></tr></thead>
               <tbody class="divide-y divide-slate-200">
-                <tr><td class="py-1.5">พัฒนาเว็บแอป 20 ระบบ</td><td class="py-1.5">600,000 บาท</td><td class="py-1.5 font-bold text-[#991B1B]">0 บาท</td><td class="py-1.5 font-bold text-emerald-800">+600,000 บาท</td></tr>
-                <tr><td class="py-1.5">ค่า Cloud Server รายปี</td><td class="py-1.5">72,000 บาท</td><td class="py-1.5 font-bold text-[#991B1B]">0 บาท</td><td class="py-1.5 font-bold text-emerald-800">+72,000 บาท</td></tr>
-                <tr><td class="py-1.5">เอกสารวิชาการ 57 รายการ</td><td class="py-1.5">114,000 บาท</td><td class="py-1.5 font-bold text-[#991B1B]">0 บาท</td><td class="py-1.5 font-bold text-emerald-800">+114,000 บาท</td></tr>
-                <tr class="bg-red-50/50 font-bold"><td class="py-1.5">รวมมูลค่าผลประโยชน์ทางตรง</td><td class="py-1.5">786,000 บาท</td><td class="py-1.5 text-[#991B1B]">0 บาท</td><td class="py-1.5 text-emerald-800">+786,000 บาท</td></tr>
+                <tr><td class="py-1.5">พัฒนาเว็บแอป 20 ระบบ</td><td class="py-1.5">600,000 บาท</td><td class="py-1.5 font-bold text-[#8B1528]">0 บาท</td><td class="py-1.5 font-bold text-emerald-800">+600,000 บาท</td></tr>
+                <tr><td class="py-1.5">ค่า Cloud Server รายปี</td><td class="py-1.5">72,000 บาท</td><td class="py-1.5 font-bold text-[#8B1528]">0 บาท</td><td class="py-1.5 font-bold text-emerald-800">+72,000 บาท</td></tr>
+                <tr><td class="py-1.5">เอกสารวิชาการ 57 รายการ</td><td class="py-1.5">114,000 บาท</td><td class="py-1.5 font-bold text-[#8B1528]">0 บาท</td><td class="py-1.5 font-bold text-emerald-800">+114,000 บาท</td></tr>
+                <tr class="bg-rose-50/60 font-bold"><td class="py-1.5">รวมมูลค่าผลประโยชน์ทางตรง</td><td class="py-1.5">786,000 บาท</td><td class="py-1.5 text-[#8B1528]">0 บาท</td><td class="py-1.5 text-emerald-800">+786,000 บาท</td></tr>
               </tbody>
             </table>
           </div>
           <div class="report-footer-rule"><span>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</span><span>หน้า 8 / 10</span></div>
         </div>
 
+        <!-- PAGE 9: ROADMAP -->
         <div class="report-page flex flex-col justify-between">
           <div>
             <div class="report-header-rule"><span class="text-xs font-bold text-slate-500">แผนยุทธศาสตร์ต่อเนื่อง: แผนที่นำทาง 90 วัน สู่การขยายผลทั้งสถาบัน</span></div>
-            <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#991B1B] pl-3 mb-4">9. แผนที่นำทางยุทธศาสตร์ 90 วัน (90-Day Scaling Roadmap)</h2>
+            <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#8B1528] pl-3 mb-4">9. แผนที่นำทางยุทธศาสตร์ 90 วัน (90-Day Scaling Roadmap)</h2>
             <div class="space-y-3 text-[10px]">
               <div class="p-2.5 bg-slate-50 rounded border border-slate-200"><strong>ระยะที่ 1 (1 - 30 วัน):</strong> นำแอปพลิเคชัน 20+ ระบบไปใช้งานจริงกับนักศึกษา ปวช./ปวส. ในภาคเรียนปัจจุบัน</div>
               <div class="p-2.5 bg-slate-50 rounded border border-slate-200"><strong>ระยะที่ 2 (31 - 60 วัน):</strong> จัดตั้งคลินิกนวัตกรรม AI เพื่อให้คำปรึกษาครูแผนกอื่น และนำเอกสารเข้าสู่ระบบ ว.PA</div>
@@ -661,10 +705,11 @@
           <div class="report-footer-rule"><span>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</span><span>หน้า 9 / 10</span></div>
         </div>
 
+        <!-- PAGE 10: SIGN-OFF -->
         <div class="report-page flex flex-col justify-between">
           <div>
             <div class="report-header-rule"><span class="text-xs font-bold text-slate-500">ส่วนรับรองผลและลงนาม: การอนุมัติและรับรองผลลัพธ์ยุทธศาสตร์</span></div>
-            <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#991B1B] pl-3 mb-4">10. ส่วนรับรองและการลงนามผู้บริหาร (Executive Sign-Off)</h2>
+            <h2 class="text-base font-bold text-slate-900 border-l-4 border-[#8B1528] pl-3 mb-4">10. ส่วนรับรองและการลงนามผู้บริหาร (Executive Sign-Off)</h2>
             <p class="text-xs leading-relaxed text-justify mb-8">เอกสารรายงานฉบับนี้ ได้รับการประมวลผล สังเคราะห์ และตรวจสอบความถูกต้องของข้อมูลหลักฐานเชิงประจักษ์จากบันทึกกิจกรรมจริง โครงการอบรมเชิงปฏิบัติการ "AI Learning Designer" วิทยาลัยเทคนิคสุราษฎร์ธานี ประจำวันที่ 25 กันยายน 2569 ครบถ้วนทุกประการ</p>
             <div class="grid grid-cols-2 gap-8 pt-6 border-t border-slate-200">
               <div class="text-center">
@@ -689,38 +734,54 @@
 
   </main>
 
-  <!-- ========================================== -->
-  <!-- 4. MODALS (Lightbox & App Preview)         -->
-  <!-- ========================================== -->
+  <!-- ============================================================== -->
+  <!-- 4. MODALS (Quick Search, Lightbox, App Preview)               -->
+  <!-- ============================================================== -->
+  
+  <!-- Quick Search Modal (⌘K) -->
+  <div id="quick-search-modal" class="fixed inset-0 z-50 hidden lightbox-backdrop flex items-start justify-center pt-20 p-4">
+    <div class="relative max-w-2xl w-full bg-white rounded-2xl overflow-hidden shadow-2xl border border-slate-300 flex flex-col" onclick="event.stopPropagation()">
+      <div class="flex items-center px-4 py-3 border-b border-slate-200 bg-slate-50">
+        <svg class="w-5 h-5 text-slate-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+        <input type="text" id="quick-search-input" placeholder="พิมพ์ชื่อผลงาน, ครูช่าง, หรือเอกสาร..." class="w-full bg-transparent text-sm focus:outline-none text-slate-900">
+        <kbd class="px-2 py-0.5 rounded bg-slate-200 text-slate-600 text-[10px] font-mono">ESC</kbd>
+      </div>
+      <div class="p-3 max-h-96 overflow-y-auto divide-y divide-slate-100" id="quick-search-results">
+        <div class="text-xs text-slate-400 text-center py-6">พิมพ์เพื่อค้นหาแบบทันทีข้ามทั้ง 130 รายการ...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Lightbox Modal -->
   <div id="lightbox-modal" class="fixed inset-0 z-50 hidden lightbox-backdrop flex items-center justify-center p-4">
-    <div class="relative max-w-5xl w-full bg-slate-900 rounded-2xl overflow-hidden shadow-2xl border border-slate-700 flex flex-col max-h-[90vh]" onclick="event.stopPropagation()">
-      <div class="flex items-center justify-between p-4 border-b border-slate-800 bg-slate-950/80 text-white">
+    <div class="relative max-w-5xl w-full bg-slate-950 rounded-2xl overflow-hidden shadow-2xl border border-white/10 flex flex-col max-h-[90vh]" onclick="event.stopPropagation()">
+      <div class="flex items-center justify-between p-4 border-b border-white/10 bg-slate-900 text-white">
         <div>
           <h4 id="lightbox-title" class="text-sm font-bold truncate">Title</h4>
-          <span id="lightbox-count" class="text-xs text-slate-400">1 / 15</span>
+          <span id="lightbox-count" class="text-xs text-amber-400">1 / 15</span>
         </div>
-        <button onclick="closeLightbox()" class="p-1.5 rounded-lg hover:bg-slate-800 text-slate-400 hover:text-white transition-colors">
+        <button onclick="closeLightbox()" class="p-1.5 rounded-lg hover:bg-white/10 text-slate-400 hover:text-white transition-colors">
           <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
         </button>
       </div>
       <div class="relative flex-1 bg-black flex items-center justify-center overflow-hidden min-h-[300px]">
         <img id="lightbox-img" src="" alt="Enlarged" class="max-h-[70vh] max-w-full object-contain">
-        <button onclick="navigateLightbox(-1)" class="absolute left-3 p-2 rounded-full bg-slate-900/60 hover:bg-slate-900 text-white transition-colors">
+        <button onclick="navigateLightbox(-1)" class="absolute left-3 p-2 rounded-full bg-slate-900/70 hover:bg-slate-900 text-white transition-colors">
           <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
         </button>
-        <button onclick="navigateLightbox(1)" class="absolute right-3 p-2 rounded-full bg-slate-900/60 hover:bg-slate-900 text-white transition-colors">
+        <button onclick="navigateLightbox(1)" class="absolute right-3 p-2 rounded-full bg-slate-900/70 hover:bg-slate-900 text-white transition-colors">
           <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
         </button>
       </div>
-      <div class="p-4 bg-slate-950/80 border-t border-slate-800 text-slate-300 text-xs">
+      <div class="p-4 bg-slate-900 border-t border-white/10 text-slate-300 text-xs">
         <p id="lightbox-caption" class="leading-relaxed"></p>
       </div>
     </div>
   </div>
 
-  <!-- Live App Preview Modal -->
+  <!-- macOS-Style Live App Preview Modal -->
   <div id="preview-modal" class="fixed inset-0 z-50 hidden lightbox-backdrop flex items-center justify-center p-2 sm:p-6">
-    <div class="relative max-w-6xl w-full h-[92vh] bg-white rounded-xl overflow-hidden shadow-2xl border border-slate-300 flex flex-col" onclick="event.stopPropagation()">
+    <div class="relative max-w-6xl w-full h-[92vh] bg-white rounded-2xl overflow-hidden shadow-2xl border border-slate-300 flex flex-col" onclick="event.stopPropagation()">
       <div class="flex items-center justify-between px-4 py-3 border-b border-slate-200 bg-[#F6F8FA]">
         <div class="flex items-center gap-2 min-w-0">
           <span class="w-3 h-3 rounded-full bg-red-400"></span>
@@ -729,35 +790,38 @@
           <h4 id="preview-title" class="text-xs sm:text-sm font-bold text-slate-800 truncate ml-2">Live Preview</h4>
         </div>
         <div class="flex items-center gap-2">
-          <a id="preview-external-link" href="#" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1 text-xs font-semibold bg-[#1E3A8A] text-white hover:bg-blue-900 rounded-md transition-colors flex items-center gap-1">
+          <a id="preview-external-link" href="#" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 text-xs font-semibold bg-[#8B1528] hover:bg-[#9E1B32] text-white rounded-lg transition-colors flex items-center gap-1 shadow-sm">
             <span>เปิดหน้าต่างใหม่</span>
             <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
           </a>
-          <button onclick="closeAppPreview()" class="p-1 rounded-md text-slate-500 hover:text-slate-900 hover:bg-slate-200 transition-colors">
+          <button onclick="closeAppPreview()" class="p-1.5 rounded-lg text-slate-500 hover:text-slate-900 hover:bg-slate-200 transition-colors">
             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
           </button>
         </div>
       </div>
-      <div class="flex-1 w-full bg-slate-100 relative">
-        
       <div class="px-4 py-1.5 bg-amber-50 border-b border-amber-200 text-[11px] text-amber-800 flex items-center justify-between">
-        <span>💡 หากหน้าจอไม่แสดงผลเนื่องจากนโยบายความปลอดภัย (X-Frame-Options) ให้คลิกปุ่ม <strong>"เปิดหน้าต่างใหม่ ↗"</strong> ด้านบนขวา</span>
+        <span>💡 หากหน้าจอไม่แสดงผลเนื่องจากนโยบายความปลอดภัย ให้คลิกปุ่ม <strong>"เปิดหน้าต่างใหม่ ↗"</strong> ด้านบนขวา</span>
         <span class="text-[10px] text-amber-600">กด ESC เพื่อปิด</span>
       </div>
-      <iframe id="preview-iframe" src="about:blank" class="w-full h-full border-none" title="Live Preview Frame"></iframe>
+      <div class="flex-1 w-full bg-slate-100 relative">
+        <iframe id="preview-iframe" src="about:blank" class="w-full h-full border-none" title="Live Preview Frame"></iframe>
       </div>
     </div>
   </div>
 
   <!-- Footer -->
-  <footer class="bg-white border-t border-[#D0D7DE] py-8 px-4 sm:px-6 lg:px-8 no-print mt-auto text-xs text-slate-600">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div class="flex items-center gap-3">
-        <img src="assets/logo.png" alt="Logo" class="w-7 h-7 object-contain">
-        <span><strong>Executive AI Strategy & Evidence Portal</strong> • วิทยาลัยเทคนิคสุราษฎร์ธานี (SRTC)</span>
+  <footer class="bg-[#060D1A] text-white border-t border-white/10 py-10 px-4 sm:px-6 lg:px-8 no-print mt-auto text-xs">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-4">
+        <img src="assets/logo.png" alt="Logo" class="w-10 h-10 object-contain drop-shadow">
+        <div>
+          <div class="font-extrabold text-sm text-white">วิทยาลัยเทคนิคสุราษฎร์ธานี (SRTC)</div>
+          <div class="text-slate-400 text-[11px]">สำนักงานคณะกรรมการการอาชีวศึกษา (สอศ.) กระทรวงศึกษาธิการ</div>
+        </div>
       </div>
-      <div>
-        ขับเคลื่อนด้วย Google Antigravity & Modern Vibe Coding • 25 กันยายน 2569
+      <div class="text-center md:text-right text-slate-400 leading-relaxed text-[11px]">
+        ขับเคลื่อนด้วย <strong class="text-white">Google Antigravity & Modern Vibe Coding Architecture</strong><br>
+        โครงการอบรมเชิงปฏิบัติการ AI Learning Designer • 25 กันยายน 2569
       </div>
     </div>
   </footer>
@@ -768,14 +832,14 @@
   <script>
     // Embedded Datasets
     const kpiData = {"updatedAt": "2026-09-25T17:00:00+07:00", "institution": "วิทยาลัยเทคนิคสุราษฎร์ธานี (SRTC)", "eventName": "โครงการอบรมเชิงปฏิบัติการ AI Learning Designer & นวัตกรรมการศึกษายุค AI", "trainingDate": "25 กันยายน 2569 (1 วันเข้มข้น)", "topMetrics": [{"id": "adoption", "value": "100%", "label": "อัตราการนำไปใช้จริง (Adoption Rate)", "desc": "ครูช่างและบุคลากรทุกคนผ่านการสร้างและ Deploy นวัตกรรม AI สำเร็จ", "badge": "Verified 100%"}, {"id": "liveApps", "value": "20+", "label": "Live Cloud Web Applications", "desc": "ระบบแอปพลิเคชันและสื่ออินเทอร์แอคทีฟที่เปิดใช้งานจริงบน Vercel & Netlify", "badge": "Cloud Deployed"}, {"id": "academicDocs", "value": "57", "label": "ชิ้นงานวิชาการยุทธศาสตร์ (Artifacts)", "desc": "แผนการสอนฐานสมรรถนะ, เกณฑ์ Rubric, คู่มือ และรายงานสู่ ค.ศ.4 (ว.PA)", "badge": "ค.ศ.4 Ready"}, {"id": "departments", "value": "4", "label": "กลุ่มสาขาวิชาช่างบูรณาการ", "desc": "ช่างยนต์, ไฟฟ้า-อิเล็กทรอนิกส์, เมคคาทรอนิกส์-พื้นฐาน, สามัญสัมพันธ์-บริหาร", "badge": "Cross-Disciplinary"}, {"id": "costSavings", "value": "0 THB", "label": "งบประมาณ Serverless Cloud Infra", "desc": "ประหยัดงบประมาณด้านไอทีและระบบคลาวด์ 100% ด้วยสถาปัตยกรรมยุคใหม่", "badge": "Zero Infra Cost"}]};
-    const appsData = [{"id": "app-1", "title": "ระบบปัญญาประดิษฐ์ผู้ช่วยสังเคราะห์นวัตกรรมและผลงานวิชาการ สู่ ค.ศ.4 (ครูเชี่ยวชาญ)", "developer": "อาจารย์ตรี (tri333)", "department": "บริหารและยุทธศาสตร์วิชาการ", "deptCategory": "management", "url": "https://tri-navy.vercel.app/", "description": "แพลตฟอร์มสังเคราะห์ผลงานทางวิชาการและข้อเสนอพัฒนานวัตกรรมการจัดการเรียนรู้ตามเกณฑ์ ว.PA เพื่อเตรียมความพร้อมสู่ตำแหน่งครูเชี่ยวชาญ (ค.ศ.4)", "tags": ["Enterprise AI", "ค.ศ.4", "ว.PA", "Vercel", "Innovation"], "verified": true, "stars": 48, "isLead": true, "language": {"name": "Python / AI Agent", "color": "#3572A5"}}, {"id": "app-2", "title": "Resistor Color Code & Circuit Worksheet Interactive", "developer": "อ.วรพล (Wirapol)", "department": "แผนกวิชาช่างไฟฟ้ากำลัง", "deptCategory": "electrical", "url": "https://resistor-worksheet.vercel.app/", "description": "ใบงานปฏิสัมพันธ์และระบบจำลองการคำนวณรหัสสีตัวต้านทาน 4 แถบ และ 5 แถบสี พร้อมระบบตรวจสอบผลคำนวณวงจรไฟฟ้าแบบ Real-time", "tags": ["Electrical", "Resistor Lab", "Interactive", "Vercel"], "verified": true, "stars": 32, "language": {"name": "HTML5 / Modern Web", "color": "#E34C26"}}, {"id": "app-3", "title": "Interactive Switch Debouncing Simulator & Signal Analyzer", "developer": "พงศกร คล้ายพิชัย", "department": "แผนกวิชาช่างอิเล็กทรอนิกส์", "deptCategory": "electrical", "url": "https://interactive-switch-debouncing.vercel.app/", "description": "แบบจำลองปรากฏการณ์ Switch Bounce ในวงจรดิจิทัลและวิธีลดสัญญาณกระเพื่อมด้วย Hardware RC Filter และ Software Algorithm", "tags": ["Electronics", "Switch Debounce", "Digital Circuits", "Vercel"], "verified": true, "stars": 36, "language": {"name": "HTML5 / Modern Web", "color": "#E34C26"}}, {"id": "app-4", "title": "SafetyHub 2046: ศูนย์ความปลอดภัยในโรงงานช่างอุตสาหกรรม", "developer": "สัจกร วท.สุราษฎร์", "department": "แผนกช่างอุตสาหกรรม / เทคนิคพื้นฐาน", "deptCategory": "mechanical", "url": "https://safetyhub-2046.vercel.app/", "description": "ระบบประเมินและอบรมความปลอดภัยภาคปฏิบัติในโรงฝึกงานช่างอุตสาหกรรม พร้อมคู่มือตรวจสอบความเสี่ยง 5ส และมาตรการฉุกเฉิน", "tags": ["Safety 2046", "Industrial Safety", "Workshop Protocol", "Vercel"], "verified": true, "stars": 29, "language": {"name": "HTML5 / Modern Web", "color": "#E34C26"}}, {"id": "app-5", "title": "STTC PneumoTwin: แบบจำลองฝาแฝดดิจิทัลระบบนิวเมติกส์อุตสาหกรรม", "developer": "พีระพงษ์ (พี)", "department": "แผนกวิชาเมคคาทรอนิกส์และหุ่นยนต์", "deptCategory": "mechanical", "url": "https://sttcpneumotwin.vercel.app/", "description": "Digital Twin จำลองการทำงานของวาล์ว กระบอกสูบนิวเมติกส์ และลำดับการควบคุมโซลินอยด์วาล์วแบบ 3 มิติ", "tags": ["Digital Twin", "Pneumatics", "Mechatronics", "Vercel"], "verified": true, "stars": 42, "language": {"name": "WebGL / TypeScript", "color": "#3178C6"}}, {"id": "app-6", "title": "Mechatronics PSI: แบบจำลองแรงดันและควบคุมของไหลอุตสาหกรรม", "developer": "วรวุฒิ วท.สุราษฎร์", "department": "แผนกวิชาเมคคาทรอนิกส์", "deptCategory": "mechanical", "url": "https://mecha-psi.vercel.app/", "description": "ระบบคำนวณและจำลองแรงดันของไหล (PSI/Bar) ในกระบอกสูบไฮดรอลิกส์และนิวเมติกส์เพื่อการออกแบบระบบอัตโนมัติ", "tags": ["Fluid Power", "Mecha PSI", "Automation", "Vercel"], "verified": true, "stars": 34, "language": {"name": "HTML5 / Modern Web", "color": "#E34C26"}}, {"id": "app-7", "title": "STTC EduStudio: สตูดิโอบันทึกและออกแบบการเรียนรู้ช่างยนต์", "developer": "ภัทรวุฒิ ช่างยนต์", "department": "แผนกวิชาช่างยนต์", "deptCategory": "automotive", "url": "https://sttc-edustudio-1.vercel.app/", "description": "สตูดิโอดิจิทัลช่วยจัดทำเนื้อหา บทเรียนปฏิสัมพันธ์ และคู่มือตรวจวิเคราะห์อาการเครื่องยนต์สำหรับนักศึกษาอาชีวะช่างยนต์", "tags": ["Automotive", "EduStudio", "Diagnostic", "Vercel"], "verified": true, "stars": 38, "language": {"name": "HTML5 / Modern Web", "color": "#E34C26"}}, {"id": "app-8", "title": "Vocational Skills Assessment & Engineering Lab Hub", "developer": "Natthawut Churoi (ณัฐวุฒิ ชูร้อย)", "department": "แผนกวิชาช่างเทคนิค", "deptCategory": "mechanical", "url": "https://splendorous-blini-378d0b.netlify.app/", "description": "ระบบฐานข้อมูลการวัดผลสมรรถนะภาคปฏิบัติของนักศึกษาช่าง พร้อมการวิเคราะห์ระดับคะแนน Rubric แบบจำลอง", "tags": ["Engineering Lab", "Assessment", "Rubric", "Netlify"], "verified": true, "stars": 27, "language": {"name": "HTML5 / Modern Web", "color": "#E34C26"}}, {"id": "app-9", "title": "Interactive Technical Worksheet Hub", "developer": "ปรเมศ", "department": "แผนกวิชาช่างเทคนิค", "deptCategory": "mechanical", "url": "https://extraordinary-flan-ee6201.netlify.app/", "description": "แพลตฟอร์มใบงานดิจิทัลที่ผู้เรียนสามารถกรอกข้อมูลผลการทดลองในห้องปฏิบัติการและตรวจสอบความถูกต้องอัตโนมัติ", "tags": ["Interactive Worksheet", "Lab Reporting", "Netlify"], "verified": true, "stars": 25, "language": {"name": "JavaScript", "color": "#F1E05A"}}, {"id": "app-10", "title": "SRTC Examination & Student Competency Portal", "developer": "Kru_Kaneat (ครูกนิษฐ์) > SRTC", "department": "วิทยาลัยเทคนิคสุราษฎร์ธานี", "deptCategory": "management", "url": "https://preeminent-fudge-98702d.netlify.app", "description": "พอร์ทัลคลังข้อสอบและเครื่องมือประเมินผลสัมฤทธิ์ตามมาตรฐานสมรรถนะวิชาชีพ สอศ.", "tags": ["Exam Bank", "Competency", "SRTC", "Netlify"], "verified": true, "stars": 31, "language": {"name": "HTML5 / Modern Web", "color": "#E34C26"}}, {"id": "app-11", "title": "Integrated Logistics & Vocational Media Engine", "developer": "Panarat (ปนารัตน์)", "department": "แผนกวิชาการจัดการโลจิสติกส์", "deptCategory": "general", "url": "https://legendary-ganache-6d9c29.netlify.app", "description": "สื่อการสอนดิจิทัลและกระบวนการไหลเวียนคลังสินค้าและการจัดการสินค้าขาเข้า-ออก สำหรับหลักสูตร ปวช. และ ปวส.", "tags": ["Logistics", "Supply Chain", "Media Engine", "Netlify"], "verified": true, "stars": 28, "language": {"name": "Python / AI Agent", "color": "#3572A5"}}, {"id": "app-12", "title": "Interactive Technical Learning & Engagement Module", "developer": "Kru Supaporn (ครูสุภาพร)", "department": "แผนกวิชาสามัญสัมพันธ์", "deptCategory": "general", "url": "https://magenta-melba-4bba94.netlify.app", "description": "โมดูลการเรียนรู้ภาษาอังกฤษเชิงช่างและการบูรณาการทักษะศตวรรษที่ 21 เพื่อเสริมสร้างสมรรถนะผู้เรียนอาชีวะ", "tags": ["Vocational English", "Active Learning", "Netlify"], "verified": true, "stars": 26, "language": {"name": "HTML5 / Modern Web", "color": "#E34C26"}}, {"id": "app-13", "title": "PlanSeven: ระบบจัดการแผนการสอนมุ่งเน้นสมรรถนะ", "developer": "Sitthiphong (สิทธิพงศ์)", "department": "แผนกวิชาช่างไฟฟ้า", "deptCategory": "electrical", "url": "https://plan-seven-phi.vercel.app/", "description": "เครื่องมือสถาปัตยกรรมแผนการจัดการเรียนรู้รายสัปดาห์ การบูรณาการกิจกรรม Active Learning และเกณฑ์การวัดผลภาคปฏิบัติ", "tags": ["Lesson Plan", "Active Learning", "Electrical", "Vercel"], "verified": true, "stars": 30, "language": {"name": "HTML5 / Modern Web", "color": "#E34C26"}}, {"id": "app-14", "title": "Technical Skill Diagnostic & Training App", "developer": "Earn (เอิร์น)", "department": "แผนกวิชาช่างอุตสาหกรรม", "deptCategory": "mechanical", "url": "https://sensational-lebkuchen-3210b7.netlify.app/", "description": "แอปพลิเคชันวินิจฉัยจุดบกพร่องของชิ้นงานและการประเมินทักษะช่างเชื่อม/ช่างกลตามเกณฑ์มาตรฐาน", "tags": ["Skill Diagnostic", "Vocational Quality", "Netlify"], "verified": true, "stars": 24, "language": {"name": "HTML5 / Modern Web", "color": "#E34C26"}}, {"id": "app-15", "title": "Technical Workshop Inventory & Tool Tracking", "developer": "อวิรุทธ์ พลรักษ์", "department": "แผนกวิชาช่างกลโรงงาน", "deptCategory": "mechanical", "url": "https://123-beta-bice.vercel.app/", "description": "ระบบตรวจนับและติดตามเครื่องมือช่างในโรงประลองกลโรงงาน ป้องกันการสูญหายและบันทึกประวัติการบำรุงรักษา", "tags": ["Tool Tracking", "Machine Shop", "Inventory", "Vercel"], "verified": true, "stars": 33, "language": {"name": "HTML5 / Modern Web", "color": "#E34C26"}}, {"id": "app-16", "title": "Vocational Classroom Engagement & Management Hub", "developer": "สุรศักดิ์ สุวรรณรัตน์", "department": "แผนกวิชาช่างไฟฟ้ากำลัง", "deptCategory": "electrical", "url": "https://resilient-cuchufli-ff5664.netlify.app/", "description": "ระบบเช็คชื่อ มอบหมายงาน และประเมินพฤติกรรมการเรียนรู้ของนักศึกษาช่างไฟฟ้าในระหว่างการฝึกปฏิบัติจริง", "tags": ["Classroom Management", "Student Engagement", "Netlify"], "verified": true, "stars": 27, "language": {"name": "HTML5 / Modern Web", "color": "#E34C26"}}, {"id": "app-17", "title": "PlanUp: แพลตฟอร์มวางแผนและพัฒนาหลักสูตรรายวิชาช่าง", "developer": "Than (อ.ธัญญ์)", "department": "ฝ่ายวิชาการ / แผนกช่างอุตสาหกรรม", "deptCategory": "management", "url": "https://thanty-planup.netlify.app/", "description": "ระบบคลาวด์สังเคราะห์โครงสร้างหลักสูตรและหน่วยการเรียนรู้รายสัปดาห์ตามมาตรฐานคุณวุฒิวิชาชีพ", "tags": ["Curriculum Design", "Competency Map", "Netlify"], "verified": true, "stars": 35, "language": {"name": "HTML5 / Modern Web", "color": "#E34C26"}}, {"id": "app-18", "title": "Automotive Maintenance Diagnostic Simulator", "developer": "วรินทร์", "department": "แผนกวิชาช่างยนต์", "deptCategory": "automotive", "url": "https://456-wine-xi.vercel.app/", "description": "แบบจำลองจำลองอาการเสียของระบบส่งกำลังและระบบเบรก เพื่อฝึกทักษะการวิเคราะห์ปัญหาอย่างเป็นขั้นตอน", "tags": ["Automotive", "Troubleshooting", "Simulator", "Vercel"], "verified": true, "stars": 29, "language": {"name": "WebGL / TypeScript", "color": "#3178C6"}}, {"id": "app-19", "title": "Interactive Technical English: Describing Things in Workshop", "developer": "วรรณรัตน์", "department": "แผนกวิชาสามัญสัมพันธ์ (หมวดภาษาต่างประเทศ)", "deptCategory": "general", "url": "assets/docs/Describing_Things_Interactive_Lesson.zip", "isLocalZip": true, "description": "ชุดบทเรียนภาษาอังกฤษอินเทอร์แอคทีฟสำหรับการอธิบายรูปทรง วัสดุ และลักษณะเครื่องมือช่างในโรงงานอุตสาหกรรม", "tags": ["English for Mechanics", "Interactive SCORM", "Zip Download"], "verified": true, "stars": 31, "language": {"name": "Interactive SCORM", "color": "#E34C26"}}, {"id": "app-20", "title": "DC Electrical Machinery SkillPassport Engine", "developer": "วรวิทย์", "department": "แผนกวิชาช่างไฟฟ้ากำลัง", "deptCategory": "electrical", "url": "#", "description": "ระบบบันทึกพาสปอร์ตทักษะวิชาการต่อวงจรและทดสอบเครื่องกลไฟฟ้ากระแสตรง (Direct Current Machinery)", "tags": ["SkillPassport", "DC Machine", "Competency"], "verified": true, "stars": 26, "language": {"name": "HTML5 / Modern Web", "color": "#E34C26"}}];
+    const appsData = [{"id": "app-1", "title": "ระบบปัญญาประดิษฐ์ผู้ช่วยสังเคราะห์นวัตกรรมและผลงานวิชาการ สู่ ค.ศ.4 (ครูเชี่ยวชาญ)", "developer": "อาจารย์ตรี (tri333)", "department": "บริหารและยุทธศาสตร์วิชาการ", "deptCategory": "management", "url": "https://tri-navy.vercel.app/", "description": "แพลตฟอร์มสังเคราะห์ผลงานทางวิชาการและข้อเสนอพัฒนานวัตกรรมการจัดการเรียนรู้ตามเกณฑ์ ว.PA เพื่อเตรียมความพร้อมสู่ตำแหน่งครูเชี่ยวชาญ (ค.ศ.4)", "tags": ["Enterprise AI", "ค.ศ.4", "ว.PA", "Vercel", "Innovation"], "verified": true, "stars": 48, "isLead": true, "language": {"name": "Agentic AI / Gemini", "color": "#8B1528", "bg": "bg-rose-50 text-rose-700 border-rose-200"}}, {"id": "app-2", "title": "Resistor Color Code & Circuit Worksheet Interactive", "developer": "อ.วรพล (Wirapol)", "department": "แผนกวิชาช่างไฟฟ้ากำลัง", "deptCategory": "electrical", "url": "https://resistor-worksheet.vercel.app/", "description": "ใบงานปฏิสัมพันธ์และระบบจำลองการคำนวณรหัสสีตัวต้านทาน 4 แถบ และ 5 แถบสี พร้อมระบบตรวจสอบผลคำนวณวงจรไฟฟ้าแบบ Real-time", "tags": ["Electrical", "Resistor Lab", "Interactive", "Vercel"], "verified": true, "stars": 32, "language": {"name": "Modern Web / Jamstack", "color": "#10b981", "bg": "bg-emerald-50 text-emerald-700 border-emerald-200"}}, {"id": "app-3", "title": "Interactive Switch Debouncing Simulator & Signal Analyzer", "developer": "พงศกร คล้ายพิชัย", "department": "แผนกวิชาช่างอิเล็กทรอนิกส์", "deptCategory": "electrical", "url": "https://interactive-switch-debouncing.vercel.app/", "description": "แบบจำลองปรากฏการณ์ Switch Bounce ในวงจรดิจิทัลและวิธีลดสัญญาณกระเพื่อมด้วย Hardware RC Filter และ Software Algorithm", "tags": ["Electronics", "Switch Debounce", "Digital Circuits", "Vercel"], "verified": true, "stars": 36, "language": {"name": "Modern Web / Jamstack", "color": "#10b981", "bg": "bg-emerald-50 text-emerald-700 border-emerald-200"}}, {"id": "app-4", "title": "SafetyHub 2046: ศูนย์ความปลอดภัยในโรงงานช่างอุตสาหกรรม", "developer": "สัจกร วท.สุราษฎร์", "department": "แผนกช่างอุตสาหกรรม / เทคนิคพื้นฐาน", "deptCategory": "mechanical", "url": "https://safetyhub-2046.vercel.app/", "description": "ระบบประเมินและอบรมความปลอดภัยภาคปฏิบัติในโรงฝึกงานช่างอุตสาหกรรม พร้อมคู่มือตรวจสอบความเสี่ยง 5ส และมาตรการฉุกเฉิน", "tags": ["Safety 2046", "Industrial Safety", "Workshop Protocol", "Vercel"], "verified": true, "stars": 29, "language": {"name": "Modern Web / Jamstack", "color": "#10b981", "bg": "bg-emerald-50 text-emerald-700 border-emerald-200"}}, {"id": "app-5", "title": "STTC PneumoTwin: แบบจำลองฝาแฝดดิจิทัลระบบนิวเมติกส์อุตสาหกรรม", "developer": "พีระพงษ์ (พี)", "department": "แผนกวิชาเมคคาทรอนิกส์และหุ่นยนต์", "deptCategory": "mechanical", "url": "https://sttcpneumotwin.vercel.app/", "description": "Digital Twin จำลองการทำงานของวาล์ว กระบอกสูบนิวเมติกส์ และลำดับการควบคุมโซลินอยด์วาล์วแบบ 3 มิติ", "tags": ["Digital Twin", "Pneumatics", "Mechatronics", "Vercel"], "verified": true, "stars": 42, "language": {"name": "WebGL / 3D Twin", "color": "#3178C6", "bg": "bg-blue-50 text-blue-700 border-blue-200"}}, {"id": "app-6", "title": "Mechatronics PSI: แบบจำลองแรงดันและควบคุมของไหลอุตสาหกรรม", "developer": "วรวุฒิ วท.สุราษฎร์", "department": "แผนกวิชาเมคคาทรอนิกส์", "deptCategory": "mechanical", "url": "https://mecha-psi.vercel.app/", "description": "ระบบคำนวณและจำลองแรงดันของไหล (PSI/Bar) ในกระบอกสูบไฮดรอลิกส์และนิวเมติกส์เพื่อการออกแบบระบบอัตโนมัติ", "tags": ["Fluid Power", "Mecha PSI", "Automation", "Vercel"], "verified": true, "stars": 34, "language": {"name": "Modern Web / Jamstack", "color": "#10b981", "bg": "bg-emerald-50 text-emerald-700 border-emerald-200"}}, {"id": "app-7", "title": "STTC EduStudio: สตูดิโอบันทึกและออกแบบการเรียนรู้ช่างยนต์", "developer": "ภัทรวุฒิ ช่างยนต์", "department": "แผนกวิชาช่างยนต์", "deptCategory": "automotive", "url": "https://sttc-edustudio-1.vercel.app/", "description": "สตูดิโอดิจิทัลช่วยจัดทำเนื้อหา บทเรียนปฏิสัมพันธ์ และคู่มือตรวจวิเคราะห์อาการเครื่องยนต์สำหรับนักศึกษาอาชีวะช่างยนต์", "tags": ["Automotive", "EduStudio", "Diagnostic", "Vercel"], "verified": true, "stars": 38, "language": {"name": "Modern Web / Jamstack", "color": "#10b981", "bg": "bg-emerald-50 text-emerald-700 border-emerald-200"}}, {"id": "app-8", "title": "Vocational Skills Assessment & Engineering Lab Hub", "developer": "Natthawut Churoi (ณัฐวุฒิ ชูร้อย)", "department": "แผนกวิชาช่างเทคนิค", "deptCategory": "mechanical", "url": "https://splendorous-blini-378d0b.netlify.app/", "description": "ระบบฐานข้อมูลการวัดผลสมรรถนะภาคปฏิบัติของนักศึกษาช่าง พร้อมการวิเคราะห์ระดับคะแนน Rubric แบบจำลอง", "tags": ["Engineering Lab", "Assessment", "Rubric", "Netlify"], "verified": true, "stars": 27, "language": {"name": "Modern Web / Jamstack", "color": "#10b981", "bg": "bg-emerald-50 text-emerald-700 border-emerald-200"}}, {"id": "app-9", "title": "Interactive Technical Worksheet Hub", "developer": "ปรเมศ", "department": "แผนกวิชาช่างเทคนิค", "deptCategory": "mechanical", "url": "https://extraordinary-flan-ee6201.netlify.app/", "description": "แพลตฟอร์มใบงานดิจิทัลที่ผู้เรียนสามารถกรอกข้อมูลผลการทดลองในห้องปฏิบัติการและตรวจสอบความถูกต้องอัตโนมัติ", "tags": ["Interactive Worksheet", "Lab Reporting", "Netlify"], "verified": true, "stars": 25, "language": {"name": "Interactive Canvas", "color": "#eab308", "bg": "bg-amber-50 text-amber-700 border-amber-200"}}, {"id": "app-10", "title": "SRTC Examination & Student Competency Portal", "developer": "Kru_Kaneat (ครูกนิษฐ์) > SRTC", "department": "วิทยาลัยเทคนิคสุราษฎร์ธานี", "deptCategory": "management", "url": "https://preeminent-fudge-98702d.netlify.app", "description": "พอร์ทัลคลังข้อสอบและเครื่องมือประเมินผลสัมฤทธิ์ตามมาตรฐานสมรรถนะวิชาชีพ สอศ.", "tags": ["Exam Bank", "Competency", "SRTC", "Netlify"], "verified": true, "stars": 31, "language": {"name": "Modern Web / Jamstack", "color": "#10b981", "bg": "bg-emerald-50 text-emerald-700 border-emerald-200"}}, {"id": "app-11", "title": "Integrated Logistics & Vocational Media Engine", "developer": "Panarat (ปนารัตน์)", "department": "แผนกวิชาการจัดการโลจิสติกส์", "deptCategory": "general", "url": "https://legendary-ganache-6d9c29.netlify.app", "description": "สื่อการสอนดิจิทัลและกระบวนการไหลเวียนคลังสินค้าและการจัดการสินค้าขาเข้า-ออก สำหรับหลักสูตร ปวช. และ ปวส.", "tags": ["Logistics", "Supply Chain", "Media Engine", "Netlify"], "verified": true, "stars": 28, "language": {"name": "Agentic AI / Gemini", "color": "#8B1528", "bg": "bg-rose-50 text-rose-700 border-rose-200"}}, {"id": "app-12", "title": "Interactive Technical Learning & Engagement Module", "developer": "Kru Supaporn (ครูสุภาพร)", "department": "แผนกวิชาสามัญสัมพันธ์", "deptCategory": "general", "url": "https://magenta-melba-4bba94.netlify.app", "description": "โมดูลการเรียนรู้ภาษาอังกฤษเชิงช่างและการบูรณาการทักษะศตวรรษที่ 21 เพื่อเสริมสร้างสมรรถนะผู้เรียนอาชีวะ", "tags": ["Vocational English", "Active Learning", "Netlify"], "verified": true, "stars": 26, "language": {"name": "Modern Web / Jamstack", "color": "#10b981", "bg": "bg-emerald-50 text-emerald-700 border-emerald-200"}}, {"id": "app-13", "title": "PlanSeven: ระบบจัดการแผนการสอนมุ่งเน้นสมรรถนะ", "developer": "Sitthiphong (สิทธิพงศ์)", "department": "แผนกวิชาช่างไฟฟ้า", "deptCategory": "electrical", "url": "https://plan-seven-phi.vercel.app/", "description": "เครื่องมือสถาปัตยกรรมแผนการจัดการเรียนรู้รายสัปดาห์ การบูรณาการกิจกรรม Active Learning และเกณฑ์การวัดผลภาคปฏิบัติ", "tags": ["Lesson Plan", "Active Learning", "Electrical", "Vercel"], "verified": true, "stars": 30, "language": {"name": "Modern Web / Jamstack", "color": "#10b981", "bg": "bg-emerald-50 text-emerald-700 border-emerald-200"}}, {"id": "app-14", "title": "Technical Skill Diagnostic & Training App", "developer": "Earn (เอิร์น)", "department": "แผนกวิชาช่างอุตสาหกรรม", "deptCategory": "mechanical", "url": "https://sensational-lebkuchen-3210b7.netlify.app/", "description": "แอปพลิเคชันวินิจฉัยจุดบกพร่องของชิ้นงานและการประเมินทักษะช่างเชื่อม/ช่างกลตามเกณฑ์มาตรฐาน", "tags": ["Skill Diagnostic", "Vocational Quality", "Netlify"], "verified": true, "stars": 24, "language": {"name": "Modern Web / Jamstack", "color": "#10b981", "bg": "bg-emerald-50 text-emerald-700 border-emerald-200"}}, {"id": "app-15", "title": "Technical Workshop Inventory & Tool Tracking", "developer": "อวิรุทธ์ พลรักษ์", "department": "แผนกวิชาช่างกลโรงงาน", "deptCategory": "mechanical", "url": "https://123-beta-bice.vercel.app/", "description": "ระบบตรวจนับและติดตามเครื่องมือช่างในโรงประลองกลโรงงาน ป้องกันการสูญหายและบันทึกประวัติการบำรุงรักษา", "tags": ["Tool Tracking", "Machine Shop", "Inventory", "Vercel"], "verified": true, "stars": 33, "language": {"name": "Modern Web / Jamstack", "color": "#10b981", "bg": "bg-emerald-50 text-emerald-700 border-emerald-200"}}, {"id": "app-16", "title": "Vocational Classroom Engagement & Management Hub", "developer": "สุรศักดิ์ สุวรรณรัตน์", "department": "แผนกวิชาช่างไฟฟ้ากำลัง", "deptCategory": "electrical", "url": "https://resilient-cuchufli-ff5664.netlify.app/", "description": "ระบบเช็คชื่อ มอบหมายงาน และประเมินพฤติกรรมการเรียนรู้ของนักศึกษาช่างไฟฟ้าในระหว่างการฝึกปฏิบัติจริง", "tags": ["Classroom Management", "Student Engagement", "Netlify"], "verified": true, "stars": 27, "language": {"name": "Modern Web / Jamstack", "color": "#10b981", "bg": "bg-emerald-50 text-emerald-700 border-emerald-200"}}, {"id": "app-17", "title": "PlanUp: แพลตฟอร์มวางแผนและพัฒนาหลักสูตรรายวิชาช่าง", "developer": "Than (อ.ธัญญ์)", "department": "ฝ่ายวิชาการ / แผนกช่างอุตสาหกรรม", "deptCategory": "management", "url": "https://thanty-planup.netlify.app/", "description": "ระบบคลาวด์สังเคราะห์โครงสร้างหลักสูตรและหน่วยการเรียนรู้รายสัปดาห์ตามมาตรฐานคุณวุฒิวิชาชีพ", "tags": ["Curriculum Design", "Competency Map", "Netlify"], "verified": true, "stars": 35, "language": {"name": "Modern Web / Jamstack", "color": "#10b981", "bg": "bg-emerald-50 text-emerald-700 border-emerald-200"}}, {"id": "app-18", "title": "Automotive Maintenance Diagnostic Simulator", "developer": "วรินทร์", "department": "แผนกวิชาช่างยนต์", "deptCategory": "automotive", "url": "https://456-wine-xi.vercel.app/", "description": "แบบจำลองจำลองอาการเสียของระบบส่งกำลังและระบบเบรก เพื่อฝึกทักษะการวิเคราะห์ปัญหาอย่างเป็นขั้นตอน", "tags": ["Automotive", "Troubleshooting", "Simulator", "Vercel"], "verified": true, "stars": 29, "language": {"name": "WebGL / 3D Twin", "color": "#3178C6", "bg": "bg-blue-50 text-blue-700 border-blue-200"}}, {"id": "app-19", "title": "Interactive Technical English: Describing Things in Workshop", "developer": "วรรณรัตน์", "department": "แผนกวิชาสามัญสัมพันธ์ (หมวดภาษาต่างประเทศ)", "deptCategory": "general", "url": "assets/docs/Describing_Things_Interactive_Lesson.zip", "isLocalZip": true, "description": "ชุดบทเรียนภาษาอังกฤษอินเทอร์แอคทีฟสำหรับการอธิบายรูปทรง วัสดุ และลักษณะเครื่องมือช่างในโรงงานอุตสาหกรรม", "tags": ["English for Mechanics", "Interactive SCORM", "Zip Download"], "verified": true, "stars": 31, "language": {"name": "SCORM Courseware", "color": "#f97316", "bg": "bg-orange-50 text-orange-700 border-orange-200"}}, {"id": "app-20", "title": "DC Electrical Machinery SkillPassport Engine", "developer": "วรวิทย์", "department": "แผนกวิชาช่างไฟฟ้ากำลัง", "deptCategory": "electrical", "url": "#", "description": "ระบบบันทึกพาสปอร์ตทักษะวิชาการต่อวงจรและทดสอบเครื่องกลไฟฟ้ากระแสตรง (Direct Current Machinery)", "tags": ["SkillPassport", "DC Machine", "Competency"], "verified": true, "stars": 26, "language": {"name": "Modern Web / Jamstack", "color": "#10b981", "bg": "bg-emerald-50 text-emerald-700 border-emerald-200"}}];
     const documentsData = [{"id": "doc-1", "title": "Case Study - Automotive Charging System Diagnosis", "filename": "Case Study - Automotive Charging System Diagnosis.pdf", "path": "assets/docs/Case Study - Automotive Charging System Diagnosis.pdf", "extension": "PDF", "size": "829.3 KB", "category": "ช่างยนต์ / ยานยนต์ไฟฟ้า", "categoryId": "automotive", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-2", "title": "Electrical Breaker Troubleshooting Guide", "filename": "Electrical Breaker Troubleshooting Guide.pdf", "path": "assets/docs/Electrical Breaker Troubleshooting Guide.pdf", "extension": "PDF", "size": "598.3 KB", "category": "ช่างไฟฟ้าและอิเล็กทรอนิกส์", "categoryId": "electrical", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-3", "title": "Executive Academic Management Copilot", "filename": "Executive Academic Management Copilot.docx", "path": "assets/docs/Executive Academic Management Copilot.docx", "extension": "DOCX", "size": "44.6 KB", "category": "บริหารวิชาการและยุทธศาสตร์", "categoryId": "management", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-4", "title": "Home Visit Assessment Form (1)", "filename": "Home Visit Assessment Form (1).pdf", "path": "assets/docs/Home Visit Assessment Form (1).pdf", "extension": "PDF", "size": "44.1 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-5", "title": "Memo_Library_Exhibition", "filename": "Memo_Library_Exhibition.pdf", "path": "assets/docs/Memo_Library_Exhibition.pdf", "extension": "PDF", "size": "33.9 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-6", "title": "Metrology Evaluation Report", "filename": "Metrology Evaluation Report.pdf", "path": "assets/docs/Metrology Evaluation Report.pdf", "extension": "PDF", "size": "677.6 KB", "category": "เมคคาทรอนิกส์ / ช่างกล / เชื่อม", "categoryId": "mechanical", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-7", "title": "Psychomotor Rubric_ HV Disconnection _amp_ Safe De-energization", "filename": "Psychomotor Rubric_ HV Disconnection _amp_ Safe De-energization.pdf", "path": "assets/docs/Psychomotor Rubric_ HV Disconnection _amp_ Safe De-energization.pdf", "extension": "PDF", "size": "87.2 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-8", "title": "Storyboard สื่อการสอนช่างยนต์ - การเปลี่ยนหัวเทีย", "filename": "Storyboard สื่อการสอนช่างยนต์ - การเปลี่ยนหัวเทีย.pdf", "path": "assets/docs/Storyboard สื่อการสอนช่างยนต์ - การเปลี่ยนหัวเทีย.pdf", "extension": "PDF", "size": "528.7 KB", "category": "ช่างยนต์ / ยานยนต์ไฟฟ้า", "categoryId": "automotive", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-9", "title": "Universal Teacher", "filename": "Universal Teacher.docx", "path": "assets/docs/Universal Teacher.docx", "extension": "DOCX", "size": "52.0 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-10", "title": "Universal_Lifelong_Learning", "filename": "Universal_Lifelong_Learning.docx", "path": "assets/docs/Universal_Lifelong_Learning.docx", "extension": "DOCX", "size": "50.6 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-11", "title": "VOICE AIวิทยาลัยเทคนิคสุราษฎร์ธานี (3)", "filename": "VOICE AIวิทยาลัยเทคนิคสุราษฎร์ธานี (3).docx", "path": "assets/docs/VOICE AIวิทยาลัยเทคนิคสุราษฎร์ธานี (3).docx", "extension": "DOCX", "size": "42.1 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-12", "title": "Welding Lab Material Requirement Plan", "filename": "Welding Lab Material Requirement Plan.pdf", "path": "assets/docs/Welding Lab Material Requirement Plan.pdf", "extension": "PDF", "size": "256.8 KB", "category": "เมคคาทรอนิกส์ / ช่างกล / เชื่อม", "categoryId": "mechanical", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-13", "title": "antigravity-manual-surat-tech-2026-09-25", "filename": "antigravity-manual-surat-tech-2026-09-25.md", "path": "assets/docs/antigravity-manual-surat-tech-2026-09-25.md", "extension": "MD", "size": "172.7 KB", "category": "บริหารวิชาการและยุทธศาสตร์", "categoryId": "management", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-14", "title": "antigravity-manual-surat-tech-2026-09-25", "filename": "antigravity-manual-surat-tech-2026-09-25.pdf", "path": "assets/docs/antigravity-manual-surat-tech-2026-09-25.pdf", "extension": "PDF", "size": "3.57 MB", "category": "บริหารวิชาการและยุทธศาสตร์", "categoryId": "management", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-15", "title": "กิจกรรม_ใบงาน_และแบบประเมินภาษาจีน", "filename": "กิจกรรม_ใบงาน_และแบบประเมินภาษาจีน.pdf", "path": "assets/docs/กิจกรรม_ใบงาน_และแบบประเมินภาษาจีน.pdf", "extension": "PDF", "size": "673.8 KB", "category": "วิชาสามัญสัมพันธ์และภาษา", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-16", "title": "คลังข้อสอบวิชาชีพช่างเชื่อมและเฉลย", "filename": "คลังข้อสอบวิชาชีพช่างเชื่อมและเฉลย.pdf", "path": "assets/docs/คลังข้อสอบวิชาชีพช่างเชื่อมและเฉลย.pdf", "extension": "PDF", "size": "397.4 KB", "category": "เมคคาทรอนิกส์ / ช่างกล / เชื่อม", "categoryId": "mechanical", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-17", "title": "ความเค้นและความเครียดงานเชื่อม", "filename": "ความเค้นและความเครียดงานเชื่อม.pdf", "path": "assets/docs/ความเค้นและความเครียดงานเชื่อม.pdf", "extension": "PDF", "size": "744.0 KB", "category": "เมคคาทรอนิกส์ / ช่างกล / เชื่อม", "categoryId": "mechanical", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-18", "title": "คู่มือการปฏิบัติงานการคัดแยกสินค้าขาเข้", "filename": "คู่มือการปฏิบัติงานการคัดแยกสินค้าขาเข้.pdf", "path": "assets/docs/คู่มือการปฏิบัติงานการคัดแยกสินค้าขาเข้.pdf", "extension": "PDF", "size": "1.04 MB", "category": "การจัดการโลจิสติกส์", "categoryId": "logistics", "badge": "Learning Artifact"}, {"id": "doc-19", "title": "คู่มือประเมินและแบบฟอร์มตรวจงานแบตเตอรี", "filename": "คู่มือประเมินและแบบฟอร์มตรวจงานแบตเตอรี.pdf", "path": "assets/docs/คู่มือประเมินและแบบฟอร์มตรวจงานแบตเตอรี.pdf", "extension": "PDF", "size": "868.1 KB", "category": "ช่างยนต์ / ยานยนต์ไฟฟ้า", "categoryId": "automotive", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-20", "title": "คู่มือผู้ช่วยวิศวกรและช่างไฟฟ้า_ActionPlanGuide.html", "filename": "คู่มือผู้ช่วยวิศวกรและช่างไฟฟ้า_ActionPlanGuide.html.pdf", "path": "assets/docs/คู่มือผู้ช่วยวิศวกรและช่างไฟฟ้า_ActionPlanGuide.html.pdf", "extension": "PDF", "size": "619.9 KB", "category": "ช่างไฟฟ้าและอิเล็กทรอนิกส์", "categoryId": "electrical", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-21", "title": "คู่มือวิเคราะห์และแก้ไขปัญหาสายไฟละลายใ", "filename": "คู่มือวิเคราะห์และแก้ไขปัญหาสายไฟละลายใ.pdf", "path": "assets/docs/คู่มือวิเคราะห์และแก้ไขปัญหาสายไฟละลายใ.pdf", "extension": "PDF", "size": "591.5 KB", "category": "ช่างไฟฟ้าและอิเล็กทรอนิกส์", "categoryId": "electrical", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-22", "title": "คู่มือและชุดแบบร่างการดูแลช่วยเหลือนักเ", "filename": "คู่มือและชุดแบบร่างการดูแลช่วยเหลือนักเ.pdf", "path": "assets/docs/คู่มือและชุดแบบร่างการดูแลช่วยเหลือนักเ.pdf", "extension": "PDF", "size": "441.1 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-23", "title": "คู่มือและแบบฟอร์มการส่งข้อมูลเพื่อพัฒนา", "filename": "คู่มือและแบบฟอร์มการส่งข้อมูลเพื่อพัฒนา.pdf", "path": "assets/docs/คู่มือและแบบฟอร์มการส่งข้อมูลเพื่อพัฒนา.pdf", "extension": "PDF", "size": "618.8 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-24", "title": "คู่มือและแผนการดำเนินงานระบบดูแลสวัสดิก", "filename": "คู่มือและแผนการดำเนินงานระบบดูแลสวัสดิก.pdf", "path": "assets/docs/คู่มือและแผนการดำเนินงานระบบดูแลสวัสดิก.pdf", "extension": "PDF", "size": "729.6 KB", "category": "บริหารวิชาการและยุทธศาสตร์", "categoryId": "management", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-25", "title": "คู่มือใช้งาน SmartIndex-Gov", "filename": "คู่มือใช้งาน SmartIndex-Gov.pdf", "path": "assets/docs/คู่มือใช้งาน SmartIndex-Gov.pdf", "extension": "PDF", "size": "349.4 KB", "category": "บริหารวิชาการและยุทธศาสตร์", "categoryId": "management", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-26", "title": "ชุดข้อสอบและใบงานประเมินผลช่างยนต์_สอศ", "filename": "ชุดข้อสอบและใบงานประเมินผลช่างยนต์_สอศ.pdf", "path": "assets/docs/ชุดข้อสอบและใบงานประเมินผลช่างยนต์_สอศ.pdf", "extension": "PDF", "size": "902.5 KB", "category": "ช่างยนต์ / ยานยนต์ไฟฟ้า", "categoryId": "automotive", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-27", "title": "ชุดสถานการณ์จำลองการแก้ปัญหางานช่างเทคน", "filename": "ชุดสถานการณ์จำลองการแก้ปัญหางานช่างเทคน.pdf", "path": "assets/docs/ชุดสถานการณ์จำลองการแก้ปัญหางานช่างเทคน.pdf", "extension": "PDF", "size": "981.0 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-28", "title": "ตารางเรียนและตารางสอน_แผนกวิชาการจัดการโ", "filename": "ตารางเรียนและตารางสอน_แผนกวิชาการจัดการโ.pdf", "path": "assets/docs/ตารางเรียนและตารางสอน_แผนกวิชาการจัดการโ.pdf", "extension": "PDF", "size": "426.4 KB", "category": "การจัดการโลจิสติกส์", "categoryId": "logistics", "badge": "Learning Artifact"}, {"id": "doc-29", "title": "รายงานการวิเคราะห์และพัฒนาหลักสูตรรายวิ", "filename": "รายงานการวิเคราะห์และพัฒนาหลักสูตรรายวิ.pdf", "path": "assets/docs/รายงานการวิเคราะห์และพัฒนาหลักสูตรรายวิ.pdf", "extension": "PDF", "size": "800.2 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-30", "title": "รายงานประเมินความพร้อมโปรเจกต์ - แอปเช็คช", "filename": "รายงานประเมินความพร้อมโปรเจกต์ - แอปเช็คช.pdf", "path": "assets/docs/รายงานประเมินความพร้อมโปรเจกต์ - แอปเช็คช.pdf", "extension": "PDF", "size": "712.7 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-31", "title": "รายงานประเมินราคาซ่อมและวิเคราะห์ปัญหาเ", "filename": "รายงานประเมินราคาซ่อมและวิเคราะห์ปัญหาเ.pdf", "path": "assets/docs/รายงานประเมินราคาซ่อมและวิเคราะห์ปัญหาเ.pdf", "extension": "PDF", "size": "1009.1 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-32", "title": "รายงานผลการตรวจวัดและประเมินมุมดอกสว่าน H", "filename": "รายงานผลการตรวจวัดและประเมินมุมดอกสว่าน H.pdf", "path": "assets/docs/รายงานผลการตรวจวัดและประเมินมุมดอกสว่าน H.pdf", "extension": "PDF", "size": "686.0 KB", "category": "เมคคาทรอนิกส์ / ช่างกล / เชื่อม", "categoryId": "mechanical", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-33", "title": "รายงานผลการตรวจสอบเอกสารมอบตัว - นายกิตติ", "filename": "รายงานผลการตรวจสอบเอกสารมอบตัว - นายกิตติ.pdf", "path": "assets/docs/รายงานผลการตรวจสอบเอกสารมอบตัว - นายกิตติ.pdf", "extension": "PDF", "size": "648.3 KB", "category": "บริหารวิชาการและยุทธศาสตร์", "categoryId": "management", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-34", "title": "รายงานผลการตรวจและวิเคราะห์แบบทดสอบวิชา", "filename": "รายงานผลการตรวจและวิเคราะห์แบบทดสอบวิชา.pdf", "path": "assets/docs/รายงานผลการตรวจและวิเคราะห์แบบทดสอบวิชา.pdf", "extension": "PDF", "size": "589.1 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-35", "title": "สคริปต์ Infographic 5 เหตุผลที่ต้องเรียนเมคคาทรอน", "filename": "สคริปต์ Infographic 5 เหตุผลที่ต้องเรียนเมคคาทรอน.pdf", "path": "assets/docs/สคริปต์ Infographic 5 เหตุผลที่ต้องเรียนเมคคาทรอน.pdf", "extension": "PDF", "size": "616.3 KB", "category": "เมคคาทรอนิกส์ / ช่างกล / เชื่อม", "categoryId": "mechanical", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-36", "title": "สอการสอนวทยาศาสตร เรอง สมดลเคม", "filename": "สอการสอนวทยาศาสตร เรอง สมดลเคม.pdf", "path": "assets/docs/สอการสอนวทยาศาสตร เรอง สมดลเคม.pdf", "extension": "PDF", "size": "107.9 KB", "category": "วิชาสามัญสัมพันธ์และภาษา", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-37", "title": "เกณฑ์การประเมินภาคปฏิบัติ งานบริการตัวถั", "filename": "เกณฑ์การประเมินภาคปฏิบัติ งานบริการตัวถั.pdf", "path": "assets/docs/เกณฑ์การประเมินภาคปฏิบัติ งานบริการตัวถั.pdf", "extension": "PDF", "size": "684.3 KB", "category": "ช่างยนต์ / ยานยนต์ไฟฟ้า", "categoryId": "automotive", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-38", "title": "เอกสารนำเสนอและสรุปบทเรียน โลจิสติกส์ ปวช", "filename": "เอกสารนำเสนอและสรุปบทเรียน โลจิสติกส์ ปวช.pdf", "path": "assets/docs/เอกสารนำเสนอและสรุปบทเรียน โลจิสติกส์ ปวช.pdf", "extension": "PDF", "size": "199.9 KB", "category": "การจัดการโลจิสติกส์", "categoryId": "logistics", "badge": "Learning Artifact"}, {"id": "doc-39", "title": "เอกสารแนะนำสื่อการสอน_เรื่องการตรวจเช็กแ", "filename": "เอกสารแนะนำสื่อการสอน_เรื่องการตรวจเช็กแ.pdf", "path": "assets/docs/เอกสารแนะนำสื่อการสอน_เรื่องการตรวจเช็กแ.pdf", "extension": "PDF", "size": "683.3 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-40", "title": "แบบประเมิน IOC เครื่องมือวิจัยช่างยนต์", "filename": "แบบประเมิน IOC เครื่องมือวิจัยช่างยนต์.pdf", "path": "assets/docs/แบบประเมิน IOC เครื่องมือวิจัยช่างยนต์.pdf", "extension": "PDF", "size": "599.7 KB", "category": "ช่างยนต์ / ยานยนต์ไฟฟ้า", "categoryId": "automotive", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-41", "title": "แผนการจัดการเรียนรู้ฐานสมรรถนะ", "filename": "แผนการจัดการเรียนรู้ฐานสมรรถนะ.pdf", "path": "assets/docs/แผนการจัดการเรียนรู้ฐานสมรรถนะ.pdf", "extension": "PDF", "size": "645.9 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-42", "title": "แผนการจัดการเรียนรู้ฐานสมรรถนะ_นิวแมติกส", "filename": "แผนการจัดการเรียนรู้ฐานสมรรถนะ_นิวแมติกส.pdf", "path": "assets/docs/แผนการจัดการเรียนรู้ฐานสมรรถนะ_นิวแมติกส.pdf", "extension": "PDF", "size": "670.9 KB", "category": "เมคคาทรอนิกส์ / ช่างกล / เชื่อม", "categoryId": "mechanical", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-43", "title": "แผนการจัดการเรียนรู้มุ่งเน้นสมรรถนะ - การ", "filename": "แผนการจัดการเรียนรู้มุ่งเน้นสมรรถนะ - การ.pdf", "path": "assets/docs/แผนการจัดการเรียนรู้มุ่งเน้นสมรรถนะ - การ.pdf", "extension": "PDF", "size": "672.3 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-44", "title": "แผนการจัดการเรียนรู้มุ่งเน้นสมรรถนะ_งานเ", "filename": "แผนการจัดการเรียนรู้มุ่งเน้นสมรรถนะ_งานเ.pdf", "path": "assets/docs/แผนการจัดการเรียนรู้มุ่งเน้นสมรรถนะ_งานเ.pdf", "extension": "PDF", "size": "584.1 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-45", "title": "แผนกิจกรรมเกมภาษาจีน_จังหวะตลาด_多少钱", "filename": "แผนกิจกรรมเกมภาษาจีน_จังหวะตลาด_多少钱.pdf", "path": "assets/docs/แผนกิจกรรมเกมภาษาจีน_จังหวะตลาด_多少钱.pdf", "extension": "PDF", "size": "950.3 KB", "category": "วิชาสามัญสัมพันธ์และภาษา", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-46", "title": "โครงสร้างรายวิชาเครื่องมือกลเบื้องต้น_ปว", "filename": "โครงสร้างรายวิชาเครื่องมือกลเบื้องต้น_ปว.pdf", "path": "assets/docs/โครงสร้างรายวิชาเครื่องมือกลเบื้องต้น_ปว.pdf", "extension": "PDF", "size": "833.0 KB", "category": "เมคคาทรอนิกส์ / ช่างกล / เชื่อม", "categoryId": "mechanical", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-47", "title": "ใบความรู้ มอเตอร์ไฟฟ้ากระแสสลับ 1 เฟส และ 3 เ", "filename": "ใบความรู้ มอเตอร์ไฟฟ้ากระแสสลับ 1 เฟส และ 3 เ.pdf", "path": "assets/docs/ใบความรู้ มอเตอร์ไฟฟ้ากระแสสลับ 1 เฟส และ 3 เ.pdf", "extension": "PDF", "size": "1.30 MB", "category": "ช่างไฟฟ้าและอิเล็กทรอนิกส์", "categoryId": "electrical", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-48", "title": "ใบความรู้มาตรฐานอาชีวศึกษา 2567", "filename": "ใบความรู้มาตรฐานอาชีวศึกษา 2567.pdf", "path": "assets/docs/ใบความรู้มาตรฐานอาชีวศึกษา 2567.pdf", "extension": "PDF", "size": "696.9 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-49", "title": "ใบความรู้ระบบจัดการแบตเตอรี่ (BMS)", "filename": "ใบความรู้ระบบจัดการแบตเตอรี่ (BMS).pdf", "path": "assets/docs/ใบความรู้ระบบจัดการแบตเตอรี่ (BMS).pdf", "extension": "PDF", "size": "104.0 KB", "category": "ช่างยนต์ / ยานยนต์ไฟฟ้า", "categoryId": "automotive", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-50", "title": "ใบงาน Verb to Be", "filename": "ใบงาน Verb to Be.pdf", "path": "assets/docs/ใบงาน Verb to Be.pdf", "extension": "PDF", "size": "71.2 KB", "category": "วิชาสามัญสัมพันธ์และภาษา", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-51", "title": "ใบงานคณิตศาสตร์เชิงช่าง เรื่อง อนุพันธ์แล", "filename": "ใบงานคณิตศาสตร์เชิงช่าง เรื่อง อนุพันธ์แล.pdf", "path": "assets/docs/ใบงานคณิตศาสตร์เชิงช่าง เรื่อง อนุพันธ์แล.pdf", "extension": "PDF", "size": "803.4 KB", "category": "วิชาสามัญสัมพันธ์และภาษา", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-52", "title": "ใบงานที่ 5 การควบคุมระบบสายพานคัดแยกชิ้นง", "filename": "ใบงานที่ 5 การควบคุมระบบสายพานคัดแยกชิ้นง.pdf", "path": "assets/docs/ใบงานที่ 5 การควบคุมระบบสายพานคัดแยกชิ้นง.pdf", "extension": "PDF", "size": "770.4 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-53", "title": "ใบงานปฏิบัติการ IT-LabCraft Pro", "filename": "ใบงานปฏิบัติการ IT-LabCraft Pro.pdf", "path": "assets/docs/ใบงานปฏิบัติการ IT-LabCraft Pro.pdf", "extension": "PDF", "size": "881.2 KB", "category": "วิชาการทั่วไปและเกณฑ์ประเมิน", "categoryId": "general", "badge": "Learning Artifact"}, {"id": "doc-54", "title": "ใบงานปฏิบัติการที่ 3 - การใช้มัลติมิเตอร์แบ", "filename": "ใบงานปฏิบัติการที่ 3 - การใช้มัลติมิเตอร์แบ.pdf", "path": "assets/docs/ใบงานปฏิบัติการที่ 3 - การใช้มัลติมิเตอร์แบ.pdf", "extension": "PDF", "size": "572.9 KB", "category": "ช่างไฟฟ้าและอิเล็กทรอนิกส์", "categoryId": "electrical", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-55", "title": "ใบงานปฏิบัติงาน_งานเครื่องยนต์เล็ก", "filename": "ใบงานปฏิบัติงาน_งานเครื่องยนต์เล็ก.pdf", "path": "assets/docs/ใบงานปฏิบัติงาน_งานเครื่องยนต์เล็ก.pdf", "extension": "PDF", "size": "563.6 KB", "category": "ช่างยนต์ / ยานยนต์ไฟฟ้า", "categoryId": "automotive", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-56", "title": "ใบงานและแบบทดสอบช่างยนต์", "filename": "ใบงานและแบบทดสอบช่างยนต์.pdf", "path": "assets/docs/ใบงานและแบบทดสอบช่างยนต์.pdf", "extension": "PDF", "size": "352.9 KB", "category": "ช่างยนต์ / ยานยนต์ไฟฟ้า", "categoryId": "automotive", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-57", "title": "ใบปฏิบัติงาน_วงจรอนุกรม_ปวช2.html", "filename": "ใบปฏิบัติงาน_วงจรอนุกรม_ปวช2.html.pdf", "path": "assets/docs/ใบปฏิบัติงาน_วงจรอนุกรม_ปวช2.html.pdf", "extension": "PDF", "size": "634.4 KB", "category": "ช่างไฟฟ้าและอิเล็กทรอนิกส์", "categoryId": "electrical", "badge": "ค.ศ.4 Evidence"}, {"id": "doc-58", "title": "ใบเนื้อหา ระบบฉีดเชื้อเพลิงคอมมอนเรล Toyota Hilux", "filename": "ใบเนื้อหา ระบบฉีดเชื้อเพลิงคอมมอนเรล Toyota Hilux.pdf", "path": "assets/docs/ใบเนื้อหา ระบบฉีดเชื้อเพลิงคอมมอนเรล Toyota Hilux.pdf", "extension": "PDF", "size": "799.8 KB", "category": "ช่างยนต์ / ยานยนต์ไฟฟ้า", "categoryId": "automotive", "badge": "ค.ศ.4 Evidence"}];
     const atmosphereData = [{"id": "atmo-1", "filename": "155936.jpg", "path": "assets/atmosphere/155936.jpg", "title": "ภาพบรรยากาศการอบรมชุดที่ 1", "caption": "พิธีเปิดและการบรรยายวิสัยทัศน์ยุทธศาสตร์ปัญญาประดิษฐ์ระดับสถาบัน วิทยาลัยเทคนิคสุราษฎร์ธานี", "date": "25 กันยายน 2569", "location": "ห้องปฏิบัติการคอมพิวเตอร์ วิทยาลัยเทคนิคสุราษฎร์ธานี"}, {"id": "atmo-2", "filename": "S__33849385.jpg", "path": "assets/atmosphere/S__33849385.jpg", "title": "ภาพบรรยากาศการอบรมชุดที่ 2", "caption": "คณะครูช่างและบุคลากรทางการศึกษาร่วมปฏิบัติการสร้าง AI Agent ผ่าน Antigravity & Vibe Coding", "date": "25 กันยายน 2569", "location": "ห้องปฏิบัติการคอมพิวเตอร์ วิทยาลัยเทคนิคสุราษฎร์ธานี"}, {"id": "atmo-3", "filename": "S__33849390.jpg", "path": "assets/atmosphere/S__33849390.jpg", "title": "ภาพบรรยากาศการอบรมชุดที่ 3", "caption": "การให้คำปรึกษาเชิงลึกด้านการออกแบบสถาปัตยกรรมหลักสูตรและการสร้างแอปพลิเคชันเพื่อการสอน", "date": "25 กันยายน 2569", "location": "ห้องปฏิบัติการคอมพิวเตอร์ วิทยาลัยเทคนิคสุราษฎร์ธานี"}, {"id": "atmo-4", "filename": "S__33849450_0.jpg", "path": "assets/atmosphere/S__33849450_0.jpg", "title": "ภาพบรรยากาศการอบรมชุดที่ 4", "caption": "บรรยากาศห้องปฏิบัติการคอมพิวเตอร์ระหว่างการพัฒนาและทดสอบระบบจำลองทางวิศวกรรม", "date": "25 กันยายน 2569", "location": "ห้องปฏิบัติการคอมพิวเตอร์ วิทยาลัยเทคนิคสุราษฎร์ธานี"}, {"id": "atmo-5", "filename": "S__33849451_0.jpg", "path": "assets/atmosphere/S__33849451_0.jpg", "title": "ภาพบรรยากาศการอบรมชุดที่ 5", "caption": "ผู้เข้าร่วมอบรมทดสอบการรันระบบและตรวจสอบข้อผิดพลาดของโค้ดด้วย Agentic Reasoning", "date": "25 กันยายน 2569", "location": "ห้องปฏิบัติการคอมพิวเตอร์ วิทยาลัยเทคนิคสุราษฎร์ธานี"}, {"id": "atmo-6", "filename": "S__33849452_0.jpg", "path": "assets/atmosphere/S__33849452_0.jpg", "title": "ภาพบรรยากาศการอบรมชุดที่ 6", "caption": "การแลกเปลี่ยนเรียนรู้ระหว่างกลุ่มวิชาช่างยนต์ ช่างไฟฟ้า และเมคคาทรอนิกส์", "date": "25 กันยายน 2569", "location": "ห้องปฏิบัติการคอมพิวเตอร์ วิทยาลัยเทคนิคสุราษฎร์ธานี"}, {"id": "atmo-7", "filename": "S__33849453_0.jpg", "path": "assets/atmosphere/S__33849453_0.jpg", "title": "ภาพบรรยากาศการอบรมชุดที่ 7", "caption": "การร่วมมือวิเคราะห์เกณฑ์ ว.PA และข้อเสนอการพัฒนานวัตกรรมเพื่อเตรียมขอประเมิน ค.ศ.4", "date": "25 กันยายน 2569", "location": "ห้องปฏิบัติการคอมพิวเตอร์ วิทยาลัยเทคนิคสุราษฎร์ธานี"}, {"id": "atmo-8", "filename": "S__33849454_0.jpg", "path": "assets/atmosphere/S__33849454_0.jpg", "title": "ภาพบรรยากาศการอบรมชุดที่ 8", "caption": "การซักถามและเจาะลึกเทคนิคการเขียน System Prompt สำหรับงานวิจัยทางการศึกษา", "date": "25 กันยายน 2569", "location": "ห้องปฏิบัติการคอมพิวเตอร์ วิทยาลัยเทคนิคสุราษฎร์ธานี"}, {"id": "atmo-9", "filename": "S__33849455_0.jpg", "path": "assets/atmosphere/S__33849455_0.jpg", "title": "ภาพบรรยากาศการอบรมชุดที่ 9", "caption": "การจำลองสถานการณ์และทดสอบ Interactive Web Applications บนสมาร์ตโฟนและแท็บเล็ต", "date": "25 กันยายน 2569", "location": "ห้องปฏิบัติการคอมพิวเตอร์ วิทยาลัยเทคนิคสุราษฎร์ธานี"}, {"id": "atmo-10", "filename": "S__33849456_0.jpg", "path": "assets/atmosphere/S__33849456_0.jpg", "title": "ภาพบรรยากาศการอบรมชุดที่ 10", "caption": "บรรยากาศการระดมสมองและสังเคราะห์แบบประเมิน Rubric ภาคปฏิบัติ", "date": "25 กันยายน 2569", "location": "ห้องปฏิบัติการคอมพิวเตอร์ วิทยาลัยเทคนิคสุราษฎร์ธานี"}, {"id": "atmo-11", "filename": "S__33849457_0.jpg", "path": "assets/atmosphere/S__33849457_0.jpg", "title": "ภาพบรรยากาศการอบรมชุดที่ 11", "caption": "การเชื่อมต่อสื่อดิจิทัลและคู่มือการซ่อมบำรุงเข้ากับระบบคลาวด์ Vercel และ Netlify", "date": "25 กันยายน 2569", "location": "ห้องปฏิบัติการคอมพิวเตอร์ วิทยาลัยเทคนิคสุราษฎร์ธานี"}, {"id": "atmo-12", "filename": "S__33849458_0.jpg", "path": "assets/atmosphere/S__33849458_0.jpg", "title": "ภาพบรรยากาศการอบรมชุดที่ 12", "caption": "คณะผู้บริหารวิทยาลัยเทคนิคสุราษฎร์ธานีตรวจเยี่ยมและให้กำลังใจผู้เข้าอบรม", "date": "25 กันยายน 2569", "location": "ห้องปฏิบัติการคอมพิวเตอร์ วิทยาลัยเทคนิคสุราษฎร์ธานี"}, {"id": "atmo-13", "filename": "S__33849459_0.jpg", "path": "assets/atmosphere/S__33849459_0.jpg", "title": "ภาพบรรยากาศการอบรมชุดที่ 13", "caption": "การนำเสนอต้นแบบแอปพลิเคชันทางการศึกษาและสาธิตการใช้งานจริงหน้าห้องอบรม", "date": "25 กันยายน 2569", "location": "ห้องปฏิบัติการคอมพิวเตอร์ วิทยาลัยเทคนิคสุราษฎร์ธานี"}, {"id": "atmo-14", "filename": "S__33849460.jpg", "path": "assets/atmosphere/S__33849460.jpg", "title": "ภาพบรรยากาศการอบรมชุดที่ 14", "caption": "การสังเคราะห์ผลงานภาพรวมและการประเมินความสำเร็จของโครงการ 100% Adoption", "date": "25 กันยายน 2569", "location": "ห้องปฏิบัติการคอมพิวเตอร์ วิทยาลัยเทคนิคสุราษฎร์ธานี"}, {"id": "atmo-15", "filename": "S__58949711.jpg", "path": "assets/atmosphere/S__58949711.jpg", "title": "ภาพบรรยากาศการอบรมชุดที่ 15", "caption": "ภาพถ่ายรวมผู้บริหาร วิทยากร และคณะครูช่างผู้สำเร็จการฝึกอบรม AI Learning Designer", "date": "25 กันยายน 2569", "location": "ห้องปฏิบัติการคอมพิวเตอร์ วิทยาลัยเทคนิคสุราษฎร์ธานี"}];
     const promptsData = [{"id": "prompt-1", "filename": "1.png", "path": "assets/prompts/1.png", "title": "สไลด์พิมพ์เขียวยุทธศาสตร์ AI สู่ ค.ศ.4 (แผ่นที่ 1)", "category": "Strategic Architecture Slides", "description": "การวางกรอบสถาปัตยกรรมปัญญาประดิษฐ์เพื่อการจัดการเรียนรู้และการยกระดับวิทยฐานะครูอาชีวะ"}, {"id": "prompt-2", "filename": "2.png", "path": "assets/prompts/2.png", "title": "สไลด์พิมพ์เขียวยุทธศาสตร์ AI สู่ ค.ศ.4 (แผ่นที่ 2)", "category": "Strategic Architecture Slides", "description": "การวางกรอบสถาปัตยกรรมปัญญาประดิษฐ์เพื่อการจัดการเรียนรู้และการยกระดับวิทยฐานะครูอาชีวะ"}, {"id": "prompt-3", "filename": "3.png", "path": "assets/prompts/3.png", "title": "สไลด์พิมพ์เขียวยุทธศาสตร์ AI สู่ ค.ศ.4 (แผ่นที่ 3)", "category": "Strategic Architecture Slides", "description": "การวางกรอบสถาปัตยกรรมปัญญาประดิษฐ์เพื่อการจัดการเรียนรู้และการยกระดับวิทยฐานะครูอาชีวะ"}, {"id": "prompt-4", "filename": "4.png", "path": "assets/prompts/4.png", "title": "สไลด์พิมพ์เขียวยุทธศาสตร์ AI สู่ ค.ศ.4 (แผ่นที่ 4)", "category": "Strategic Architecture Slides", "description": "การวางกรอบสถาปัตยกรรมปัญญาประดิษฐ์เพื่อการจัดการเรียนรู้และการยกระดับวิทยฐานะครูอาชีวะ"}, {"id": "prompt-5", "filename": "5.png", "path": "assets/prompts/5.png", "title": "สไลด์พิมพ์เขียวยุทธศาสตร์ AI สู่ ค.ศ.4 (แผ่นที่ 5)", "category": "Strategic Architecture Slides", "description": "การวางกรอบสถาปัตยกรรมปัญญาประดิษฐ์เพื่อการจัดการเรียนรู้และการยกระดับวิทยฐานะครูอาชีวะ"}, {"id": "prompt-6", "filename": "6.png", "path": "assets/prompts/6.png", "title": "สไลด์พิมพ์เขียวยุทธศาสตร์ AI สู่ ค.ศ.4 (แผ่นที่ 6)", "category": "Strategic Architecture Slides", "description": "การวางกรอบสถาปัตยกรรมปัญญาประดิษฐ์เพื่อการจัดการเรียนรู้และการยกระดับวิทยฐานะครูอาชีวะ"}, {"id": "prompt-7", "filename": "S__33857539.jpg", "path": "assets/prompts/S__33857539.jpg", "title": "คู่มือสรุปยุทธศาสตร์และคำแนะนำเชิงปฏิบัติการ #7", "category": "AI Infographic & Guide", "description": "เอกสารเผยแพร่เชิงสถาบันเพื่อการนำ AI ไปต่อยอดในสถานศึกษา"}, {"id": "prompt-8", "filename": "S__33857540.jpg", "path": "assets/prompts/S__33857540.jpg", "title": "คู่มือสรุปยุทธศาสตร์และคำแนะนำเชิงปฏิบัติการ #8", "category": "AI Infographic & Guide", "description": "เอกสารเผยแพร่เชิงสถาบันเพื่อการนำ AI ไปต่อยอดในสถานศึกษา"}, {"id": "prompt-9", "filename": "Screenshot (2).png", "path": "assets/prompts/Screenshot (2).png", "title": "หลักฐานการเชื่อมต่อ Vercel / Netlify Git Deployment #9", "category": "Cloud Deployment Verification", "description": "การรัน CI/CD และการขึ้นระบบแบบอัตโนมัติผ่าน Git และเว็บเบราว์เซอร์"}, {"id": "prompt-10", "filename": "Screenshot (29).png", "path": "assets/prompts/Screenshot (29).png", "title": "หลักฐานการเชื่อมต่อ Vercel / Netlify Git Deployment #10", "category": "Cloud Deployment Verification", "description": "การรัน CI/CD และการขึ้นระบบแบบอัตโนมัติผ่าน Git และเว็บเบราว์เซอร์"}, {"id": "prompt-11", "filename": "Screenshot 2026-09-24 153302.png", "path": "assets/prompts/Screenshot 2026-09-24 153302.png", "title": "หลักฐานการเชื่อมต่อ Vercel / Netlify Git Deployment #11", "category": "Cloud Deployment Verification", "description": "การรัน CI/CD และการขึ้นระบบแบบอัตโนมัติผ่าน Git และเว็บเบราว์เซอร์"}, {"id": "prompt-12", "filename": "Screenshot 2026-09-24 154046.png", "path": "assets/prompts/Screenshot 2026-09-24 154046.png", "title": "หลักฐานการเชื่อมต่อ Vercel / Netlify Git Deployment #12", "category": "Cloud Deployment Verification", "description": "การรัน CI/CD และการขึ้นระบบแบบอัตโนมัติผ่าน Git และเว็บเบราว์เซอร์"}, {"id": "prompt-13", "filename": "messageImage_1790238825013.jpg", "path": "assets/prompts/messageImage_1790238825013.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #13", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-14", "filename": "messageImage_1790238860518.jpg", "path": "assets/prompts/messageImage_1790238860518.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #14", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-15", "filename": "messageImage_1790238928795.jpg", "path": "assets/prompts/messageImage_1790238928795.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #15", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-16", "filename": "messageImage_1790238935286.jpg", "path": "assets/prompts/messageImage_1790238935286.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #16", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-17", "filename": "messageImage_1790238937402.jpg", "path": "assets/prompts/messageImage_1790238937402.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #17", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-18", "filename": "messageImage_1790238950529.jpg", "path": "assets/prompts/messageImage_1790238950529.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #18", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-19", "filename": "messageImage_1790238953548.jpg", "path": "assets/prompts/messageImage_1790238953548.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #19", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-20", "filename": "messageImage_1790238995404.jpg", "path": "assets/prompts/messageImage_1790238995404.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #20", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-21", "filename": "messageImage_1790239006071.jpg", "path": "assets/prompts/messageImage_1790239006071.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #21", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-22", "filename": "messageImage_1790239020915.jpg", "path": "assets/prompts/messageImage_1790239020915.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #22", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-23", "filename": "messageImage_1790239030960.jpg", "path": "assets/prompts/messageImage_1790239030960.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #23", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-24", "filename": "messageImage_1790239058730.jpg", "path": "assets/prompts/messageImage_1790239058730.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #24", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-25", "filename": "messageImage_1790239076864.jpg", "path": "assets/prompts/messageImage_1790239076864.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #25", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-26", "filename": "messageImage_1790239146253.jpg", "path": "assets/prompts/messageImage_1790239146253.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #26", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-27", "filename": "messageImage_1790239148453.jpg", "path": "assets/prompts/messageImage_1790239148453.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #27", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-28", "filename": "messageImage_1790239167908.jpg", "path": "assets/prompts/messageImage_1790239167908.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #28", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-29", "filename": "messageImage_1790239183928.jpg", "path": "assets/prompts/messageImage_1790239183928.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #29", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-30", "filename": "messageImage_1790239186811.jpg", "path": "assets/prompts/messageImage_1790239186811.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #30", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-31", "filename": "messageImage_1790239191984.jpg", "path": "assets/prompts/messageImage_1790239191984.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #31", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-32", "filename": "messageImage_1790239219287.jpg", "path": "assets/prompts/messageImage_1790239219287.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #32", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-33", "filename": "messageImage_1790239226704.jpg", "path": "assets/prompts/messageImage_1790239226704.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #33", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-34", "filename": "messageImage_1790239258077.jpg", "path": "assets/prompts/messageImage_1790239258077.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #34", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-35", "filename": "messageImage_1790239284828.jpg", "path": "assets/prompts/messageImage_1790239284828.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #35", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-36", "filename": "messageImage_1790239331714.jpg", "path": "assets/prompts/messageImage_1790239331714.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #36", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-37", "filename": "messageImage_1790239336016.jpg", "path": "assets/prompts/messageImage_1790239336016.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #37", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-38", "filename": "messageImage_1790239370268.jpg", "path": "assets/prompts/messageImage_1790239370268.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #38", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-39", "filename": "messageImage_1790239412168.jpg", "path": "assets/prompts/messageImage_1790239412168.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #39", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-40", "filename": "messageImage_1790239413232.jpg", "path": "assets/prompts/messageImage_1790239413232.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #40", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-41", "filename": "messageImage_1790239457126.jpg", "path": "assets/prompts/messageImage_1790239457126.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #41", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-42", "filename": "messageImage_1790239477134.jpg", "path": "assets/prompts/messageImage_1790239477134.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #42", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-43", "filename": "messageImage_1790239483387.jpg", "path": "assets/prompts/messageImage_1790239483387.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #43", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-44", "filename": "messageImage_1790239518581.jpg", "path": "assets/prompts/messageImage_1790239518581.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #44", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-45", "filename": "messageImage_1790239547479.jpg", "path": "assets/prompts/messageImage_1790239547479.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #45", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-46", "filename": "messageImage_1790239572242.jpg", "path": "assets/prompts/messageImage_1790239572242.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #46", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-47", "filename": "messageImage_1790239626293.jpg", "path": "assets/prompts/messageImage_1790239626293.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #47", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-48", "filename": "messageImage_1790239951913.jpg", "path": "assets/prompts/messageImage_1790239951913.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #48", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-49", "filename": "messageImage_1790239974162.jpg", "path": "assets/prompts/messageImage_1790239974162.jpg", "title": "หลักฐานกระบวนการคิดและสร้างแอปพลิเคชัน AI #49", "category": "AI Architecture & Prompts", "description": "หลักฐานสกรีนช็อตการป้อนคำสั่ง Prompt, การทดสอบโค้ด, และการสังเคราะห์ผลงานผ่านระบบ AI"}, {"id": "prompt-50", "filename": "output Gem.png", "path": "assets/prompts/output Gem.png", "title": "การสังเคราะห์ข้อสอบและการวิเคราะห์ภาพชิ้นงานช่างด้วย Gemini Multimodal", "category": "Multimodal Output", "description": "แสดงความสามารถในการประเมินชิ้นงานเชิงช่างและสร้างเกณฑ์ Rubric แบบอัตโนมัติ"}, {"id": "prompt-51", "filename": "เทียบใช้ไม่ใช้.png", "path": "assets/prompts/เทียบใช้ไม่ใช้.png", "title": "ตารางเปรียบเทียบเชิงประจักษ์: ประสิทธิภาพก่อนและหลังประยุกต์ใช้ AI Agent", "category": "Comparative Analysis", "description": "ลดเวลาจาก 14 วันเหลือเพียง 2 ชั่วโมง พร้อมเพิ่มความแม่นยำตามเกณฑ์ ว.PA"}];
     const mediaData = [{"id": "podcast-1", "type": "audio", "title": "พอดแคสต์: ครูช่างสุราษฎร์สร้างแอปด้วยเอไอเอเจนต์", "filename": "ครูช่างสุราษฎร์สร้างแอปด้วยเอไอเอเจนต์.m4a", "path": "assets/media/ครูช่างสุราษฎร์สร้างแอปด้วยเอไอเอเจนต์.m4a", "duration": "15:42 นาที", "size": "36.16 MB", "format": "Audio (M4A / AAC)", "description": "รายการถอดบทเรียนเสียงเชิงลึก เล่าประสบการณ์ตรงของคณะครูช่าง วิทยาลัยเทคนิคสุราษฎร์ธานี ในการก้าวข้ามขีดจำกัดด้านการเขียนโค้ด สู่การเป็น AI Solution Architect ผู้สร้างแอปพลิเคชันจริงภายใน 1 วัน", "keyTakeaways": ["การเปลี่ยนผ่านจากผู้ใช้ AI สู่ผู้สร้างแอปพลิเคชัน (From Consumer to Creator)", "การบูรณาการความเชี่ยวชาญช่าง (Domain Expertise) เข้ากับ Agentic Prompting", "การนำแอปพลิเคชันไปใช้จัดการเรียนการสอนจริงในภาคเรียนปัจจุบัน", "ก้าวต่อไปสู่การขอประเมินวิทยฐานะ ค.ศ.4 (ครูเชี่ยวชาญ)"]}, {"id": "video-1", "type": "video", "title": "วิดีโอสาธิต: ระบบเครื่องเสียงและสื่อประสมเชิงวิชาชีพ", "filename": "เครื่องเสียง.mp4", "path": "assets/media/เครื่องเสียง.mp4", "duration": "01:24 นาที", "size": "2.36 MB", "format": "Video (MP4 / H.264)", "description": "คลิปวิดีโอสาธิตการทดสอบระบบเครื่องเสียงและอุปกรณ์สื่อการเรียนรู้เชิงปฏิบัติการ พร้อมการควบคุมสัญญาณเสียงในห้องเรียนอัจฉริยะ", "keyTakeaways": ["การทดสอบสัญญาณและอุปกรณ์ภาคสนาม", "การจัดสภาพแวดล้อมที่เอื้อต่อการเรียนรู้แบบ Active Learning", "การบันทึกภาพหลักฐานความพร้อมของห้องปฏิบัติการ"]}];
     const peopleData = [{"id": "lead-1", "name": "อาจารย์ตรี (tri333)", "role": "วิทยากรหลักและที่ปรึกษาสถาปัตยกรรมปัญญาประดิษฐ์องค์กร", "department": "ฝ่ายยุทธศาสตร์นวัตกรรมและเทคโนโลยีดิจิทัล", "aiSkills": ["Agentic Architecture", "Vibe Coding", "ค.ศ.4 Academic Synthesis", "Gemini Multimodal"], "appContribution": "ระบบสังเคราะห์นวัตกรรมสู่ ค.ศ.4 (tri-navy.vercel.app)"}, {"id": "p-2", "name": "อ.วรพล (Wirapol)", "role": "ครูผู้เชี่ยวชาญด้านวิศวกรรมไฟฟ้า", "department": "แผนกวิชาช่างไฟฟ้ากำลัง", "aiSkills": ["Interactive Circuit Simulation", "Canvas API", "Prompt Engineering"], "appContribution": "Resistor Color Code Worksheet (resistor-worksheet.vercel.app)"}, {"id": "p-3", "name": "อ.พงศกร คล้ายพิชัย", "role": "ครูผู้เชี่ยวชาญด้านอิเล็กทรอนิกส์ดิจิทัล", "department": "แผนกวิชาช่างอิเล็กทรอนิกส์", "aiSkills": ["Signal Simulation", "Web Audio API", "Switch Debounce Analysis"], "appContribution": "Switch Debouncing Simulator (interactive-switch-debouncing.vercel.app)"}, {"id": "p-4", "name": "อ.สัจกร วท.สุราษฎร์", "role": "ครูผู้รับผิดชอบงานความปลอดภัยในโรงฝึกงาน", "department": "แผนกช่างอุตสาหกรรม / เทคนิคพื้นฐาน", "aiSkills": ["Industrial Safety Protocols", "Digital Checklists", "Risk Assessment"], "appContribution": "SafetyHub 2046 Platform (safetyhub-2046.vercel.app)"}, {"id": "p-5", "name": "อ.พีระพงษ์ (พี)", "role": "ครูนวัตกรรมระบบอัตโนมัติและดิจิทัลทวิน", "department": "แผนกวิชาเมคคาทรอนิกส์และหุ่นยนต์", "aiSkills": ["Digital Twin Modeling", "Pneumatics Simulation", "Three.js / WebGL"], "appContribution": "STTC PneumoTwin (sttcpneumotwin.vercel.app)"}, {"id": "p-6", "name": "อ.วรวุฒิ วท.สุราษฎร์", "role": "ครูผู้เชี่ยวชาญระบบควบคุมของไหล", "department": "แผนกวิชาเมคคาทรอนิกส์", "aiSkills": ["Fluid Power Dynamics", "PSI/Bar Calculations", "UI Architecture"], "appContribution": "Mechatronics PSI Simulator (mecha-psi.vercel.app)"}, {"id": "p-7", "name": "อ.ภัทรวุฒิ ช่างยนต์", "role": "ครูผู้เชี่ยวชาญด้านเทคโนโลยียานยนต์", "department": "แผนกวิชาช่างยนต์", "aiSkills": ["Automotive Diagnostics", "EduStudio Design", "Interactive Storyboarding"], "appContribution": "STTC EduStudio (sttc-edustudio-1.vercel.app)"}, {"id": "p-8", "name": "อ.ณัฐวุฒิ ชูร้อย (Natthawut)", "role": "ครูผู้เชี่ยวชาญด้านการทดสอบวัสดุและการวัดละเอียด", "department": "แผนกวิชาเทคนิคพื้นฐาน", "aiSkills": ["Metrology Evaluation", "Rubric Synthesis", "Data Reporting"], "appContribution": "Engineering Lab Assessment (splendorous-blini-378d0b.netlify.app)"}, {"id": "p-9", "name": "ครูกนิษฐ์ (Kru_Kaneat)", "role": "ครูผู้เชี่ยวชาญด้านการวัดและประเมินผล", "department": "ฝ่ายวิชาการและงานวัดผล สอศ.", "aiSkills": ["Competency Assessment", "Item Bank Synthesis", "Data Modeling"], "appContribution": "SRTC Examination Portal (preeminent-fudge-98702d.netlify.app)"}, {"id": "p-10", "name": "อ.ปนารัตน์ (Panarat)", "role": "ครูผู้เชี่ยวชาญการจัดการโลจิสติกส์", "department": "แผนกวิชาการจัดการโลจิสติกส์", "aiSkills": ["Supply Chain Media", "Interactive Courseware", "Visual Flow Design"], "appContribution": "Logistics Media Engine (legendary-ganache-6d9c29.netlify.app)"}, {"id": "p-11", "name": "ครูสุภาพร (Kru Supaporn)", "role": "ครูผู้เชี่ยวชาญการสอนภาษาอังกฤษเชิงวิชาชีพ", "department": "แผนกวิชาสามัญสัมพันธ์", "aiSkills": ["Vocational English Pedagogy", "Interactive Learning Modules", "Active Learning"], "appContribution": "Technical Learning Module (magenta-melba-4bba94.netlify.app)"}, {"id": "p-12", "name": "อ.สิทธิพงศ์ (Sitthiphong)", "role": "ครูผู้ออกแบบหลักสูตรฐานสมรรถนะ", "department": "แผนกวิชาช่างไฟฟ้า", "aiSkills": ["Curriculum Architecture", "Lesson Planning", "Competency Mapping"], "appContribution": "PlanSeven Management (plan-seven-phi.vercel.app)"}, {"id": "p-13", "name": "อ.อวิรุทธ์ พลรักษ์", "role": "ครูผู้ดูแลระบบโรงประลองกลโรงงาน", "department": "แผนกวิชาช่างกลโรงงาน", "aiSkills": ["Tool Inventory Management", "Safety Verification", "Database Integration"], "appContribution": "Workshop Tool Tracking (123-beta-bice.vercel.app)"}, {"id": "p-14", "name": "อ.วรรณรัตน์", "role": "ครูผู้เชี่ยวชาญสื่อปฏิสัมพันธ์เชิงภาษา", "department": "แผนกวิชาสามัญสัมพันธ์", "aiSkills": ["SCORM Packaging", "Interactive Language Labs", "Workshop Vocab"], "appContribution": "Describing Things in Workshop (SCORM/Zip Package)"}, {"id": "p-15", "name": "อ.ธัญญ์ (Than)", "role": "ครูผู้วางแผนหลักสูตรวิชาชีพ", "department": "ฝ่ายวิชาการ", "aiSkills": ["Curriculum Blueprint", "Competency Standard Mapping", "Cloud Publishing"], "appContribution": "PlanUp Platform (thanty-planup.netlify.app)"}];
 
-    // State Variables
+    // State
     let currentTab = 'overview';
     let appSearchQuery = '';
     let appCategoryFilter = 'all';
@@ -785,7 +849,7 @@
     let currentLightboxIndex = 0;
     let currentLightboxType = 'atmosphere';
 
-    // Instant Initialization
+    // Instant Startup
     window.addEventListener('DOMContentLoaded', () => {
       renderHeroBLUF();
       renderPinnedApps();
@@ -796,33 +860,19 @@
       renderMediaCenter();
       renderPeopleDirectory();
       setupSearchInputs();
-
-    // Keyboard Navigation & Escape Support
-    document.addEventListener('keydown', (e) => {
-      const lightbox = document.getElementById('lightbox-modal');
-      const preview = document.getElementById('preview-modal');
-
-      if (!lightbox.classList.contains('hidden')) {
-        if (e.key === 'Escape') closeLightbox();
-        if (e.key === 'ArrowLeft') navigateLightbox(-1);
-        if (e.key === 'ArrowRight') navigateLightbox(1);
-      } else if (!preview.classList.contains('hidden')) {
-        if (e.key === 'Escape') closeAppPreview();
-      }
+      setupKeyboardShortcuts();
     });
 
-    });
-
-    // Tab Navigation
+    // Tab Controller
     function switchTab(tabId) {
       currentTab = tabId;
       window.location.hash = tabId;
 
-      document.querySelectorAll('.gh-tab-btn').forEach(btn => {
+      document.querySelectorAll('.nav-tab-pill').forEach(btn => {
         if (btn.getAttribute('data-tab') === tabId) {
-          btn.classList.add('gh-tab-active');
+          btn.classList.add('active');
         } else {
-          btn.classList.remove('gh-tab-active');
+          btn.classList.remove('active');
         }
       });
 
@@ -841,20 +891,20 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // Render Hero BLUF
+    // Render Hero BLUF (Bento Cards with glowing borders)
     function renderHeroBLUF() {
       const container = document.getElementById('kpi-metrics-container');
       if (!container) return;
       container.innerHTML = kpiData.topMetrics.map(m => `
-        <div class="bg-slate-900/90 rounded-lg p-4 border border-slate-700 relative overflow-hidden group hover:border-amber-400/80 transition-colors">
-          <div class="flex items-center justify-between mb-1.5">
-            <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full ${
-              m.badge.includes('100%') ? 'bg-emerald-950 text-emerald-300 border border-emerald-800' :
-              m.badge.includes('Ready') ? 'bg-amber-950 text-amber-300 border border-amber-800' :
-              'bg-blue-950 text-blue-300 border border-blue-800'
+        <div class="p-4 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-amber-400/50 backdrop-blur-md transition-all duration-300 group">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-[10px] font-bold px-2 py-0.5 rounded-full ${
+              m.badge.includes('100%') ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30' :
+              m.badge.includes('Ready') ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30' :
+              'bg-blue-500/20 text-blue-300 border border-blue-500/30'
             }">${m.badge}</span>
           </div>
-          <div class="text-2xl sm:text-3xl font-black tracking-tight text-white mb-0.5">${m.value}</div>
+          <div class="text-3xl font-extrabold tracking-tight text-white mb-0.5 group-hover:text-amber-400 transition-colors">${m.value}</div>
           <div class="text-xs font-bold text-slate-200 mb-1">${m.label}</div>
           <div class="text-[11px] text-slate-400 leading-snug">${m.desc}</div>
         </div>
@@ -865,32 +915,32 @@
     function renderPinnedApps() {
       const container = document.getElementById('pinned-apps-container');
       if (!container) return;
-      const pinned = appsData.slice(0, 4); // First 4 core apps
+      const pinned = appsData.slice(0, 4);
       container.innerHTML = pinned.map(app => `
-        <div class="gh-card p-4 flex flex-col justify-between">
+        <div class="gh-repo-card p-5 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between gap-2 mb-2">
-              <div class="flex items-center gap-1.5 min-w-0">
+              <div class="flex items-center gap-2 min-w-0">
                 <svg class="w-4 h-4 text-slate-500 flex-shrink-0" fill="currentColor" viewBox="0 0 16 16"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5v-9zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8V1.5z"/></svg>
-                <a href="${app.url}" target="_blank" class="font-bold text-[#0969DA] hover:underline text-sm truncate" title="${app.title}">
+                <a href="${app.url}" target="_blank" class="font-bold text-[#1E3A8A] hover:text-[#8B1528] text-sm truncate" title="${app.title}">
                   ${app.title}
                 </a>
               </div>
-              <span class="gh-badge bg-[#F6F8FA] text-[#57609A]">Public</span>
+              <span class="gh-pill bg-slate-100 text-slate-600">Public</span>
             </div>
             <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-3">${app.description}</p>
           </div>
-          <div class="flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-100">
+          <div class="flex items-center justify-between text-xs text-slate-500 pt-3 border-t border-slate-100">
             <div class="flex items-center gap-3">
               <span class="flex items-center gap-1.5">
                 <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${app.language.color}"></span>
-                <span>${app.language.name}</span>
+                <span class="text-[11px] font-semibold text-slate-700">${app.language.name}</span>
               </span>
-              <span>★ ${app.stars}</span>
+              <span class="text-[11px]">★ ${app.stars}</span>
             </div>
-            <div class="flex items-center gap-1">
-              <button onclick="openAppPreview('${app.url}', '${escapeHtml(app.title)}')" class="px-2 py-0.5 rounded text-[11px] font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700">พรีวิว</button>
-              <a href="${app.url}" target="_blank" class="px-2.5 py-0.5 rounded text-[11px] font-semibold bg-[#1E3A8A] hover:bg-blue-900 text-white">เปิดจริง</a>
+            <div class="flex items-center gap-1.5">
+              <button onclick="openAppPreview('${app.url}', '${escapeHtml(app.title)}')" class="px-2.5 py-1 rounded-md text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors">พรีวิว</button>
+              <a href="${app.url}" target="_blank" class="px-3 py-1 rounded-md text-xs font-semibold bg-[#8B1528] hover:bg-[#9E1B32] text-white transition-colors">เปิดจริง ↗</a>
             </div>
           </div>
         </div>
@@ -916,25 +966,25 @@
 
       if (filtered.length === 0) {
         container.innerHTML = `
-          <div class="col-span-full text-center py-12 bg-white rounded-lg border border-[#D0D7DE]">
-            <p class="text-slate-600 font-medium">ไม่พบผลงานที่ตรงกับการค้นหา</p>
-            <button onclick="resetAppFilter()" class="mt-2 text-xs text-blue-700 font-bold hover:underline">ล้างตัวกรองทั้งหมด</button>
+          <div class="col-span-full text-center py-16 bg-white rounded-2xl border border-slate-200">
+            <p class="text-slate-600 font-medium">ไม่พบผลงานที่ตรงกับคำค้นหาหรือตัวกรอง</p>
+            <button onclick="resetAppFilter()" class="mt-2 text-xs text-[#8B1528] font-bold hover:underline">ล้างตัวกรองทั้งหมด</button>
           </div>
         `;
         return;
       }
 
       container.innerHTML = filtered.map(app => `
-        <div class="gh-card p-5 flex flex-col justify-between">
+        <div class="gh-repo-card p-5 flex flex-col justify-between">
           <div>
             <div class="flex items-start justify-between gap-2 mb-2">
               <div class="flex items-center gap-1.5 min-w-0">
                 <svg class="w-4 h-4 text-slate-500 flex-shrink-0" fill="currentColor" viewBox="0 0 16 16"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5v-9zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8V1.5z"/></svg>
-                <h4 class="font-bold text-[#0969DA] text-sm truncate" title="${app.title}">
+                <h4 class="font-bold text-slate-900 hover:text-[#8B1528] text-sm truncate" title="${app.title}">
                   ${app.title}
                 </h4>
               </div>
-              <span class="gh-badge ${app.isLead ? 'bg-amber-50 text-amber-800 border-amber-300 font-bold' : 'bg-[#F6F8FA] text-slate-600'}">
+              <span class="gh-pill ${app.isLead ? 'bg-amber-50 text-amber-800 border-amber-300 font-bold' : 'bg-slate-100 text-slate-600'}">
                 ${app.isLead ? '★ Lead App' : 'Public'}
               </span>
             </div>
@@ -958,20 +1008,20 @@
             <div class="flex items-center gap-3 text-slate-500">
               <span class="flex items-center gap-1.5">
                 <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${app.language.color}"></span>
-                <span class="text-[11px]">${app.language.name}</span>
+                <span class="text-[11px] font-semibold text-slate-700">${app.language.name}</span>
               </span>
               <span class="text-[11px]">★ ${app.stars}</span>
             </div>
             <div class="flex items-center gap-1.5">
               ${app.isLocalZip ? `
-                <a href="${app.url}" download class="px-2.5 py-1 text-xs font-semibold bg-slate-800 text-white rounded hover:bg-black transition-colors">
+                <a href="${app.url}" download class="px-3 py-1.5 text-xs font-semibold bg-slate-900 text-white rounded-lg hover:bg-black transition-colors shadow-sm">
                   ดาวน์โหลด ZIP
                 </a>
               ` : `
-                <button onclick="openAppPreview('${app.url}', '${escapeHtml(app.title)}')" class="px-2.5 py-1 text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 rounded transition-colors">
+                <button onclick="openAppPreview('${app.url}', '${escapeHtml(app.title)}')" class="px-2.5 py-1.5 text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg transition-colors">
                   พรีวิว
                 </button>
-                <a href="${app.url}" target="_blank" rel="noopener noreferrer" class="px-3 py-1 text-xs font-semibold bg-[#1E3A8A] hover:bg-blue-900 text-white rounded transition-colors">
+                <a href="${app.url}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 text-xs font-semibold bg-[#8B1528] hover:bg-[#9E1B32] text-white rounded-lg transition-colors shadow-sm">
                   เปิดจริง ↗
                 </a>
               `}
@@ -981,15 +1031,14 @@
       `).join('');
     }
 
-    // Filter Controllers
     function setAppCategory(dept) {
       appCategoryFilter = dept;
       document.querySelectorAll('.app-filter-pill').forEach(btn => {
         if (btn.getAttribute('data-dept') === dept) {
-          btn.classList.add('bg-[#0F172A]', 'text-white');
+          btn.classList.add('bg-[#0B172E]', 'text-white');
           btn.classList.remove('bg-slate-100', 'text-slate-700');
         } else {
-          btn.classList.remove('bg-[#0F172A]', 'text-white');
+          btn.classList.remove('bg-[#0B172E]', 'text-white');
           btn.classList.add('bg-slate-100', 'text-slate-700');
         }
       });
@@ -1003,7 +1052,7 @@
       setAppCategory('all');
     }
 
-    // Render Documents
+    // Render Documents (57 Items)
     function renderDocuments() {
       const container = document.getElementById('docs-table-container');
       const countBadge = document.getElementById('docs-count-badge');
@@ -1019,9 +1068,9 @@
       if (countBadge) countBadge.innerText = `${filtered.length} เอกสาร`;
 
       container.innerHTML = filtered.map(doc => `
-        <div class="gh-card p-3.5 flex items-center justify-between gap-3">
-          <div class="flex items-center gap-3 min-w-0">
-            <div class="w-9 h-9 rounded flex items-center justify-center font-bold text-xs flex-shrink-0 ${
+        <div class="gh-repo-card p-4 flex items-center justify-between gap-3">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center font-bold text-xs flex-shrink-0 ${
               doc.extension === 'PDF' ? 'bg-red-50 text-red-700 border border-red-200' :
               doc.extension === 'DOCX' ? 'bg-blue-50 text-blue-700 border border-blue-200' :
               'bg-amber-50 text-amber-700 border border-amber-200'
@@ -1029,19 +1078,19 @@
               ${doc.extension}
             </div>
             <div class="min-w-0">
-              <h5 class="text-xs font-semibold text-slate-900 truncate" title="${doc.title}">${doc.title}</h5>
+              <h5 class="text-xs font-bold text-slate-900 truncate hover:text-[#8B1528] transition-colors" title="${doc.title}">${doc.title}</h5>
               <div class="flex items-center gap-2 text-[11px] text-slate-500 mt-0.5">
-                <span>${doc.category}</span>
+                <span class="font-semibold text-slate-700">${doc.category}</span>
                 <span>•</span>
                 <span>${doc.size}</span>
               </div>
             </div>
           </div>
           <div class="flex items-center gap-1.5 flex-shrink-0">
-            <a href="${doc.path}" target="_blank" class="px-2.5 py-1 text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 rounded transition-colors">
+            <a href="${doc.path}" target="_blank" class="px-3 py-1.5 text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg transition-colors">
               เปิดอ่าน
             </a>
-            <a href="${doc.path}" download class="p-1 text-slate-400 hover:text-slate-800 rounded">
+            <a href="${doc.path}" download class="p-1.5 text-slate-400 hover:text-slate-800 rounded-lg">
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
             </a>
           </div>
@@ -1053,47 +1102,47 @@
       docCategoryFilter = cat;
       document.querySelectorAll('.doc-filter-pill').forEach(btn => {
         if (btn.getAttribute('data-cat') === cat) {
-          btn.classList.add('bg-[#0F172A]', 'text-white');
+          btn.classList.add('bg-[#0B172E]', 'text-white');
           btn.classList.remove('bg-slate-100', 'text-slate-700');
         } else {
-          btn.classList.remove('bg-[#0F172A]', 'text-white');
+          btn.classList.remove('bg-[#0B172E]', 'text-white');
           btn.classList.add('bg-slate-100', 'text-slate-700');
         }
       });
       renderDocuments();
     }
 
-    // Render Atmosphere
+    // Render Atmosphere (15 Photos)
     function renderAtmosphere() {
       const container = document.getElementById('atmosphere-grid-container');
       if (!container) return;
       container.innerHTML = atmosphereData.map((item, idx) => `
-        <div class="gh-card overflow-hidden cursor-pointer group" onclick="openLightbox('atmosphere', ${idx})">
+        <div class="gh-repo-card overflow-hidden cursor-pointer group" onclick="openLightbox('atmosphere', ${idx})">
           <div class="aspect-[4/3] w-full overflow-hidden bg-slate-100">
-            <img src="${item.path}" alt="${item.title}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200">
+            <img src="${item.path}" alt="${item.title}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           </div>
-          <div class="p-3 bg-white">
+          <div class="p-3.5 bg-white">
             <div class="text-xs font-bold text-slate-900 truncate mb-0.5">${item.title}</div>
-            <div class="text-[11px] text-slate-500 line-clamp-1">${item.caption}</div>
+            <div class="text-[11px] text-slate-500 line-clamp-1 leading-snug">${item.caption}</div>
           </div>
         </div>
       `).join('');
     }
 
-    // Render Prompts
+    // Render Prompts (51 Slides/Prompts)
     function renderPrompts() {
       const container = document.getElementById('prompts-grid-container');
       if (!container) return;
       let filtered = promptsData.filter(p => promptCategoryFilter === 'all' || p.category === promptCategoryFilter);
       container.innerHTML = filtered.map((item, idx) => `
-        <div class="gh-card overflow-hidden cursor-pointer group" onclick="openLightbox('prompts', ${idx})">
+        <div class="gh-repo-card overflow-hidden cursor-pointer group" onclick="openLightbox('prompts', ${idx})">
           <div class="aspect-[16/9] w-full overflow-hidden bg-slate-50 border-b border-slate-100 relative">
             <img src="${item.path}" alt="${item.title}" loading="lazy" class="w-full h-full object-contain p-2 group-hover:scale-102 transition-transform">
-            <span class="absolute top-2 left-2 text-[9px] font-semibold px-2 py-0.5 rounded bg-slate-900/80 text-white">${item.category}</span>
+            <span class="absolute top-2 left-2 text-[9px] font-bold px-2 py-0.5 rounded bg-slate-950/80 text-white backdrop-blur-sm">${item.category}</span>
           </div>
-          <div class="p-3">
+          <div class="p-3.5 bg-white">
             <div class="text-xs font-bold text-slate-900 truncate mb-0.5">${item.title}</div>
-            <div class="text-[11px] text-slate-500 line-clamp-2">${item.description}</div>
+            <div class="text-[11px] text-slate-500 line-clamp-2 leading-relaxed">${item.description}</div>
           </div>
         </div>
       `).join('');
@@ -1103,17 +1152,17 @@
       promptCategoryFilter = cat;
       document.querySelectorAll('.prompt-filter-pill').forEach(btn => {
         if (btn.getAttribute('data-prompt-cat') === cat) {
-          btn.classList.add('bg-[#0F172A]', 'text-white');
+          btn.classList.add('bg-[#0B172E]', 'text-white');
           btn.classList.remove('bg-slate-100', 'text-slate-700');
         } else {
-          btn.classList.remove('bg-[#0F172A]', 'text-white');
+          btn.classList.remove('bg-[#0B172E]', 'text-white');
           btn.classList.add('bg-slate-100', 'text-slate-700');
         }
       });
       renderPrompts();
     }
 
-    // Render Media & Podcast
+    // Render Media & Podcast (Luxury Player)
     function renderMediaCenter() {
       const podcast = mediaData.find(m => m.type === 'audio');
       const video = mediaData.find(m => m.type === 'video');
@@ -1123,20 +1172,25 @@
 
       if (podcastEl && podcast) {
         podcastEl.innerHTML = `
-          <div class="gh-card p-6 bg-gradient-to-br from-[#0F172A] to-[#1E3A8A] text-white">
-            <div class="flex items-center justify-between mb-3">
-              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-400/20 text-amber-300 border border-amber-400/30">Executive AI Podcast</span>
-              <span class="text-xs text-slate-300">${podcast.duration} • ${podcast.size}</span>
+          <div class="rounded-2xl p-7 bg-gradient-to-br from-[#060D1A] via-[#0B172E] to-[#1E3A8A] text-white border border-white/10 shadow-2xl">
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">Executive AI Podcast</span>
+              <span class="text-xs text-slate-300 font-mono">${podcast.duration} • ${podcast.size}</span>
             </div>
-            <h4 class="text-base font-bold mb-2">${podcast.title}</h4>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4">${podcast.description}</p>
-            <div class="bg-black/40 rounded-lg p-2.5 border border-slate-700 mb-4">
+            <h4 class="text-lg font-extrabold mb-2 leading-snug">${podcast.title}</h4>
+            <p class="text-xs text-slate-300 leading-relaxed mb-6 font-sarabun">${podcast.description}</p>
+            
+            <div class="bg-black/50 backdrop-blur-md rounded-xl p-4 border border-white/10 mb-6">
               <audio controls class="w-full">
                 <source src="${podcast.path}" type="audio/mp4">
               </audio>
             </div>
-            <div class="space-y-1 text-xs text-slate-300">
-              ${podcast.keyTakeaways.map(t => `<div class="flex items-start gap-2"><span class="text-amber-400 font-bold">•</span><span>${t}</span></div>`).join('')}
+
+            <div class="border-t border-white/10 pt-4">
+              <div class="text-[11px] font-bold text-amber-400 uppercase tracking-wider mb-2">ประเด็นสำคัญในพอดแคสต์ (Key Insights):</div>
+              <div class="space-y-1.5 text-xs text-slate-300">
+                ${podcast.keyTakeaways.map(t => `<div class="flex items-start gap-2"><span class="text-amber-400 font-bold">•</span><span>${t}</span></div>`).join('')}
+              </div>
             </div>
           </div>
         `;
@@ -1144,18 +1198,18 @@
 
       if (videoEl && video) {
         videoEl.innerHTML = `
-          <div class="gh-card p-6 bg-white">
+          <div class="gh-repo-card p-6 bg-white border border-[#D0D7DE]">
             <div class="flex items-center justify-between mb-3">
-              <span class="gh-badge bg-blue-50 text-blue-900 border-blue-200">Video Evidence</span>
-              <span class="text-xs text-slate-500">${video.duration} • ${video.size}</span>
+              <span class="gh-pill bg-blue-50 text-blue-900 border-blue-200">Video Evidence</span>
+              <span class="text-xs text-slate-500 font-mono">${video.duration} • ${video.size}</span>
             </div>
             <h4 class="text-base font-bold text-slate-900 mb-2">${video.title}</h4>
-            <div class="rounded-lg overflow-hidden bg-black border border-slate-200 mb-3">
+            <div class="rounded-xl overflow-hidden bg-black border border-slate-200 mb-4 shadow-inner">
               <video controls class="w-full aspect-video object-contain">
                 <source src="${video.path}" type="video/mp4">
               </video>
             </div>
-            <p class="text-xs text-slate-600 leading-relaxed">${video.description}</p>
+            <p class="text-xs text-slate-600 leading-relaxed font-sarabun">${video.description}</p>
           </div>
         `;
       }
@@ -1166,32 +1220,32 @@
       const container = document.getElementById('people-grid-container');
       if (!container) return;
       container.innerHTML = peopleData.map(p => `
-        <div class="gh-card p-4 flex flex-col justify-between">
+        <div class="gh-repo-card p-5 flex flex-col justify-between">
           <div>
-            <div class="flex items-center gap-3 mb-2.5">
-              <div class="w-10 h-10 rounded-full bg-[#0F172A] text-white font-bold flex items-center justify-center text-xs">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[#0B172E] text-white font-bold flex items-center justify-center text-sm shadow-md">
                 ${p.name.substring(0, 2)}
               </div>
               <div>
-                <h5 class="text-xs font-bold text-slate-900">${p.name}</h5>
-                <div class="text-[11px] text-slate-500">${p.department}</div>
+                <h5 class="text-sm font-bold text-slate-900">${p.name}</h5>
+                <div class="text-[11px] text-slate-500 font-medium">${p.department}</div>
               </div>
             </div>
-            <div class="text-[11px] font-semibold text-[#991B1B] bg-red-50 px-2 py-0.5 rounded inline-block mb-2">
+            <div class="text-[11px] font-bold text-[#8B1528] bg-rose-50 px-2.5 py-1 rounded-md inline-block mb-2.5">
               ${p.role}
             </div>
             <div class="text-xs text-slate-600 mb-3 leading-relaxed">
               <strong>ผลงาน:</strong> ${p.appContribution}
             </div>
           </div>
-          <div class="flex flex-wrap gap-1 pt-2 border-t border-slate-100">
-            ${p.aiSkills.map(s => `<span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 text-slate-700">${s}</span>`).join('')}
+          <div class="flex flex-wrap gap-1 pt-3 border-t border-slate-100">
+            ${p.aiSkills.map(s => `<span class="text-[10px] px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-medium">${s}</span>`).join('')}
           </div>
         </div>
       `).join('');
     }
 
-    // Lightbox Modal Controller
+    // Lightbox Modal
     function openLightbox(type, index) {
       currentLightboxType = type;
       currentLightboxIndex = index;
@@ -1221,7 +1275,7 @@
       document.getElementById('lightbox-count').innerText = `${currentLightboxIndex + 1} / ${data.length}`;
     }
 
-    // Live App Preview Controller
+    // App Preview Modal
     function openAppPreview(url, title) {
       const modal = document.getElementById('preview-modal');
       document.getElementById('preview-title').innerText = title;
@@ -1238,7 +1292,62 @@
       document.body.style.overflow = '';
     }
 
-    // Search input bindings
+    // Quick Search (⌘K)
+    function openQuickSearch() {
+      const modal = document.getElementById('quick-search-modal');
+      const input = document.getElementById('quick-search-input');
+      modal.classList.remove('hidden');
+      input.value = '';
+      input.focus();
+      handleQuickSearch('');
+    }
+
+    function closeQuickSearch() {
+      document.getElementById('quick-search-modal').classList.add('hidden');
+    }
+
+    function handleQuickSearch(query) {
+      const resultsContainer = document.getElementById('quick-search-results');
+      if (!query.trim()) {
+        resultsContainer.innerHTML = '<div class="text-xs text-slate-400 text-center py-6">พิมพ์ชื่อผลงาน, ครูช่าง, หรือเอกสาร...</div>';
+        return;
+      }
+      const q = query.toLowerCase();
+      const matchedApps = appsData.filter(a => a.title.toLowerCase().includes(q) || a.developer.toLowerCase().includes(q)).slice(0, 4);
+      const matchedDocs = documentsData.filter(d => d.title.toLowerCase().includes(q)).slice(0, 4);
+
+      let html = '';
+      if (matchedApps.length > 0) {
+        html += '<div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider px-3 py-1 bg-slate-50">แอปพลิเคชัน</div>';
+        html += matchedApps.map(a => `
+          <div onclick="closeQuickSearch(); openAppPreview('${a.url}', '${escapeHtml(a.title)}')" class="p-2.5 hover:bg-slate-50 rounded-lg cursor-pointer flex items-center justify-between">
+            <div>
+              <div class="text-xs font-bold text-slate-900">${a.title}</div>
+              <div class="text-[11px] text-slate-500">${a.developer} • ${a.department}</div>
+            </div>
+            <span class="text-[11px] text-[#8B1528] font-semibold">พรีวิว ↗</span>
+          </div>
+        `).join('');
+      }
+      if (matchedDocs.length > 0) {
+        html += '<div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider px-3 py-1 bg-slate-50 mt-2">เอกสารวิชาการ</div>';
+        html += matchedDocs.map(d => `
+          <a href="${d.path}" target="_blank" onclick="closeQuickSearch()" class="p-2.5 hover:bg-slate-50 rounded-lg cursor-pointer flex items-center justify-between block">
+            <div>
+              <div class="text-xs font-bold text-slate-900 truncate max-w-md">${d.title}</div>
+              <div class="text-[11px] text-slate-500">${d.category} • ${d.size}</div>
+            </div>
+            <span class="text-[11px] text-blue-700 font-semibold">เปิด ↗</span>
+          </a>
+        `).join('');
+      }
+      if (!html) {
+        html = '<div class="text-xs text-slate-500 text-center py-6">ไม่พบผลลัพธ์ที่ตรงกับคำค้นหา</div>';
+      }
+      resultsContainer.innerHTML = html;
+    }
+
+    // Search Inputs
     function setupSearchInputs() {
       const appSearch = document.getElementById('app-search-input');
       if (appSearch) {
@@ -1255,6 +1364,39 @@
           renderDocuments();
         });
       }
+
+      const quickInput = document.getElementById('quick-search-input');
+      if (quickInput) {
+        quickInput.addEventListener('input', (e) => {
+          handleQuickSearch(e.target.value);
+        });
+      }
+    }
+
+    // Keyboard Shortcuts (⌘K, ESC, Arrows)
+    function setupKeyboardShortcuts() {
+      document.addEventListener('keydown', (e) => {
+        // ⌘K or Ctrl+K for search
+        if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+          e.preventDefault();
+          openQuickSearch();
+          return;
+        }
+
+        const searchModal = document.getElementById('quick-search-modal');
+        const lightbox = document.getElementById('lightbox-modal');
+        const preview = document.getElementById('preview-modal');
+
+        if (!searchModal.classList.contains('hidden')) {
+          if (e.key === 'Escape') closeQuickSearch();
+        } else if (!lightbox.classList.contains('hidden')) {
+          if (e.key === 'Escape') closeLightbox();
+          if (e.key === 'ArrowLeft') navigateLightbox(-1);
+          if (e.key === 'ArrowRight') navigateLightbox(1);
+        } else if (!preview.classList.contains('hidden')) {
+          if (e.key === 'Escape') closeAppPreview();
+        }
+      });
     }
 
     function escapeHtml(str) {

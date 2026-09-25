@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</title>
+  <meta name="description" content="พอร์ทัลแสดงผลลัพธ์ยุทธศาสตร์ AI, นวัตกรรมแอปพลิเคชัน และคลังหลักฐานระดับ C-Level โครงการ AI Learning Designer วิทยาลัยเทคนิคสุราษฎร์ธานี">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0F172A',
+              royal: '#1E3A8A',
+              slate: '#334155',
+              surface: '#F8FAFC',
+              amber: '#D97706',
+              amberLight: '#FEF3C7'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- ========================================== -->
+  <!-- 1. EXECUTIVE HEADER (No Print)             -->
+  <!-- ========================================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 no-print shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        
+        <!-- Left: Logo & Institutional Brand -->
+        <div class="flex items-center gap-3 sm:gap-4">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-center text-white font-bold text-base sm:text-lg shadow-sm">
+            <span class="text-amber-400">S</span>RTC
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-900">วิทยาลัยเทคนิคสุราษฎร์ธานี</span>
+              <span class="hidden sm:inline-block px-2 py-0.5 rounded-full text-[10px] font-semibold badge-gold">C-Level Portal</span>
+            </div>
+            <h1 class="text-sm sm:text-base font-bold text-slate-900 truncate">
+              Executive AI Strategy & Evidence Portal
+            </h1>
+          </div>
+        </div>
+
+        <!-- Right: Actions & Print Button -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <button class="trigger-print-btn inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-blue-900 text-white hover:bg-blue-800 text-xs sm:text-sm font-semibold transition-all shadow-sm">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+            </svg>
+            <span>พิมพ์รายงาน A4</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Navigation Tabs Strip -->
+    <div class="border-t border-slate-200 bg-white overflow-x-auto scrollbar-none" id="main-tabs">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex space-x-1 sm:space-x-2 text-xs sm:text-sm font-medium py-1">
+        <button data-tab="overview" class="nav-tab-btn tab-active px-3 py-2 rounded-lg transition-colors flex items-center gap-1.5 whitespace-nowrap">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg>
+          ภาพรวมยุทธศาสตร์ (Overview)
+        </button>
+        <button data-tab="apps" class="nav-tab-btn text-slate-600 px-3 py-2 rounded-lg hover:text-blue-900 transition-colors flex items-center gap-1.5 whitespace-nowrap">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+          คลังแอปพลิเคชัน (Live Apps)
+        </button>
+        <button data-tab="docs" class="nav-tab-btn text-slate-600 px-3 py-2 rounded-lg hover:text-blue-900 transition-colors flex items-center gap-1.5 whitespace-nowrap">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+          ผลงานวิชาการ 57 ชิ้น (Docs)
+        </button>
+        <button data-tab="prompts" class="nav-tab-btn text-slate-600 px-3 py-2 rounded-lg hover:text-blue-900 transition-colors flex items-center gap-1.5 whitespace-nowrap">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+          วิศวกรรมคำสั่ง & สไลด์ (Prompts)
+        </button>
+        <button data-tab="atmosphere" class="nav-tab-btn text-slate-600 px-3 py-2 rounded-lg hover:text-blue-900 transition-colors flex items-center gap-1.5 whitespace-nowrap">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+          บรรยากาศห้องอบรม (Gallery)
+        </button>
+        <button data-tab="media" class="nav-tab-btn text-slate-600 px-3 py-2 rounded-lg hover:text-blue-900 transition-colors flex items-center gap-1.5 whitespace-nowrap">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          มีเดีย & พอดแคสต์ (Podcast)
+        </button>
+        <button data-tab="people" class="nav-tab-btn text-slate-600 px-3 py-2 rounded-lg hover:text-blue-900 transition-colors flex items-center gap-1.5 whitespace-nowrap">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+          ทำเนียบผู้พัฒนา (People)
+        </button>
+        <button data-tab="report" class="nav-tab-btn text-slate-600 px-3 py-2 rounded-lg hover:text-blue-900 transition-colors flex items-center gap-1.5 whitespace-nowrap bg-amber-50 text-amber-900 border border-amber-200">
+          <svg class="w-4 h-4 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+          รายงานผู้บริหาร 10 หน้า (A4 Report)
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- 2. HERO & BLUF TOP METRICS (No Print)      -->
+  <!-- ========================================== -->
+  <section class="bg-gradient-to-b from-slate-900 to-slate-950 text-white py-12 px-4 sm:px-6 lg:px-8 no-print border-b border-slate-800" id="hero-section">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-950 text-blue-300 border border-blue-800 mb-3">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            โครงการอบรมเชิงปฏิบัติการประจำปีงบประมาณ 2569
+          </div>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white mb-2">
+            AI Learning Designer & นวัตกรรมการศึกษายุคปัญญาประดิษฐ์
+          </h2>
+          <p class="text-sm sm:text-base text-slate-300 max-w-3xl leading-relaxed">
+            ศูนย์กลางจัดแสดงผลลัพธ์ยุทธศาสตร์ AI, สถาปัตยกรรม Vibe Coding สู่การประเมินวิทยฐานะ ค.ศ.4 (ครูเชี่ยวชาญ) 
+            และคลังหลักฐานเชิงประจักษ์ 130 รายการ ของคณะผู้บริหารและครูช่าง วิทยาลัยเทคนิคสุราษฎร์ธานี
+          </p>
+        </div>
+
+        <div class="flex-shrink-0 bg-slate-800/80 backdrop-blur rounded-2xl p-4 border border-slate-700 min-w-[260px]">
+          <div class="text-xs text-slate-400 font-semibold mb-1">วันที่จัดกิจกรรมอย่างเป็นทางการ</div>
+          <div class="text-lg font-bold text-amber-400 mb-2">25 กันยายน 2569</div>
+          <div class="text-xs text-slate-300 flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>รับรองผลการจัดอบรม 1 วันเต็ม</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLUF Top Metrics Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4" id="kpi-metrics-container">
+        <!-- Rendered by JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 3. MAIN CONTENT BODY (Tab Sections)        -->
+  <!-- ========================================== -->
+  <main class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+
+    <!-- SECTION: OVERVIEW -->
+    <div id="section-overview" class="space-y-10 no-print">
+      
+      <!-- Executive Summary Card -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm executive-card">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-900 flex items-center justify-center font-bold">
+            BLUF
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-slate-900">สาระสำคัญเชิงยุทธศาสตร์ (Bottom Line Up Front)</h3>
+            <p class="text-xs text-slate-500">บทสรุปความคุ้มค่าและทิศทางการยกระดับสถาบันสำหรับผู้บริหารระดับสูง (C-Level)</p>
+          </div>
+        </div>
+        <p class="text-slate-700 leading-relaxed text-sm sm:text-base mb-6 font-sarabun">
+          การอบรมเชิงปฏิบัติการ <strong>"AI Learning Designer"</strong> ในวันที่ 25 กันยายน 2569 ได้สร้างจุดเปลี่ยนสำคัญในการจัดการศึกษาอาชีวศึกษาของวิทยาลัยเทคนิคสุราษฎร์ธานี 
+          โดยเปลี่ยนบทบาทของครูช่างจาก <em>"ผู้บริโภคเครื่องมือ AI"</em> สู่ <em>"สถาปนิกผู้ออกแบบและสร้างแอปพลิเคชัน (AI Solution Architect)"</em> ผ่านกระบวนการ Vibe Coding 
+          สามารถผลิตผลงานที่จับต้องได้และนำไปใช้งานจริงทันทีรวม <strong>20+ แอปพลิเคชันบน Cloud</strong> และสังเคราะห์เอกสารวิชาการ <strong>57 รายการ</strong> 
+          โดยปราศจากภาระค่าใช้จ่ายด้านโครงสร้างพื้นฐานเซิร์ฟเวอร์ (0 THB Serverless Architecture)
+        </p>
+
+        <!-- 3 Pillars Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 border-t border-slate-100">
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+            <div class="text-xs font-bold uppercase tracking-wider text-blue-900 mb-1">Pillar 1: Competency & PA</div>
+            <div class="font-bold text-slate-900 text-sm mb-1">ขับเคลื่อนสู่ ค.ศ.4 (ครูเชี่ยวชาญ)</div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              ตอบโจทย์เกณฑ์ ว.PA ด้านการริเริ่ม พัฒนา และปรับเปลี่ยนนวัตกรรมการสอนที่ส่งผลต่อคุณภาพผู้เรียนอย่างชัดเจน
+            </p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+            <div class="text-xs font-bold uppercase tracking-wider text-amber-700 mb-1">Pillar 2: Engineering Stack</div>
+            <div class="font-bold text-slate-900 text-sm mb-1">Modern Vibe Coding & Agentic AI</div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              ใช้ Google Antigravity, Gemini Multimodal และ Cloud Platforms (Vercel/Netlify) พัฒนาระบบได้รวดเร็วกว่าเดิม 10 เท่า
+            </p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+            <div class="text-xs font-bold uppercase tracking-wider text-emerald-800 mb-1">Pillar 3: Institutional ROI</div>
+            <div class="font-bold text-slate-900 text-sm mb-1">ผลตอบแทนการลงทุนและการประหยัดเวลา</div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              ประหยัดเวลาเตรียมการสอนและสร้างแบบประเมินจากเดิมเฉลี่ย 14 วันต่อชิ้นงาน เหลือเพียง 2 ชั่วโมงต่อชิ้นงาน
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Execution Timeline (25 Sep 2026) -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm executive-card">
+        <h3 class="text-lg font-bold text-slate-900 mb-2">ไทม์ไลน์การปฏิบัติการเข้มข้น 1 วันเต็ม (25 กันยายน 2569)</h3>
+        <p class="text-xs text-slate-500 mb-6">บันทึกขั้นตอนและหมุดหมายความสำเร็จตามหลักฐานจริงในกลุ่มประสานงาน LINE</p>
+        
+        <div class="relative pl-6 border-l-2 border-slate-200 space-y-6">
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-blue-900 border-2 border-white"></div>
+            <div class="text-xs font-bold text-blue-900 uppercase tracking-wider">07:12 - 08:30 น.</div>
+            <div class="text-sm font-bold text-slate-900">แจกจ่ายคู่มือ Google Antigravity & Podcast ปฐมนิเทศ</div>
+            <p class="text-xs text-slate-600 mt-1">ผู้เข้าร่วมศึกษาเอกสาร antigravity-manual-surat-tech.md และติดตั้ง Skillbook: vibe-coding-idea-architect</p>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-blue-900 border-2 border-white"></div>
+            <div class="text-xs font-bold text-blue-900 uppercase tracking-wider">08:37 - 10:00 น.</div>
+            <div class="text-sm font-bold text-slate-900">การติดตั้งระบบ Vibe Coding & แพลตฟอร์ม Cloud Hosting</div>
+            <p class="text-xs text-slate-600 mt-1">ตั้งค่า Vercel, Netlify และเชื่อมต่อ AI Agent สำหรับคิดโครงสร้างระบบการเรียนการสอน</p>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-amber-500 border-2 border-white"></div>
+            <div class="text-xs font-bold text-amber-700 uppercase tracking-wider">10:03 - 10:50 น. • High Velocity Milestone</div>
+            <div class="text-sm font-bold text-slate-900">การทยอยส่งมอบและ Deploy เว็บแอปพลิเคชัน 20+ ระบบขึ้น Cloud</div>
+            <p class="text-xs text-slate-600 mt-1">ครูช่างปล่อยแอปพลิเคชันแรก (tri-navy) ตามด้วย resistor-worksheet, safetyhub-2046, mecha-psi ฯลฯ สำเร็จภายใน 50 นาที</p>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-emerald-600 border-2 border-white"></div>
+            <div class="text-xs font-bold text-emerald-800 uppercase tracking-wider">11:00 - 16:30 น.</div>
+            <div class="text-sm font-bold text-slate-900">การสังเคราะห์แผนการสอนฐานสมรรถนะ เกณฑ์ Rubric และข้อเสนอ ค.ศ.4</div>
+            <p class="text-xs text-slate-600 mt-1">พัฒนาเอกสารทางวิชาการ 57 ชิ้นงาน ครอบคลุม 4 กลุ่มสาขาวิชาช่าง และสรุปบทเรียนโครงการ</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SECTION: LIVE APPS -->
+    <div id="section-apps" class="space-y-6 hidden no-print">
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+          <div>
+            <div class="flex items-center gap-2">
+              <h3 class="text-xl font-bold text-slate-900">คลังเว็บแอปพลิเคชันการศึกษา (Live Cloud Applications)</h3>
+              <span id="apps-count-badge" class="px-2.5 py-0.5 rounded-full text-xs font-bold badge-navy">20+ Apps</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-1">แอปพลิเคชันจริงที่ครูช่างวิทยาลัยเทคนิคสุราษฎร์ธานีพัฒนาและเปิดใช้งานบน Vercel และ Netlify</p>
+          </div>
+
+          <!-- Search Input -->
+          <div class="relative w-full md:w-72">
+            <input type="text" id="app-search-input" placeholder="ค้นหาชื่อแอป, ครูผู้สอน, แผนก..." class="w-full pl-9 pr-4 py-2 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent">
+            <svg class="w-4 h-4 text-slate-400 absolute left-3 top-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Filter Pills -->
+        <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-100">
+          <button class="app-filter-pill px-3 py-1.5 rounded-lg text-xs font-medium bg-blue-900 text-white transition-colors" data-dept="all">ทั้งหมด (All)</button>
+          <button class="app-filter-pill px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-dept="automotive">ช่างยนต์ (Automotive)</button>
+          <button class="app-filter-pill px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-dept="electrical">ช่างไฟฟ้าและอิเล็กทรอนิกส์</button>
+          <button class="app-filter-pill px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-dept="mechanical">เมคคาทรอนิกส์ / กลโรงงาน / เชื่อม</button>
+          <button class="app-filter-pill px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-dept="management">บริหารวิชาการ & ค.ศ.4</button>
+          <button class="app-filter-pill px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-dept="general">สามัญสัมพันธ์ & โลจิสติกส์</button>
+        </div>
+      </div>
+
+      <!-- Apps Grid Container -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="apps-grid-container">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <!-- SECTION: ACADEMIC DOCUMENTS -->
+    <div id="section-docs" class="space-y-6 hidden no-print">
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+          <div>
+            <div class="flex items-center gap-2">
+              <h3 class="text-xl font-bold text-slate-900">คลังเอกสารและแผนงานวิชาการยุทธศาสตร์ (57 ชิ้นงาน)</h3>
+              <span id="docs-count-badge" class="px-2.5 py-0.5 rounded-full text-xs font-bold badge-gold">57 Artifacts</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-1">แผนการจัดการเรียนรู้ฐานสมรรถนะ, เกณฑ์ Rubric, คู่มือปฏิบัติการ และเอกสารรับรอง ค.ศ.4</p>
+          </div>
+
+          <!-- Doc Search -->
+          <div class="relative w-full md:w-72">
+            <input type="text" id="doc-search-input" placeholder="ค้นหาชื่อเอกสาร, หมวดวิชา..." class="w-full pl-9 pr-4 py-2 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent">
+            <svg class="w-4 h-4 text-slate-400 absolute left-3 top-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Filter Pills -->
+        <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-100">
+          <button class="doc-filter-pill px-3 py-1.5 rounded-lg text-xs font-medium bg-blue-900 text-white transition-colors" data-cat="all">ทั้งหมด (57)</button>
+          <button class="doc-filter-pill px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-cat="automotive">ช่างยนต์ / ยานยนต์ไฟฟ้า</button>
+          <button class="doc-filter-pill px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-cat="electrical">ช่างไฟฟ้าและอิเล็กทรอนิกส์</button>
+          <button class="doc-filter-pill px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-cat="mechanical">เมคคาทรอนิกส์ / เชื่อม / ช่างกล</button>
+          <button class="doc-filter-pill px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-cat="management">บริหารวิชาการ & ค.ศ.4</button>
+          <button class="doc-filter-pill px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-cat="logistics">โลจิสติกส์</button>
+          <button class="doc-filter-pill px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-cat="general">สามัญสัมพันธ์ & ภาษา</button>
+        </div>
+      </div>
+
+      <!-- Documents Grid Container -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3" id="docs-table-container">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <!-- SECTION: PROMPTS & ARCHITECTURE -->
+    <div id="section-prompts" class="space-y-6 hidden no-print">
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+        <h3 class="text-xl font-bold text-slate-900 mb-1">คลังสถาปัตยกรรมคำสั่งและสไลด์ยุทธศาสตร์ (AI Prompts & Architecture)</h3>
+        <p class="text-xs text-slate-500 mb-4">พิมพ์เขียวสถาปัตยกรรม AI, การวิเคราะห์เปรียบเทียบก่อน-หลัง และภาพบันทึกคำสั่ง Live Coding</p>
+
+        <!-- Filter Pills -->
+        <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-100">
+          <button class="prompt-filter-pill px-3 py-1.5 rounded-lg text-xs font-medium bg-blue-900 text-white transition-colors" data-prompt-cat="all">ทั้งหมด (51)</button>
+          <button class="prompt-filter-pill px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-prompt-cat="Strategic Architecture Slides">สไลด์พิมพ์เขียวยุทธศาสตร์ (1-6)</button>
+          <button class="prompt-filter-pill px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-prompt-cat="Comparative Analysis">ตารางเปรียบเทียบใช้ vs ไม่ใช้ AI</button>
+          <button class="prompt-filter-pill px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-prompt-cat="Multimodal Output">Gemini Multimodal Synthesis</button>
+          <button class="prompt-filter-pill px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-prompt-cat="AI Infographic & Guide">อินโฟกราฟิก & คู่มือ</button>
+          <button class="prompt-filter-pill px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors" data-prompt-cat="Live Coding & Prompts">สกรีนช็อตคำสั่ง Prompt</button>
+        </div>
+      </div>
+
+      <!-- Prompts Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="prompts-grid-container">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <!-- SECTION: ATMOSPHERE GALLERY -->
+    <div id="section-atmosphere" class="space-y-6 hidden no-print">
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="text-xl font-bold text-slate-900">ภาพบันทึกบรรยากาศการอบรมเชิงปฏิบัติการจริง (Atmosphere Gallery)</h3>
+            <p class="text-xs text-slate-500 mt-1">คัดเฉพาะภาพถ่ายบุคคล การเรียนรู้ และการมีส่วนร่วมในห้องปฏิบัติการจริง 15 ภาพ (คัดแยกภาพหน้าจอคอมพิวเตอร์ออกตามมาตรฐาน C-Level)</p>
+          </div>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold badge-navy">15 Verified Photos</span>
+        </div>
+      </div>
+
+      <!-- Atmosphere Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="atmosphere-grid-container">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <!-- SECTION: MEDIA & PODCAST -->
+    <div id="section-media" class="space-y-8 hidden no-print">
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+        <h3 class="text-xl font-bold text-slate-900 mb-1">ศูนย์สื่อมัลติมีเดียและพอดแคสต์ (Executive Media Center)</h3>
+        <p class="text-xs text-slate-500">บันทึกเสียงรายการสัมภาษณ์ถอดบทเรียนครูช่าง และคลิปวิดีโอสาธิตอุปกรณ์</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Podcast Player -->
+        <div id="podcast-player-container">
+          <!-- Rendered by JS -->
+        </div>
+
+        <!-- Video Player -->
+        <div id="video-player-container">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION: PEOPLE DIRECTORY -->
+    <div id="section-people" class="space-y-6 hidden no-print">
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="text-xl font-bold text-slate-900">ทำเนียบวิทยากร คณะครูช่าง และผู้พัฒนานวัตกรรม (Faculty Directory)</h3>
+            <p class="text-xs text-slate-500 mt-1">รายชื่อผู้เข้าร่วมโครงการ แผนกวิชา และทักษะปัญญาประดิษฐ์ที่ผ่านการรับรอง</p>
+          </div>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold badge-navy">15 AI Innovators</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="people-grid-container">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <!-- SECTION: FORMAL 10-PAGE REPORT (Always available in print mode, switchable in web) -->
+    <div id="section-report" class="space-y-8 hidden">
+      
+      <!-- Top Action Bar for Web View -->
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex items-center justify-between no-print">
+        <div>
+          <h3 class="text-xl font-bold text-slate-900">รายงานยุทธศาสตร์ผู้บริหารฉบับทางการ (Formal 10-Page A4 Executive Report)</h3>
+          <p class="text-xs text-slate-500 mt-1">จัดพิมพ์ตามมาตรฐานเอกสารทางราชการและมาตรฐานรายงานผู้บริหารระดับ C-Level พร้อมระบบสั่งพิมพ์ลงกระดาษ A4</p>
+        </div>
+        <button class="trigger-print-btn inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-900 text-white hover:bg-blue-800 text-sm font-bold shadow-md transition-all">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+          </svg>
+          <span>สั่งพิมพ์รายงานฉบับสมบูรณ์ (Print A4)</span>
+        </button>
+      </div>
+
+      <!-- ============================================== -->
+      <!-- 10-PAGE PRINT ENGINE CONTAINER                 -->
+      <!-- ============================================== -->
+      <div id="formal-report-section" class="font-sarabun text-slate-900">
+        
+        <!-- PAGE 1: COVER & EXECUTIVE SUMMARY -->
+        <div class="report-page flex flex-col justify-between">
+          <div>
+            <div class="text-center pb-6 border-b-2 border-slate-900 mb-8">
+              <div class="text-xs font-bold uppercase tracking-widest text-slate-600 mb-2">เอกสารรายงานยุทธศาสตร์ระดับผู้บริหาร (C-LEVEL EXECUTIVE REPORT)</div>
+              <h1 class="text-2xl font-extrabold text-slate-900 leading-snug mb-3">
+                รายงานผลลัพธ์ยุทธศาสตร์และการพัฒนานวัตกรรมปัญญาประดิษฐ์ทางการศึกษา<br>
+                โครงการอบรมเชิงปฏิบัติการ "AI Learning Designer"
+              </h1>
+              <div class="text-sm font-bold text-blue-900">วิทยาลัยเทคนิคสุราษฎร์ธานี • 25 กันยายน 2569</div>
+            </div>
+
+            <div class="mb-8">
+              <h2 class="text-base font-bold text-slate-900 border-l-4 border-blue-900 pl-3 mb-3">1. บทสรุปผู้บริหารระดับสูง (Executive Summary & C-Level Mandate)</h2>
+              <p class="text-xs leading-relaxed text-justify mb-3">
+                ตามนโยบายการขับเคลื่อนความเป็นเลิศด้านอาชีวศึกษาของสำนักงานคณะกรรมการการอาชีวศึกษา (สอศ.) ในการยกระดับสมรรถนะครูช่างสู่ยุคดิจิทัล วิทยาลัยเทคนิคสุราษฎร์ธานีได้จัดโครงการอบรมเชิงปฏิบัติการ <strong>"AI Learning Designer"</strong> ในวันที่ 25 กันยายน 2569 เพื่อสร้างความพร้อมในการประยุกต์ใช้ Generative AI และ Agentic AI ในการจัดการเรียนการสอนสายอาชีพ
+              </p>
+              <p class="text-xs leading-relaxed text-justify mb-4">
+                ผลการดำเนินงาน 1 วันเต็ม ประสบความสำเร็จอย่างโดดเด่นในระดับ <strong>100% Adoption Rate</strong> โดยคณะครูช่างทุกท่านสามารถก้าวข้ามขีดจำกัดด้านการเขียนโปรแกรม และร่วมกันพัฒนาแอปพลิเคชันเพื่อการศึกษาที่เปิดใช้งานจริงบน Cloud ได้มากถึง <strong>20+ เว็บแอปพลิเคชัน</strong> พร้อมสังเคราะห์เอกสารและแผนการสอนฐานสมรรถนะรวม <strong>57 ชิ้นงาน</strong> ภายใต้กรอบงบประมาณโครงสร้างพื้นฐานคลาวด์ <strong>0 บาท (Zero Server Cost)</strong>
+              </p>
+            </div>
+
+            <div class="bg-slate-50 p-5 rounded-lg border border-slate-200 mb-6">
+              <h3 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3 text-center">ตัวเลขชี้วัดความสำเร็จเชิงประจักษ์ (Key Strategic Metrics - BLUF)</h3>
+              <div class="grid grid-cols-3 gap-4 text-center">
+                <div class="border-r border-slate-200 pr-2">
+                  <div class="text-xl font-black text-blue-900">100%</div>
+                  <div class="text-[11px] font-semibold text-slate-700">Adoption Rate</div>
+                  <div class="text-[9px] text-slate-500">บุคลากรสร้าง AI สำเร็จทุกคน</div>
+                </div>
+                <div class="border-r border-slate-200 pr-2">
+                  <div class="text-xl font-black text-blue-900">20+ Apps</div>
+                  <div class="text-[11px] font-semibold text-slate-700">Live Deployments</div>
+                  <div class="text-[9px] text-slate-500">เปิดใช้งานจริงบน Vercel/Netlify</div>
+                </div>
+                <div>
+                  <div class="text-xl font-black text-blue-900">57 ชิ้นงาน</div>
+                  <div class="text-[11px] font-semibold text-slate-700">Academic Artifacts</div>
+                  <div class="text-[9px] text-slate-500">รองรับการขอประเมิน ค.ศ.4</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="report-footer-rule">
+            <span>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</span>
+            <span>หน้า 1 / 10</span>
+          </div>
+        </div>
+
+        <!-- PAGE 2: PROBLEM STATEMENT & PARADIGM SHIFT -->
+        <div class="report-page flex flex-col justify-between">
+          <div>
+            <div class="report-header-rule">
+              <span class="text-xs font-bold text-slate-500">มิติเชิงยุทธศาสตร์: ปัญหาและความจำเป็นในการเปลี่ยนแปลง</span>
+            </div>
+            
+            <h2 class="text-base font-bold text-slate-900 border-l-4 border-blue-900 pl-3 mb-4">2. สภาพปัญหาและการเปลี่ยนผ่านกระบวนทัศน์อาชีวศึกษา (Paradigm Shift)</h2>
+            
+            <div class="space-y-4 text-xs leading-relaxed text-justify">
+              <p>
+                <strong>2.1 ความท้าทายเดิมของการศึกษาอาชีวศึกษา (The Traditional Bottleneck):</strong><br>
+                การจัดการเรียนการสอนช่างอุตสาหกรรมในอดีตต้องเผชิญกับอุปสรรคสำคัญ 3 ประการ: 
+                1) การเตรียมสื่อและใบงานภาคปฏิบัติใช้เวลานาน เฉลี่ย 10-14 วันต่อหนึ่งหน่วยการเรียนรู้ 
+                2) สื่อจำลองทางเทคนิค (Simulators) มีราคาสูง ต้องพึ่งพาซอฟต์แวร์นำเข้าจากต่างประเทศ และมีข้อจำกัดเรื่องลิขสิทธิ์ 
+                และ 3) ข้อจำกัดด้านทักษะการเขียนโปรแกรมของครูช่าง ทำให้ไม่สามารถสร้างสรรค์สื่อดิจิทัลเฉพาะทางที่ตรงกับบริบทโรงฝึกงานได้เอง
+              </p>
+
+              <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+                <h4 class="font-bold text-slate-900 mb-2">ตารางเปรียบเทียบกระบวนทัศน์การจัดการเรียนการสอน (Paradigm Comparison)</h4>
+                <table class="w-full text-[10px] border-collapse">
+                  <thead>
+                    <tr class="border-b border-slate-300 text-left">
+                      <th class="py-1.5 font-bold">มิติการดำเนินงาน</th>
+                      <th class="py-1.5 font-bold text-slate-500">กระบวนการเดิม (Traditional)</th>
+                      <th class="py-1.5 font-bold text-blue-900">กระบวนการยุค AI Agent</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-200">
+                    <tr>
+                      <td class="py-1.5 font-semibold">การจัดทำแผนและสื่อ</td>
+                      <td class="py-1.5 text-slate-600">เขียนด้วยมือ / คัดลอกเอกสาร (14 วัน)</td>
+                      <td class="py-1.5 font-semibold text-blue-900">สังเคราะห์ผ่าน Vibe Coding (2 ชม.)</td>
+                    </tr>
+                    <tr>
+                      <td class="py-1.5 font-semibold">การพัฒนาแบบจำลองแล็บ</td>
+                      <td class="py-1.5 text-slate-600">ซื้อชุดทดลองราคาแพง / ขาดแคลน</td>
+                      <td class="py-1.5 font-semibold text-blue-900">สร้าง Web Simulator ใช้งานได้ฟรี</td>
+                    </tr>
+                    <tr>
+                      <td class="py-1.5 font-semibold">การวัดและประเมินผล</td>
+                      <td class="py-1.5 text-slate-600">เกณฑ์อัตวิสัย / ขาดมาตรฐาน Rubric</td>
+                      <td class="py-1.5 font-semibold text-blue-900">เกณฑ์ Psychomotor Rubric ชัดเจนตาม ว.PA</td>
+                    </tr>
+                    <tr>
+                      <td class="py-1.5 font-semibold">บทบาทของครูช่าง</td>
+                      <td class="py-1.5 text-slate-600">ผู้ถ่ายทอดความรู้ตามตำรา</td>
+                      <td class="py-1.5 font-semibold text-blue-900">AI Learning Designer & Solution Architect</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <p>
+                <strong>2.2 การเปลี่ยนสถานะของครูช่าง (From Consumer to Creator):</strong><br>
+                โครงการนี้ได้พิสูจน์ให้เห็นว่า เมื่อครูช่างได้รับการติดอาวุธด้วยระเบียบวิธี <em>"Agentic Prompting & Vibe Coding"</em> 
+                ครูผู้สอนสามารถแปลงความเชี่ยวชาญเชิงช่าง (Domain Expertise) เช่น การวิเคราะห์หัวฉีดคอมมอนเรล หรือการคำนวณรหัสสีตัวต้านทาน 
+                ให้กลายเป็นซอฟต์แวร์อินเทอร์แอคทีฟที่ตอบสนองต่อผู้เรียนได้ทันที
+              </p>
+            </div>
+          </div>
+
+          <div class="report-footer-rule">
+            <span>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</span>
+            <span>หน้า 2 / 10</span>
+          </div>
+        </div>
+
+        <!-- PAGE 3: TECHNICAL BLUEPRINT & ARCHITECTURE -->
+        <div class="report-page flex flex-col justify-between">
+          <div>
+            <div class="report-header-rule">
+              <span class="text-xs font-bold text-slate-500">สถาปัตยกรรมทางเทคนิค: พิมพ์เขียว Vibe Coding & Multi-Agent Stack</span>
+            </div>
+            
+            <h2 class="text-base font-bold text-slate-900 border-l-4 border-blue-900 pl-3 mb-4">3. พิมพ์เขียวสถาปัตยกรรม Vibe Coding & Multi-Agent Stack</h2>
+
+            <div class="space-y-4 text-xs leading-relaxed text-justify">
+              <p>
+                การพัฒนาซอฟต์แวร์ในโครงการนี้ใช้แนวคิดสถาปัตยกรรม <strong>"Agent-Native & Serverless Web Stack"</strong> 
+                ซึ่งตัดขั้นตอนการตั้งค่าเซิร์ฟเวอร์แบบเดิมทิ้งไปทั้งหมด โดยแบ่งสถาปัตยกรรมออกเป็น 4 ระดับ (Layers):
+              </p>
+
+              <div class="p-4 bg-slate-900 text-white rounded-lg text-[10px] font-mono leading-normal">
+                <div class="text-amber-400 font-bold mb-1">// ENTERPRISE VOCATIONAL AI ARCHITECTURE BLUEPRINT</div>
+                <div class="text-slate-400">Layer 1: Reasoning & Synthesis</div>
+                <div class="text-emerald-400 ml-4">↳ Google Antigravity Agent + Gemini Multimodal Engine</div>
+                <div class="text-slate-400 mt-1">Layer 2: Prompt & Logic Orchestration</div>
+                <div class="text-emerald-400 ml-4">↳ Skillbook: vibe-coding-idea-architect + Rubric Synthesizer</div>
+                <div class="text-slate-400 mt-1">Layer 3: Interactive Application Runtime</div>
+                <div class="text-emerald-400 ml-4">↳ Modern SPA (HTML5, Tailwind, React, Dynamic Canvas / SVG)</div>
+                <div class="text-slate-400 mt-1">Layer 4: Zero-Cost Global Edge Deployment</div>
+                <div class="text-emerald-400 ml-4">↳ Vercel Edge Network & Netlify Global CDN (Zero Maintenance)</div>
+              </div>
+
+              <p>
+                <strong>3.1 ความมั่นคงปลอดภัยและการจัดการค่าใช้จ่าย (FinOps & Security):</strong><br>
+                ระบบทั้งหมดถูก Deploy บนสถาปัตยกรรม Jamstack / Serverless ส่งผลให้วิทยาลัยเทคนิคสุราษฎร์ธานีไม่มีต้นทุนด้าน Server Hosting, 
+                ไม่ต้องกังวลเรื่องการ Patch ช่องโหว่ของระบบปฏิบัติการ และรองรับการเข้าถึงพร้อมกันของนักศึกษาหลายพันคนได้ทันที
+              </p>
+
+              <p>
+                <strong>3.2 ความเป็นอิสระของสถาบัน (No Vendor Lock-in):</strong><br>
+                ซอร์สโค้ดและแอสเซททั้งหมดถูกจัดเก็บในรูปแบบมาตรฐานเปิด (Standard Web Assets) สามารถย้ายเซิร์ฟเวอร์หรือนำไปรันบนระบบ Local 
+                ภายในห้องปฏิบัติการของวิทยาลัยได้ 100% แม้ในกรณีที่ไม่มีการเชื่อมต่ออินเทอร์เน็ตภายนอก
+              </p>
+            </div>
+          </div>
+
+          <div class="report-footer-rule">
+            <span>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</span>
+            <span>หน้า 3 / 10</span>
+          </div>
+        </div>
+
+        <!-- PAGE 4: EXECUTION TIMELINE (25 SEP 2026) -->
+        <div class="report-page flex flex-col justify-between">
+          <div>
+            <div class="report-header-rule">
+              <span class="text-xs font-bold text-slate-500">การขับเคลื่อนเชิงปฏิบัติการ: ไทม์ไลน์และหมุดหมาย 1 วันเต็ม</span>
+            </div>
+            
+            <h2 class="text-base font-bold text-slate-900 border-l-4 border-blue-900 pl-3 mb-4">4. ไทม์ไลน์การขับเคลื่อน 1 วันเต็ม (25 กันยายน 2569)</h2>
+
+            <div class="space-y-4 text-xs leading-relaxed text-justify">
+              <p>
+                โครงการดำเนินการในรูปแบบ <em>"Intensive Sprint Workshop"</em> ตั้งแต่เวลา 07:12 น. ถึง 16:30 น. โดยแบ่งช่วงการทำงานออกเป็น 4 หมุดหมายยุทธศาสตร์ (Milestones):
+              </p>
+
+              <div class="space-y-3 pt-2">
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                  <div class="flex justify-between items-center mb-1">
+                    <span class="font-bold text-blue-900">หมุดหมายที่ 1: การวางรากฐานและติดตั้ง Agentic AI (07:12 - 08:37 น.)</span>
+                    <span class="text-[10px] text-slate-500 font-bold">100% Readiness</span>
+                  </div>
+                  <p class="text-[10px] text-slate-600">
+                    แจกจ่ายเอกสารคู่มือ antigravity-manual-surat-tech.md และติดตั้ง Skillbook สำหรับวิทยาลัย พร้อมรับฟังพอดแคสต์สร้างความเข้าใจเบื้องต้น
+                  </p>
+                </div>
+
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                  <div class="flex justify-between items-center mb-1">
+                    <span class="font-bold text-blue-900">หมุดหมายที่ 2: การพัฒนาแอปพลิเคชันและการเปิดตัวบน Cloud (08:37 - 10:50 น.)</span>
+                    <span class="text-[10px] text-amber-700 font-bold">Velocity Peak</span>
+                  </div>
+                  <p class="text-[10px] text-slate-600">
+                    ครูช่างทุกคนลงมือปฏิบัติการเขียนโค้ดผ่าน AI Agent โดยเริ่ม Deploy แอปพลิเคชันแรก (tri-navy) เวลา 10:03 น. และตามด้วยแอปพลิเคชันของครูช่างอีกกว่า 19 ระบบจนครบ 20+ แอปก่อนเวลา 10:50 น.
+                  </p>
+                </div>
+
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                  <div class="flex justify-between items-center mb-1">
+                    <span class="font-bold text-blue-900">หมุดหมายที่ 3: การสร้างคลังเอกสารและแบบประเมินภาคปฏิบัติ (11:00 - 14:30 น.)</span>
+                    <span class="text-[10px] text-emerald-700 font-bold">57 Artifacts</span>
+                  </div>
+                  <p class="text-[10px] text-slate-600">
+                    สังเคราะห์แผนการจัดการเรียนรู้ฐานสมรรถนะ เกณฑ์ Rubric งานซ่อมบำรุง และคู่มือการเรียนการสอนรายวิชาช่างรวม 57 รายการ
+                  </p>
+                </div>
+
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                  <div class="flex justify-between items-center mb-1">
+                    <span class="font-bold text-blue-900">หมุดหมายที่ 4: การนำเสนอผลงานและการสังเคราะห์ยุทธศาสตร์ (14:30 - 16:30 น.)</span>
+                    <span class="text-[10px] text-blue-900 font-bold">Institutional Sign-Off</span>
+                  </div>
+                  <p class="text-[10px] text-slate-600">
+                    การสาธิตแอปพลิเคชันจริงหน้าห้องอบรม การแลกเปลี่ยนเรียนรู้ข้ามแผนกวิชา และการสรุปรายงานผลลัพธ์เสนอผู้บริหารวิทยาลัย
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="report-footer-rule">
+            <span>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</span>
+            <span>หน้า 4 / 10</span>
+          </div>
+        </div>
+
+        <!-- PAGE 5: 4 DEPARTMENTAL CASE STUDIES -->
+        <div class="report-page flex flex-col justify-between">
+          <div>
+            <div class="report-header-rule">
+              <span class="text-xs font-bold text-slate-500">ผลงานเชิงประจักษ์: กรณีศึกษา 4 สาขาวิชาช่าง</span>
+            </div>
+            
+            <h2 class="text-base font-bold text-slate-900 border-l-4 border-blue-900 pl-3 mb-3">5. กรณีศึกษาและผลงานจริง 4 สาขาวิชาช่าง</h2>
+
+            <div class="space-y-3 text-xs leading-relaxed">
+              <!-- Dept 1 -->
+              <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-bold text-blue-900">1. สาขาวิชาช่างยนต์ / ยานยนต์ไฟฟ้า (Automotive & EV)</span>
+                  <span class="text-[9px] font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">Deploy สำเร็จ</span>
+                </div>
+                <p class="text-[10px] text-slate-600 mb-1">
+                  <strong>แอปพลิเคชันเด่น:</strong> STTC EduStudio (sttc-edustudio-1.vercel.app) และแบบจำลองวิเคราะห์อาการเสีย 456-wine-xi<br>
+                  <strong>ผลงานวิชาการ:</strong> Case Study Automotive Charging System Diagnosis, Psychomotor Rubric งานปลดระบบแรงดันสูง EV, ใบเนื้อหาระบบคอมมอนเรล Toyota Hilux
+                </p>
+              </div>
+
+              <!-- Dept 2 -->
+              <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-bold text-blue-900">2. สาขาวิชาช่างไฟฟ้าและอิเล็กทรอนิกส์ (Electrical & Electronics)</span>
+                  <span class="text-[9px] font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">Deploy สำเร็จ</span>
+                </div>
+                <p class="text-[10px] text-slate-600 mb-1">
+                  <strong>แอปพลิเคชันเด่น:</strong> Resistor Worksheet Interactive (resistor-worksheet.vercel.app) และ Switch Debouncing Simulator<br>
+                  <strong>ผลงานวิชาการ:</strong> Electrical Breaker Troubleshooting Guide, ใบความรู้ระบบจัดการแบตเตอรี่ (BMS), แผนการสอนมอเตอร์ไฟฟ้ากระแสสลับ
+                </p>
+              </div>
+
+              <!-- Dept 3 -->
+              <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-bold text-blue-900">3. สาขาวิชาเมคคาทรอนิกส์และเทคนิคพื้นฐาน (Mechatronics & Mechanical)</span>
+                  <span class="text-[9px] font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">Deploy สำเร็จ</span>
+                </div>
+                <p class="text-[10px] text-slate-600 mb-1">
+                  <strong>แอปพลิเคชันเด่น:</strong> STTC PneumoTwin (sttcpneumotwin.vercel.app), Mecha PSI และ SafetyHub 2046<br>
+                  <strong>ผลงานวิชาการ:</strong> Metrology Evaluation Report, แผนการสอนนิวเมติกส์อุตสาหกรรม, ข้อสอบมาตรฐานช่างเชื่อม
+                </p>
+              </div>
+
+              <!-- Dept 4 -->
+              <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-bold text-blue-900">4. สาขาวิชาสามัญสัมพันธ์และบริหารยุทธศาสตร์ (General Education & Management)</span>
+                  <span class="text-[9px] font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">Deploy สำเร็จ</span>
+                </div>
+                <p class="text-[10px] text-slate-600 mb-1">
+                  <strong>แอปพลิเคชันเด่น:</strong> ระบบสังเคราะห์นวัตกรรมสู่ ค.ศ.4 (tri-navy.vercel.app), Logistics Media Engine และบทเรียน SCORM ภาษาอังกฤษช่าง<br>
+                  <strong>ผลงานวิชาการ:</strong> Executive Academic Management Copilot, คู่มือการคัดแยกสินค้าขาเข้า, แบบร่างระบบดูแลช่วยเหลือนักเรียน
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="report-footer-rule">
+            <span>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</span>
+            <span>หน้า 5 / 10</span>
+          </div>
+        </div>
+
+        <!-- PAGE 6: ACADEMIC RIGOR & ค.ศ.4 PROGRESSION (ว.PA) -->
+        <div class="report-page flex flex-col justify-between">
+          <div>
+            <div class="report-header-rule">
+              <span class="text-xs font-bold text-slate-500">ความก้าวหน้าทางวิชาการ: การเตรียมความพร้อมสู่ ค.ศ.4 (ครูเชี่ยวชาญ)</span>
+            </div>
+            
+            <h2 class="text-base font-bold text-slate-900 border-l-4 border-blue-900 pl-3 mb-4">6. กรอบการยกระดับวิทยฐานะ ค.ศ.4 (ครูเชี่ยวชาญ) ตามเกณฑ์ ว.PA</h2>
+
+            <div class="space-y-4 text-xs leading-relaxed text-justify">
+              <p>
+                ตามหลักเกณฑ์และวิธีการประเมินตำแหน่งและวิทยฐานะข้าราชการครูและบุคลากรทางการศึกษา (ว.PA) ของ ก.ค.ศ. 
+                ผู้ขอรับการประเมินเพื่อมีหรือเลื่อนเป็น <strong>"ครูเชี่ยวชาญ (ค.ศ.4)"</strong> จะต้องแสดงหลักฐานเชิงประจักษ์ถึงการ 
+                <strong>"คิดค้น พัฒนา (Create & Innovate)"</strong> นวัตกรรมการจัดการเรียนรู้ที่ส่งผลต่อคุณภาพผู้เรียน และสามารถเป็นแบบอย่างหรือให้คำปรึกษาแก่ผู้อื่นได้
+              </p>
+
+              <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+                <h4 class="font-bold text-slate-900 mb-2">การสอดรับของผลงานโครงการกับเกณฑ์การประเมิน 3 ด้าน 15 ตัวชี้วัด</h4>
+                <div class="space-y-2 text-[10px]">
+                  <div>
+                    <strong class="text-blue-900">ด้านที่ 1: ด้านการจัดการเรียนรู้</strong><br>
+                    • นวัตกรรมแอปพลิเคชันที่สร้างขึ้นสอดคล้องกับหลักสูตรฐานสมรรถนะวิชาชีพ (วท.สุราษฎร์ฯ)<br>
+                    • มีการวัดและประเมินผลผ่าน Interactive Simulator และ Psychomotor Rubric ที่มีความเที่ยงตรง
+                  </div>
+                  <div>
+                    <strong class="text-blue-900">ด้านที่ 2: ด้านการส่งเสริมและสนับสนุนการจัดการเรียนรู้</strong><br>
+                    • การสร้างระบบจัดเก็บข้อมูลผลสัมฤทธิ์และแฟ้มสะสมงานดิจิทัล (Skill Passport)<br>
+                    • มีระบบดูแลช่วยเหลือผู้เรียนรายบุคคลผ่านเครื่องมือคัดกรองอัจฉริยะ (Home Visit Copilot)
+                  </div>
+                  <div>
+                    <strong class="text-blue-900">ด้านที่ 3: ด้านการพัฒนาตนเองและวิชาชีพ</strong><br>
+                    • เกิดชุมชนแห่งการเรียนรู้ทางวิชาชีพ (PLC) ข้ามแผนกวิชาเพื่อบูรณาการเทคโนโลยี AI<br>
+                    • สามารถเผยแพร่นวัตกรรมเป็นแบบอย่างแก่สถานศึกษาอาชีวศึกษาอื่นทั่วประเทศ
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                <strong>ข้อสรุปเชิงยุทธศาสตร์:</strong> ผลงานและร่องรอยหลักฐานทั้ง 130 รายการที่จัดเก็บในพอร์ทัลนี้ 
+                เป็นเอกสารหลักฐานที่มีความสมบูรณ์ พร้อมแนบในระบบ DPA (Digital Performance Appraisal) ของสำนักงาน ก.ค.ศ. ได้ทันที
+              </p>
+            </div>
+          </div>
+
+          <div class="report-footer-rule">
+            <span>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</span>
+            <span>หน้า 6 / 10</span>
+          </div>
+        </div>
+
+        <!-- PAGE 7: AI GOVERNANCE & PDPA COMPLIANCE -->
+        <div class="report-page flex flex-col justify-between">
+          <div>
+            <div class="report-header-rule">
+              <span class="text-xs font-bold text-slate-500">ธรรมาภิบาลและความปลอดภัย: จริยธรรม AI และ PDPA</span>
+            </div>
+            
+            <h2 class="text-base font-bold text-slate-900 border-l-4 border-blue-900 pl-3 mb-4">7. ธรรมาภิบาลปัญญาประดิษฐ์ ความปลอดภัยข้อมูล และ PDPA</h2>
+
+            <div class="space-y-4 text-xs leading-relaxed text-justify">
+              <p>
+                การนำ AI มาใช้ในสถานศึกษาจำเป็นต้องมีกรอบการกำกับดูแลที่รัดกุม เพื่อป้องกันปัญหาด้านจริยธรรมและการละเมิดข้อมูลส่วนบุคคล 
+                วิทยาลัยเทคนิคสุราษฎร์ธานีได้กำหนด <strong>4 มาตรการความปลอดภัยขั้นสูงสุด</strong>:
+              </p>
+
+              <div class="grid grid-cols-2 gap-3 text-[10px]">
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                  <div class="font-bold text-blue-900 mb-1">1. การคุ้มครองข้อมูลส่วนบุคคล (PDPA)</div>
+                  <p class="text-slate-600">
+                    ห้ามส่งข้อมูลที่มีความอ่อนไหวของนักศึกษา (ชื่อจริง-นามสกุล, เลขประจำตัวประชาชน, ผลการเรียนดิบ) เข้าสู่ Public LLMs 
+                    โดยระบบทั้งหมดจะผ่านการทำ Data Anonymization ก่อนเสมอ
+                  </p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                  <div class="font-bold text-blue-900 mb-1">2. ความรับผิดชอบทางวิชาการ (Academic Integrity)</div>
+                  <p class="text-slate-600">
+                    AI ทำหน้าที่เป็น <em>"Co-pilot / ผู้ช่วยร่าง"</em> เท่านั้น เนื้อหาทางเทคนิคและข้อสอบต้องผ่านการตรวจทานและรับรอง (Human-in-the-Loop) 
+                    โดยครูผู้สอนที่มีใบประกอบวิชาชีพทุกครั้ง
+                  </p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                  <div class="font-bold text-blue-900 mb-1">3. ความโปร่งใสและการอ้างอิง (Transparency)</div>
+                  <p class="text-slate-600">
+                    สื่อการสอนที่สร้างขึ้นต้องระบุอย่างเปิดเผยว่ามีกระบวนการร่วมพัฒนาด้วย AI และมีบันทึกประวัติ System Prompt ไว้อย่างเป็นระบบ
+                  </p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                  <div class="font-bold text-blue-900 mb-1">4. ความปลอดภัยในโรงฝึกงาน (Safety First)</div>
+                  <p class="text-slate-600">
+                    คำสั่งและขั้นตอนการซ่อมบำรุงที่สร้างจาก AI ต้องสอดคล้องกับมาตรฐานความปลอดภัยสากล เช่น NFPA 70E ในงานไฟฟ้าแรงสูง และมาตรฐาน OSHA
+                  </p>
+                </div>
+              </div>
+
+              <div class="p-3 bg-blue-50 border border-blue-200 rounded-lg text-blue-900">
+                <strong>การรับรองความปลอดภัย:</strong> โครงการนี้ได้ปฏิบัติตามแนวทางการใช้ปัญญาประดิษฐ์อย่างมีความรับผิดชอบ (Responsible AI) 
+                ของกระทรวงศึกษาธิการ และไม่มีการรั่วไหลของข้อมูลลับของสถาบันตลอดการจัดอบรม
+              </div>
+            </div>
+          </div>
+
+          <div class="report-footer-rule">
+            <span>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</span>
+            <span>หน้า 7 / 10</span>
+          </div>
+        </div>
+
+        <!-- PAGE 8: ROI & CLOUD SAVINGS -->
+        <div class="report-page flex flex-col justify-between">
+          <div>
+            <div class="report-header-rule">
+              <span class="text-xs font-bold text-slate-500">การวิเคราะห์ความคุ้มค่า: ผลตอบแทนการลงทุนและประสิทธิภาพทรัพยากร</span>
+            </div>
+            
+            <h2 class="text-base font-bold text-slate-900 border-l-4 border-blue-900 pl-3 mb-4">8. การวิเคราะห์ความคุ้มค่า ROI และการประหยัดทรัพยากร</h2>
+
+            <div class="space-y-4 text-xs leading-relaxed text-justify">
+              <p>
+                เมื่อวิเคราะห์เปรียบเทียบเชิงเศรษฐศาสตร์ระหว่างการจัดจ้างพัฒนาระบบซอฟต์แวร์ภายนอก (Outsourcing) 
+                กับการสร้างขีดความสามารถภายในสถาบันผ่านโครงการนี้ แสดงผลลัพธ์ความคุ้มค่าที่ชัดเจน:
+              </p>
+
+              <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+                <table class="w-full text-[10px] border-collapse">
+                  <thead>
+                    <tr class="border-b border-slate-300 text-left">
+                      <th class="py-1.5 font-bold">รายการทรัพยากร</th>
+                      <th class="py-1.5 font-bold text-slate-500">มูลค่าหากจัดซื้อจัดจ้างภายนอก</th>
+                      <th class="py-1.5 font-bold text-blue-900">ต้นทุนจริงผ่านโครงการ AI</th>
+                      <th class="py-1.5 font-bold text-emerald-800">มูลค่าที่ประหยัดได้</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-200">
+                    <tr>
+                      <td class="py-1.5">พัฒนาเว็บแอปพลิเคชัน 20 ระบบ (ระบบละ 30,000 บ.)</td>
+                      <td class="py-1.5 text-slate-600">600,000 บาท</td>
+                      <td class="py-1.5 font-bold text-blue-900">0 บาท (ครูสร้างเอง)</td>
+                      <td class="py-1.5 font-bold text-emerald-800">+600,000 บาท</td>
+                    </tr>
+                    <tr>
+                      <td class="py-1.5">ค่าบริการ Cloud Server & Hosting รายปี</td>
+                      <td class="py-1.5 text-slate-600">72,000 บาท/ปี</td>
+                      <td class="py-1.5 font-bold text-blue-900">0 บาท (Serverless)</td>
+                      <td class="py-1.5 font-bold text-emerald-800">+72,000 บาท/ปี</td>
+                    </tr>
+                    <tr>
+                      <td class="py-1.5">สังเคราะห์เอกสารและเกณฑ์ Rubric 57 รายการ</td>
+                      <td class="py-1.5 text-slate-600">114,000 บาท</td>
+                      <td class="py-1.5 font-bold text-blue-900">0 บาท (AI Co-pilot)</td>
+                      <td class="py-1.5 font-bold text-emerald-800">+114,000 บาท</td>
+                    </tr>
+                    <tr class="bg-blue-50/50 font-bold">
+                      <td class="py-2 text-slate-900">รวมมูลค่าผลประโยชน์ทางตรง (Total Direct Value)</td>
+                      <td class="py-2 text-slate-600">786,000 บาท</td>
+                      <td class="py-2 text-blue-900">0 บาท</td>
+                      <td class="py-2 text-emerald-800">+786,000 บาท</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <p>
+                <strong>ผลประโยชน์เชิงประสิทธิภาพเวลา (Time Efficiency Gains):</strong><br>
+                ครูผู้เข้าอบรมสามารถลดเวลาในการจัดทำสื่อการสอน แผนการจัดการเรียนรู้ และแบบประเมินสมรรถนะลงได้เฉลี่ย <strong>85%</strong> 
+                (จากเดิมเฉลี่ย 14 วันต่อรายวิชา เหลือเพียง 2 ชั่วโมง) ทำให้ครูมีเวลาทุ่มเทให้กับการสอนภาคปฏิบัติและการดูแลเอาใจใส่ผู้เรียนอย่างใกล้ชิด
+              </p>
+            </div>
+          </div>
+
+          <div class="report-footer-rule">
+            <span>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</span>
+            <span>หน้า 8 / 10</span>
+          </div>
+        </div>
+
+        <!-- PAGE 9: 90-DAY INSTITUTIONAL ROADMAP -->
+        <div class="report-page flex flex-col justify-between">
+          <div>
+            <div class="report-header-rule">
+              <span class="text-xs font-bold text-slate-500">แผนยุทธศาสตร์ต่อเนื่อง: แผนที่นำทาง 90 วัน สู่การขยายผลทั้งสถาบัน</span>
+            </div>
+            
+            <h2 class="text-base font-bold text-slate-900 border-l-4 border-blue-900 pl-3 mb-4">9. แผนที่นำทางยุทธศาสตร์ 90 วัน (90-Day Scaling Roadmap)</h2>
+
+            <div class="space-y-4 text-xs leading-relaxed text-justify">
+              <p>
+                เพื่อให้ผลลัพธ์ของโครงการเกิดความต่อเนื่องและยั่งยืน วิทยาลัยเทคนิคสุราษฎร์ธานีได้กำหนดแผนปฏิบัติการ 3 ระยะ (30-60-90 วัน):
+              </p>
+
+              <div class="space-y-3 pt-1">
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                  <div class="font-bold text-blue-900 mb-1">ระยะที่ 1 (วันที่ 1 - 30): การทดสอบภาคสนามในห้องเรียนจริง (Classroom Pilot)</div>
+                  <p class="text-[10px] text-slate-600">
+                    • นำแอปพลิเคชันทั้ง 20+ ระบบไปใช้งานจริงกับนักศึกษา ปวช. และ ปวส. ในภาคเรียนปัจจุบัน<br>
+                    • เก็บรวบรวมข้อเสนอแนะและผลสัมฤทธิ์ทางการเรียนเพื่อนำมาปรับปรุงระบบอย่างต่อเนื่อง
+                  </p>
+                </div>
+
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                  <div class="font-bold text-blue-900 mb-1">ระยะที่ 2 (วันที่ 31 - 60): การจัดตั้งศูนย์ AI Vocational Lab (Institutional Hub)</div>
+                  <p class="text-[10px] text-slate-600">
+                    • จัดตั้งคลินิกนวัตกรรม AI เพื่อให้คำปรึกษาแก่ครูแผนกอื่นๆ ที่ยังไม่ได้เข้าร่วมในเฟสแรก<br>
+                    • นำเอกสารผลงานวิชาการ 57 รายการเข้าสู่กระบวนการเขียนข้อเสนอขอรับการประเมิน ค.ศ.4
+                  </p>
+                </div>
+
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+                  <div class="font-bold text-blue-900 mb-1">ระยะที่ 3 (วันที่ 61 - 90): การถ่ายทอดสู่ระดับอาชีวศึกษาภาคใต้ (Regional Scaling)</div>
+                  <p class="text-[10px] text-slate-600">
+                    • จัดสัมมนาวิชาการระดับภาคเพื่อเผยแพร่รูปแบบ "สุราษฎร์โมเดล: ครูช่างสร้างแอปด้วย AI Agent"<br>
+                    • ตีพิมพ์รายงานผลงานและคู่มือการเรียนการสอนเพื่อเป็นวิทยาทานแก่วงการอาชีวศึกษาไทย
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="report-footer-rule">
+            <span>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</span>
+            <span>หน้า 9 / 10</span>
+          </div>
+        </div>
+
+        <!-- PAGE 10: EXECUTIVE SIGN-OFF & ENDORSEMENT -->
+        <div class="report-page flex flex-col justify-between">
+          <div>
+            <div class="report-header-rule">
+              <span class="text-xs font-bold text-slate-500">ส่วนรับรองผลและลงนาม: การอนุมัติและรับรองผลลัพธ์ยุทธศาสตร์</span>
+            </div>
+            
+            <h2 class="text-base font-bold text-slate-900 border-l-4 border-blue-900 pl-3 mb-4">10. ส่วนรับรองและการลงนามผู้บริหาร (Executive Sign-Off)</h2>
+
+            <div class="space-y-4 text-xs leading-relaxed text-justify mb-8">
+              <p>
+                เอกสารรายงานฉบับนี้ ได้รับการประมวลผล สังเคราะห์ และตรวจสอบความถูกต้องของข้อมูลหลักฐานเชิงประจักษ์ 
+                จากบันทึกกิจกรรมจริง โค้ดต้นฉบับ ไฟล์เอกสารวิชาการ และภาพถ่ายบรรยากาศในโครงการอบรมเชิงปฏิบัติการ 
+                <strong>"AI Learning Designer"</strong> วิทยาลัยเทคนิคสุราษฎร์ธานี ประจำวันที่ 25 กันยายน 2569 ครบถ้วนทุกประการ
+              </p>
+            </div>
+
+            <!-- Signature Boxes -->
+            <div class="grid grid-cols-2 gap-8 pt-6 border-t border-slate-200">
+              
+              <div class="text-center">
+                <div class="text-xs font-bold text-slate-700 mb-12">ผู้จัดทำและวิทยากรที่ปรึกษาสถาปัตยกรรม AI</div>
+                <div class="border-b border-slate-400 w-48 mx-auto mb-2"></div>
+                <div class="text-xs font-bold text-slate-900">(อาจารย์ตรี / tri333)</div>
+                <div class="text-[10px] text-slate-500">วิทยากรหลักและที่ปรึกษาด้านสถาปัตยกรรมปัญญาประดิษฐ์องค์กร</div>
+                <div class="text-[10px] text-slate-400 mt-1">วันที่ 25 กันยายน 2569</div>
+              </div>
+
+              <div class="text-center">
+                <div class="text-xs font-bold text-slate-700 mb-12">ผู้อนุมัติและรับรองรายงานระดับสถาบัน</div>
+                <div class="border-b border-slate-400 w-48 mx-auto mb-2"></div>
+                <div class="text-xs font-bold text-slate-900">(................................................................)</div>
+                <div class="text-[10px] text-slate-500">ผู้อำนวยการวิทยาลัยเทคนิคสุราษฎร์ธานี</div>
+                <div class="text-[10px] text-slate-400 mt-1">วันที่ ........ / .................... / ................</div>
+              </div>
+
+            </div>
+
+            <div class="mt-12 p-3 bg-slate-50 rounded border border-slate-200 text-center text-[10px] text-slate-500">
+              เอกสารฉบับนี้พิมพ์จากระบบ Executive AI Strategy & Evidence Portal • วิทยาลัยเทคนิคสุราษฎร์ธานี (SRTC)
+            </div>
+          </div>
+
+          <div class="report-footer-rule">
+            <span>Executive AI Strategy & Evidence Portal | วิทยาลัยเทคนิคสุราษฎร์ธานี</span>
+            <span>หน้า 10 / 10 (สิ้นสุดรายงาน)</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- 4. MODALS (Lightbox & App Preview)         -->
+  <!-- ========================================== -->
+  
+  <!-- Image Lightbox Modal -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 hidden lightbox-backdrop flex items-center justify-center p-4">
+    <div class="relative max-w-5xl w-full bg-slate-900 rounded-2xl overflow-hidden shadow-2xl border border-slate-700 flex flex-col max-h-[90vh]" onclick="event.stopPropagation()">
+      <div class="flex items-center justify-between p-4 border-b border-slate-800 bg-slate-950/80 text-white">
+        <div>
+          <h4 id="lightbox-title" class="text-sm font-bold truncate">Title</h4>
+          <span id="lightbox-count" class="text-xs text-slate-400">1 / 15</span>
+        </div>
+        <button id="lightbox-close" class="p-1.5 rounded-lg hover:bg-slate-800 text-slate-400 hover:text-white transition-colors">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="relative flex-1 bg-black flex items-center justify-center overflow-hidden min-h-[300px]">
+        <img id="lightbox-img" src="" alt="Enlarged" class="max-h-[70vh] max-w-full object-contain">
+        
+        <button id="lightbox-prev" class="absolute left-3 p-2 rounded-full bg-slate-900/60 hover:bg-slate-900 text-white transition-colors" title="ก่อนหน้า">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+        </button>
+        <button id="lightbox-next" class="absolute right-3 p-2 rounded-full bg-slate-900/60 hover:bg-slate-900 text-white transition-colors" title="ถัดไป">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+        </button>
+      </div>
+
+      <div class="p-4 bg-slate-950/80 border-t border-slate-800 text-slate-300 text-xs">
+        <p id="lightbox-caption" class="leading-relaxed"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Live App Preview Modal -->
+  <div id="preview-modal" class="fixed inset-0 z-50 hidden lightbox-backdrop flex items-center justify-center p-2 sm:p-6">
+    <div class="relative max-w-6xl w-full h-[92vh] bg-white rounded-2xl overflow-hidden shadow-2xl border border-slate-300 flex flex-col" onclick="event.stopPropagation()">
+      <div class="flex items-center justify-between px-4 py-3 border-b border-slate-200 bg-slate-100">
+        <div class="flex items-center gap-2 min-w-0">
+          <span class="w-3 h-3 rounded-full bg-red-400"></span>
+          <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+          <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+          <h4 id="preview-title" class="text-xs sm:text-sm font-bold text-slate-800 truncate ml-2">Live Preview</h4>
+        </div>
+        <div class="flex items-center gap-2">
+          <a id="preview-external-link" href="#" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1 text-xs font-semibold bg-blue-900 text-white hover:bg-blue-800 rounded-lg transition-colors flex items-center gap-1">
+            <span>เปิดหน้าต่างใหม่</span>
+            <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+          <button id="preview-close" class="p-1 rounded-lg text-slate-500 hover:text-slate-900 hover:bg-slate-200 transition-colors">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="flex-1 w-full bg-slate-100 relative">
+        <iframe id="preview-iframe" src="about:blank" class="w-full h-full border-none" title="Live Preview Frame"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 5. FOOTER (No Print)                       -->
+  <!-- ========================================== -->
+  <footer class="bg-white border-t border-slate-200 py-8 px-4 sm:px-6 lg:px-8 no-print mt-auto text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <strong>Executive AI Strategy & Evidence Portal</strong> • วิทยาลัยเทคนิคสุราษฎร์ธานี (SRTC)
+      </div>
+      <div>
+        พัฒนาขึ้นสำหรับผู้บริหารระดับ C-Level • 25 กันยายน 2569
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main Application Script -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+/* Executive Portal - Enterprise Stylesheet & A4 Print Engine */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  --color-primary: #0F172A;
+  --color-primary-light: #1E293B;
+  --color-navy: #1E3A8A;
+  --color-navy-dark: #172554;
+  --color-accent: #D97706;
+  --color-accent-hover: #B45309;
+  --color-accent-light: #FEF3C7;
+  --color-success: #059669;
+  --color-slate-surface: #F8FAFC;
+  --color-border: #E2E8F0;
+}
+
+body {
+  font-family: 'Prompt', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #1E293B;
+  background-color: #F8FAFC;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-sarabun {
+  font-family: 'Sarabun', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Smooth Tab Transitions */
+.tab-active {
+  color: #1E3A8A !important;
+  border-bottom: 3px solid #1E3A8A !important;
+  font-weight: 600 !important;
+  background-color: #EFF6FF !important;
+}
+
+/* Glassmorphism & High-End Cards */
+.executive-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.executive-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -6px rgba(15, 23, 42, 0.08), 0 8px 12px -6px rgba(15, 23, 42, 0.04);
+  border-color: #CBD5E1;
+}
+
+/* Badge Styles */
+.badge-gold {
+  background-color: #FEF3C7;
+  color: #92400E;
+  border: 1px solid #FDE68A;
+}
+
+.badge-navy {
+  background-color: #EFF6FF;
+  color: #1E3A8A;
+  border: 1px solid #BFDBFE;
+}
+
+.badge-success {
+  background-color: #ECFDF5;
+  color: #065F46;
+  border: 1px solid #A7F3D0;
+}
+
+/* Image Eager Preload & Zero Grey Box */
+.img-loading {
+  background: linear-gradient(110deg, #eceff1 8%, #f5f5f5 18%, #eceff1 33%);
+  background-size: 200% 100%;
+  animation: 1.5s shine linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
+
+/* Modal Lightbox */
+.lightbox-backdrop {
+  background-color: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(8px);
+}
+
+/* =================================================== */
+/* A4 FORMAL REPORT PRINT ENGINE                       */
+/* =================================================== */
+.report-page {
+  background: #FFFFFF;
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto 30px auto;
+  padding: 24mm 22mm 24mm 22mm;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+  border: 1px solid #E2E8F0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.report-header-rule {
+  border-bottom: 2px solid #0F172A;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.report-footer-rule {
+  position: absolute;
+  bottom: 15mm;
+  left: 22mm;
+  right: 22mm;
+  border-top: 1px solid #CBD5E1;
+  padding-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 8pt;
+  color: #64748B;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 15mm 15mm 15mm 15mm;
+  }
+
+  html, body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    font-size: 10.5pt;
+    line-height: 1.45;
+  }
+
+  /* Hide Web UI Elements */
+  .no-print,
+  nav,
+  header,
+  #main-tabs,
+  #hero-section,
+  #apps-hub,
+  #docs-hub,
+  #prompts-hub,
+  #atmosphere-gallery,
+  #media-center,
+  #people-directory,
+  .print-btn,
+  .tab-buttons,
+  footer {
+    display: none !important;
+  }
+
+  /* Show Only Report Section */
+  #formal-report-section {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .report-page {
+    width: 100% !important;
+    min-height: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 0 20mm 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+
+  .report-page:last-child {
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+
+  .report-footer-rule {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    margin-top: 25px !important;
+  }
+}

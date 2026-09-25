@@ -1,26 +1,27 @@
 /* Executive AI Strategy & Evidence Portal - Ultra-Luxury Enterprise CSS */
+/* Corporate Identity: วิทยาลัยเทคนิคสุราษฎร์ธานี (SRTC Official Emblem Palette) */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
-  --color-midnight: #060D1A;
-  --color-royal-navy: #0B172E;
-  --color-deep-blue: #1E3A8A;
-  --color-crimson: #8B1528;
-  --color-crimson-light: #9E1B32;
-  --color-gold: #F59E0B;
-  --color-gold-dark: #D97706;
-  --color-gold-light: #FEF3C7;
+  /* Official SRTC Emblem Color Palette */
+  --color-srtc-navy-deep: #12163E;
+  --color-srtc-navy: #1B215E;
+  --color-srtc-sapphire: #2E3192;
+  --color-srtc-sapphire-light: #4147B5;
+  --color-srtc-crimson: #9E0B11;
+  --color-srtc-crimson-vibrant: #C4141C;
+  --color-srtc-gold: #F59E0B;
+  --color-srtc-gold-glow: #FBBF24;
+  --color-srtc-gold-light: #FEF3C7;
   --color-emerald: #059669;
+  --color-surface-bg: #F4F7FB;
   --color-surface-card: #FFFFFF;
-  --color-surface-bg: #F8FAFC;
-  --color-border-subtle: #E2E8F0;
-  --color-border-hover: #CBD5E1;
 }
 
 body {
   font-family: 'Prompt', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   color: #1E293B;
-  background-color: #F8FAFC;
+  background-color: var(--color-surface-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -41,53 +42,118 @@ body {
   font-family: 'JetBrains Mono', monospace;
 }
 
-/* Glassmorphic & Aura Effects */
-.glass-dark {
-  background: rgba(11, 23, 46, 0.75);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
+/* ============================================================== */
+/* 1. ULTRA-LUXURY FLOATING CARDS (LIGHT, COLOR & DEPTH)          */
+/* ============================================================== */
 
-.glass-card {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(226, 232, 240, 0.9);
-  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.glass-card:hover {
-  transform: translateY(-2px);
-  border-color: #9E1B32;
-  box-shadow: 0 16px 32px -6px rgba(139, 21, 40, 0.08), 0 8px 16px -4px rgba(15, 23, 42, 0.04);
-}
-
-/* Gold Aura Pulsing Ring */
-.gold-aura {
-  box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.35);
-}
-
-.crimson-aura {
-  box-shadow: 0 0 35px -5px rgba(139, 21, 40, 0.35);
-}
-
-/* GitHub Octicon Design System */
+/* Base Floating Elevated Card */
+.floating-card,
 .gh-repo-card {
+  position: relative;
   background: #FFFFFF;
-  border: 1px solid #D0D7DE;
-  border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(31, 35, 40, 0.04);
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 16px;
+  border: 1px solid rgba(46, 49, 146, 0.08);
+  box-shadow: 
+    0 4px 6px -1px rgba(27, 33, 94, 0.04),
+    0 12px 28px -4px rgba(27, 33, 94, 0.07),
+    0 0 0 1px rgba(27, 33, 94, 0.04);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
 }
 
+/* Top Hairline Light Reflection Sheen */
+.floating-card::before,
+.gh-repo-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #2E3192 0%, #F59E0B 50%, #9E0B11 100%);
+  opacity: 0.15;
+  transition: opacity 0.3s ease, height 0.3s ease;
+  z-index: 2;
+}
+
+/* Dynamic Hover State: 3D Lift & Radiant Ambient Halo */
+.floating-card:hover,
 .gh-repo-card:hover {
-  border-color: #1E3A8A;
-  box-shadow: 0 8px 24px rgba(30, 58, 138, 0.1);
-  transform: translateY(-2px);
+  transform: translateY(-8px) scale(1.012);
+  border-color: rgba(46, 49, 146, 0.28);
+  box-shadow: 
+    0 22px 45px -10px rgba(27, 33, 94, 0.18),
+    0 14px 28px -6px rgba(158, 11, 17, 0.12),
+    0 0 30px rgba(245, 158, 11, 0.2),
+    0 0 0 1.5px rgba(46, 49, 146, 0.22);
 }
 
+.floating-card:hover::before,
+.gh-repo-card:hover::before {
+  opacity: 1;
+  height: 3.5px;
+}
+
+/* Lead Application High-Prestige Card */
+.floating-card-lead {
+  border: 1.5px solid rgba(245, 158, 11, 0.45) !important;
+  background: linear-gradient(155deg, #FFFFFF 0%, #FFFDF8 100%) !important;
+  box-shadow: 
+    0 6px 18px -2px rgba(245, 158, 11, 0.14),
+    0 14px 32px -6px rgba(27, 33, 94, 0.09) !important;
+}
+
+.floating-card-lead:hover {
+  border-color: rgba(245, 158, 11, 0.85) !important;
+  box-shadow: 
+    0 24px 50px -8px rgba(245, 158, 11, 0.28),
+    0 14px 28px -6px rgba(46, 49, 146, 0.18),
+    0 0 35px rgba(245, 158, 11, 0.3) !important;
+}
+
+/* Bento Hero KPI Glass Cards */
+.bento-hero-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  box-shadow: 
+    0 15px 35px -5px rgba(18, 22, 62, 0.45),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.3);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.bento-hero-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, transparent 65%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.bento-hero-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(245, 158, 11, 0.65);
+  box-shadow: 
+    0 22px 48px -8px rgba(18, 22, 62, 0.55),
+    0 0 30px rgba(245, 158, 11, 0.35),
+    inset 0 1px 2px 0 rgba(255, 255, 255, 0.4);
+}
+
+.bento-hero-card:hover::after {
+  opacity: 1;
+}
+
+/* Pill Tags with GitHub & SRTC Heritage */
 .gh-pill {
   display: inline-flex;
   align-items: center;
@@ -96,32 +162,85 @@ body {
   border-radius: 9999px;
   font-size: 11px;
   font-weight: 600;
-  transition: all 0.15s ease;
+  transition: all 0.2s ease;
 }
 
-/* Navigation Tabs */
+/* ============================================================== */
+/* 2. MODERN FLOATING CAPSULE NAVIGATION DOCK (NO ANTIQUE SCROLL)  */
+/* ============================================================== */
+
+.nav-dock-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-dock-track {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 6px 10px;
+  background: rgba(18, 22, 62, 0.90);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 9999px;
+  box-shadow: 
+    0 14px 34px -4px rgba(18, 22, 62, 0.45),
+    0 0 24px rgba(46, 49, 146, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 100%;
+  mask-image: linear-gradient(90deg, transparent 0%, black 20px, black calc(100% - 20px), transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 20px, black calc(100% - 20px), transparent 100%);
+}
+
+.nav-dock-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* Floating Navigation Pills */
 .nav-tab-pill {
-  padding: 8px 16px;
+  position: relative;
+  padding: 8px 18px;
   font-size: 13px;
   font-weight: 600;
-  color: #64748B;
+  color: #CBD5E1;
   border-radius: 9999px;
-  transition: all 0.2s ease;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   display: inline-flex;
   align-items: center;
   gap: 8px;
   white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid transparent;
+  flex-shrink: 0;
+  user-select: none;
 }
 
 .nav-tab-pill:hover {
-  color: #0F172A;
-  background-color: #F1F5F9;
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
 }
 
 .nav-tab-pill.active {
   color: #FFFFFF !important;
-  background-color: #8B1528 !important;
-  box-shadow: 0 4px 12px rgba(139, 21, 40, 0.3);
+  background: linear-gradient(135deg, #9E0B11 0%, #C4141C 100%) !important;
+  border-color: rgba(245, 158, 11, 0.55) !important;
+  box-shadow: 
+    0 6px 20px -2px rgba(158, 11, 17, 0.55),
+    0 0 16px rgba(245, 158, 11, 0.4),
+    inset 0 1px 1.5px rgba(255, 255, 255, 0.35) !important;
+  transform: translateY(-1px);
 }
 
 .nav-tab-pill.active .counter-badge {
@@ -130,12 +249,57 @@ body {
 }
 
 .counter-badge {
-  background-color: #E2E8F0;
-  color: #475569;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #E2E8F0;
   padding: 1px 7px;
   border-radius: 9999px;
   font-size: 11px;
   font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Modern Left & Right Slide Buttons */
+.nav-glide-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(27, 33, 94, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.nav-glide-btn:hover {
+  background: #2E3192;
+  border-color: #F59E0B;
+  color: #FBBF24;
+  transform: scale(1.1);
+  box-shadow: 0 6px 22px rgba(46, 49, 146, 0.5), 0 0 12px rgba(245, 158, 11, 0.4);
+}
+
+/* ============================================================== */
+/* 3. BRAND IDENTITY & AURA HELPERS                               */
+/* ============================================================== */
+
+.srtc-hero-mesh {
+  background: 
+    radial-gradient(circle at 15% 20%, rgba(245, 158, 11, 0.15) 0%, transparent 45%),
+    radial-gradient(circle at 85% 30%, rgba(158, 11, 17, 0.22) 0%, transparent 50%),
+    radial-gradient(circle at 50% 90%, rgba(46, 49, 146, 0.35) 0%, transparent 60%),
+    linear-gradient(180deg, #12163E 0%, #1A2158 50%, #202766 100%);
+}
+
+.srtc-header-mesh {
+  background: linear-gradient(180deg, rgba(18, 22, 62, 0.98) 0%, rgba(27, 33, 94, 0.96) 100%);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.25);
 }
 
 /* Audio Player Luxury Scrubber */
@@ -151,28 +315,28 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* Modal Lightbox */
 .lightbox-backdrop {
-  background-color: rgba(6, 13, 26, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(18, 22, 62, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
-/* =================================================== */
-/* A4 FORMAL REPORT PRINT ENGINE                       */
-/* =================================================== */
+/* ============================================================== */
+/* 4. A4 FORMAL REPORT PRINT ENGINE                               */
+/* ============================================================== */
 .report-page {
   background: #FFFFFF;
   width: 210mm;
   min-height: 297mm;
   margin: 0 auto 30px auto;
   padding: 24mm 22mm 24mm 22mm;
-  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 35px rgba(27, 33, 94, 0.09);
   border: 1px solid #E2E8F0;
   position: relative;
   box-sizing: border-box;
 }
 
 .report-header-rule {
-  border-bottom: 2px solid #0F172A;
+  border-bottom: 2px solid #1B215E;
   padding-bottom: 8px;
   margin-bottom: 20px;
 }
@@ -248,20 +412,5 @@ input[type="range"]::-webkit-slider-thumb {
     page-break-after: always !important;
     break-after: page !important;
     page-break-inside: avoid !important;
-    break-inside: avoid !important;
-  }
-
-  .report-page:last-child {
-    page-break-after: auto !important;
-    break-after: auto !important;
-  }
-
-  .report-footer-rule {
-    position: relative !important;
-    bottom: auto !important;
-    left: auto !important;
-    right: auto !important;
-    margin-top: 20px !important;
-    border-top: 1px solid #94A3B8 !important;
   }
 }

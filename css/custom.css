@@ -122,7 +122,7 @@ body {
 @media print {
   @page {
     size: A4 portrait;
-    margin: 15mm 15mm 15mm 15mm;
+    margin: 12mm 15mm 12mm 15mm;
   }
 
   html, body {
@@ -130,44 +130,56 @@ body {
     color: #000000 !important;
     font-size: 10.5pt;
     line-height: 1.45;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
-  /* Hide Web UI Elements */
+  /* Hide all non-report elements */
   .no-print,
   nav,
   header,
+  footer,
   #main-tabs,
   #hero-section,
-  #apps-hub,
-  #docs-hub,
-  #prompts-hub,
-  #atmosphere-gallery,
-  #media-center,
-  #people-directory,
-  .print-btn,
-  .tab-buttons,
-  footer {
+  #section-overview,
+  #section-apps,
+  #section-docs,
+  #section-prompts,
+  #section-atmosphere,
+  #section-media,
+  #section-people,
+  #preview-modal,
+  #lightbox-modal,
+  .gh-tab-btn,
+  button {
     display: none !important;
   }
 
-  /* Show Only Report Section */
+  /* Ensure report section and pages show */
+  #section-report,
   #formal-report-section {
     display: block !important;
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
+    visibility: visible !important;
   }
 
   .report-page {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
     width: 100% !important;
-    min-height: auto !important;
+    min-height: 270mm !important;
     height: auto !important;
     margin: 0 !important;
-    padding: 0 0 20mm 0 !important;
+    padding: 0 0 10mm 0 !important;
     box-shadow: none !important;
     border: none !important;
     page-break-after: always !important;
     break-after: page !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
 
   .report-page:last-child {
@@ -180,6 +192,7 @@ body {
     bottom: auto !important;
     left: auto !important;
     right: auto !important;
-    margin-top: 25px !important;
+    margin-top: 20px !important;
+    border-top: 1px solid #94A3B8 !important;
   }
 }

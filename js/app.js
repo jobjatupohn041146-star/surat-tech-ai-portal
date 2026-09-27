@@ -278,8 +278,9 @@ function renderAtmosphere() {
 
   container.innerHTML = atmosphereData.map((item, index) => `
     <div class="group relative rounded-xl overflow-hidden bg-slate-900 border border-slate-200 cursor-pointer shadow-sm executive-card" onclick="window.openLightbox('atmosphere', ${index})">
-      <div class="aspect-[4/3] w-full overflow-hidden bg-slate-100">
+      <div class="aspect-[4/3] w-full overflow-hidden bg-slate-100 relative">
         <img src="${item.path}" alt="${item.title}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+        ${item.isFacebook ? `<span class="absolute top-2 right-2 text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-600 text-white shadow-sm">Facebook PR</span>` : ''}
       </div>
       <div class="p-3.5 bg-white border-t border-slate-100">
         <div class="text-xs font-semibold text-slate-900 line-clamp-1 mb-1">${item.title}</div>
